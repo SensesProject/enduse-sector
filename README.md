@@ -1,6 +1,6 @@
 # Enduse Sector Risks Module
 
-This repository contains the code for [*Transition Risks – Enduse Sector Transformation*](https://climatescenarios.org/end-use), a learn module on finance risks related to transitions in the power sector. It is part of the [SENSES Toolkit](https://climatescenarios.org/).
+This repository contains the code for [*Transition Risks – Enduse Sector Transformation*](https://climatescenarios.org/end-use), a learn module on finance risks related to transitions in the Enduse sector. It is part of the [SENSES Toolkit](https://climatescenarios.org/).
 
 ## License
 
