@@ -40,9 +40,64 @@
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.</p>
       </div>
-      <div class="vis-wrapper">
-        <EmiCostsRisk :width="width" :height="height"/>
+<!--      <LayoutScrollytelling>
+              <template v-slot:vis="{ width, height, step }">
+                <div class="vis-inner" :style="{width: `${width}px`, height: `${height}px`}">
+                  <Costs :width="width" :height="height" :step="step"/>
+                </div>
+              </template>
+              <div slot="text" class="observer">
+              <IntersectionObserver :step="0"  align="right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                  ex ea commodo consequat.
+                </p>
+              </IntersectionObserver>
+              <IntersectionObserver :step="1"  align="right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                  ex ea commodo consequat.
+                </p>
+              </IntersectionObserver>
+              <IntersectionObserver :step="2"  align="right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                  ex ea commodo consequat.
+                </p>
+              </IntersectionObserver>
+              <IntersectionObserver :step="3"  align="right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                  ex ea commodo consequat.</p>
+              </IntersectionObserver>
+              <IntersectionObserver no-styling :step="4"  align="right" class="changeheight">
+                <p></p>
+              </IntersectionObserver>
+            </div>
+          </LayoutScrollytelling> -->
+      <LayoutScrollytelling>
+        <template v-slot:vis="{ width, height, step }">
+          <div class="vis-inner" :style="{width: `${width}px`, height: `${height}px`}">
+            <Revenue :width="width" :height="height" :step="step"/>
+          </div>
+        </template>
+        <div slot="text" class="observer">
+        <IntersectionObserver :step="0"  align="left">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+        </IntersectionObserver>
       </div>
+      </LayoutScrollytelling>
       <div class="text-wrapper">
         <h2 class="chapter-title" id="structure">
           Investment need
@@ -54,9 +109,6 @@
           voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.</p>
-      </div>
-      <div class="vis-wrapper">
-        <StructureRisk :width="width" :height="height"/>
       </div>
       <div class="text-wrapper" id="last-text">
         <h2 class="chapter-title" id="conclusion">
@@ -79,9 +131,11 @@
 import SensesMenu from 'library/src/components/SensesMenu.vue'
 import RiskPathway from './components/RiskPathway.vue'
 import FinalEnergy from './components/FinalEnergy.vue'
-import EmiCostsRisk from './components/EmiCostsRisk.vue'
-import StructureRisk from './components/StructureRisk.vue'
+import Revenue from './components/Revenue.vue'
+// import Costs from './components/Costs.vue'
 import SensesMeta from 'library/src/components/SensesMeta.vue'
+import LayoutScrollytelling from 'library/src/components/LayoutScrollytelling.vue'
+import IntersectionObserver from 'library/src/components/IntersectionObserver.vue'
 
 export default {
   name: 'App',
@@ -89,9 +143,11 @@ export default {
     SensesMenu,
     RiskPathway,
     FinalEnergy,
-    EmiCostsRisk,
-    StructureRisk,
-    SensesMeta
+    Revenue,
+    // Costs,
+    SensesMeta,
+    LayoutScrollytelling,
+    IntersectionObserver
   },
   data () {
     return {
@@ -141,6 +197,7 @@ export default {
 
     .text-wrapper {
       margin-top: $spacing;
+      margin-bottom: $spacing;
 
       .module-title {
         font-size: 40px;
@@ -164,6 +221,12 @@ export default {
         border-top: 1px solid $color-gray;
         padding-top: 30px;
       }
+    }
+    .intersection-observer .default.left {
+      // -webkit-box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
+      // -moz-box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
+      // box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
+      width: 35%;
     }
 
     .vis-wrapper {
