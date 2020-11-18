@@ -30,7 +30,7 @@
       </div>
       <div class="text-wrapper">
         <h2 class="chapter-title" id="costs">
-          Fuel cost changes
+          Revenue changes
         </h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -40,7 +40,7 @@
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.</p>
       </div>
-<!--      <LayoutScrollytelling>
+      <!-- <LayoutScrollytelling>
               <template v-slot:vis="{ width, height, step }">
                 <div class="vis-inner" :style="{width: `${width}px`, height: `${height}px`}">
                   <Costs :width="width" :height="height" :step="step"/>
@@ -110,6 +110,29 @@
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.</p>
       </div>
+      <LayoutScrollytelling>
+        <template v-slot:vis="{ width, height, step }">
+          <div class="vis-inner" :style="{width: `${width}px`, height: `${height}px`}">
+            <InvestmentNeed :width="width" :height="height" :step="step"/>
+          </div>
+        </template>
+        <div slot="text" class="observer">
+          <IntersectionObserver :step="0"  align="right">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+          </IntersectionObserver>
+          <IntersectionObserver :step="1"  align="right">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+          </IntersectionObserver>
+        </div>
+      </LayoutScrollytelling>
       <div class="text-wrapper" id="last-text">
         <h2 class="chapter-title" id="conclusion">
           Assessing risks with the help of climate scenarios
@@ -132,6 +155,7 @@ import SensesMenu from 'library/src/components/SensesMenu.vue'
 import RiskPathway from './components/RiskPathway.vue'
 import FinalEnergy from './components/FinalEnergy.vue'
 import Revenue from './components/Revenue.vue'
+import InvestmentNeed from './components/InvestmentNeed.vue'
 // import Costs from './components/Costs.vue'
 import SensesMeta from 'library/src/components/SensesMeta.vue'
 import LayoutScrollytelling from 'library/src/components/LayoutScrollytelling.vue'
@@ -144,6 +168,7 @@ export default {
     RiskPathway,
     FinalEnergy,
     Revenue,
+    InvestmentNeed,
     // Costs,
     SensesMeta,
     LayoutScrollytelling,

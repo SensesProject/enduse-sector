@@ -7,6 +7,7 @@
     </div>
     <div class="key" :class=" mobile ? 'mobile' : 'desktop'">
       <SensesSelect class="region_selector" :options="regions" v-model="currentRegion"/>
+      <SensesSelect class="elasticity_selector" :options="elasticity" v-model="currentElasticity"/>
     </div>
     <p class="legend">
       <span class="dot-two"></span>
@@ -96,7 +97,7 @@
 import _ from 'lodash'
 import * as d3 from 'd3'
 
-import revenueData from 'dsv-loader!@/assets/data/RFPs_enduseSector_remind.csv' // eslint-disable-line import/no-webpack-loader-syntax
+import revenueData from 'dsv-loader!@/assets/data/Revenue_remind.csv' // eslint-disable-line import/no-webpack-loader-syntax
 import SensesSelect from 'library/src/components/SensesSelect.vue'
 
 export default {
@@ -128,6 +129,7 @@ export default {
 
       sector: _.groupBy(revenueData, d => d.Sector),
       model: [...new Set(revenueData.map(r => r.Model))],
+      elasticity: [...new Set(revenueData.map(r => r.Elasticity))],
       years: [...new Set(revenueData.map(r => r.Year))],
       labels: [...new Set(revenueData.map(r => r.Sector))],
       scenario: [...new Set(revenueData.map(r => r.Scenario))],
@@ -137,6 +139,7 @@ export default {
       revenueValues: [...new Set(revenueData.map(r => r.oneWorld || r.twoWorld))],
       currentScenario: '1.5ºC',
       currentRegion: 'World',
+      currentElasticity: 'low',
       active: false,
       over: '',
       margin: {
@@ -152,6 +155,7 @@ export default {
   computed: {
     // scenarioFilter () { return _.map(this.sector, (sc, s) => _.filter(sc, d => d.Scenario === this.scenDict[this.currentScenario])) },
     regionFilter () { return _.map(this.sector, (re, r) => _.filter(re, d => d.Region === this.currentRegion)) },
+    elasticityFilter () { return _.map(this.regionFilter, (el, r) => _.filter(el, d => d.Elasticity === this.currentElasticity)) },
     // worldFilter () { return _.map(this.sector, (re, r) => _.filter(re, d => d.Region === 'World')) },
     // filters world and baseline Values
     // worldBaseFilter () { return _.map(this.sector, (sc, s) => _.filter(sc, d => (d.Scenario === 'NPi_v3' && d.Region === this.currentRegion))) },
@@ -195,8 +199,9 @@ export default {
       }
     },
     dots () {
-      return _.map(this.regionFilter, (sector, s) => {
+      return _.map(this.elasticityFilter, (sector, s) => {
         return _.map(sector, (single, i) => {
+          console.log('single', single)
           return {
             year: this.scale.x(single.Year),
             barWidth: (0.8 * this.sectWidth) / 55,
@@ -204,24 +209,24 @@ export default {
             // heightValue: this.scale.y(Math.abs(single.Revenue)) - this.scale.y(0),
             twoWorld: this.scale.y(Math.abs(single.twoWorld)),
             oneWorld: this.scale.y(Math.abs(single.oneWorld)),
-            twoOecd: this.scale.y(Math.abs(single.twoOecd)),
-            oneOecd: this.scale.y(Math.abs(single.oneOecd)),
+            // twoOecd: this.scale.y(Math.abs(single.twoOecd)),
+            // oneOecd: this.scale.y(Math.abs(single.oneOecd)),
             // twoWorld: this.scale.y(Math.abs(single.twoWorld)) - this.scale.y(0),
             // oneWorld: this.scale.y(Math.abs(single.oneWorld)) - this.scale.y(0),
             // Y Values for Barchart
             // yValue: single.Revenue >= 0 ? (0.5 * this.innerHeight) - this.scale.y(single.Revenue) : (0.5 * this.innerHeight) - this.scale.y(0),
             twoWorldY: single.twoWorld >= 0 ? (0.3 * this.innerHeight) - this.scale.y(Math.abs(single.twoWorld)) : (0.3 * this.innerHeight),
             oneWorldY: single.oneWorld >= 0 ? (0.3 * this.innerHeight) - this.scale.y(Math.abs(single.oneWorld)) : (0.3 * this.innerHeight),
-            twoOecdY: single.twoOecd >= 0 ? (0.3 * this.innerHeight) - this.scale.y(Math.abs(single.twoOecd)) : (0.3 * this.innerHeight),
-            oneOecdY: single.oneOecd >= 0 ? (0.3 * this.innerHeight) - this.scale.y(Math.abs(single.oneOecd)) : (0.3 * this.innerHeight),
+            // twoOecdY: single.twoOecd >= 0 ? (0.3 * this.innerHeight) - this.scale.y(Math.abs(single.twoOecd)) : (0.3 * this.innerHeight),
+            // oneOecdY: single.oneOecd >= 0 ? (0.3 * this.innerHeight) - this.scale.y(Math.abs(single.oneOecd)) : (0.3 * this.innerHeight),
             // twoWorldY: single.twoWorld >= 0 ? (0.5 * this.innerHeight) - this.scale.y(single.twoWorld) : (0.5 * this.innerHeight) - this.scale.y(0),
             // oneWorldY: single.oneWorld >= 0 ? (0.5 * this.innerHeight) - this.scale.y(single.oneWorld) : (0.5 * this.innerHeight) - this.scale.y(0),
             // Hover Over real values
             dollarValue: parseFloat(single.Revenue),
             twoWorldDollar: parseFloat(single.twoWorld),
-            oneWorldDollar: parseFloat(single.oneWorld),
-            twoOecdDollar: parseFloat(single.twoOecd),
-            oneOecdDollar: parseFloat(single.oneOecd)
+            oneWorldDollar: parseFloat(single.oneWorld)
+            // twoOecdDollar: parseFloat(single.twoOecd),
+            // oneOecdDollar: parseFloat(single.oneOecd)
           }
         })
       })
@@ -261,6 +266,7 @@ export default {
     }
   },
   mounted () {
+    console.log('dotsElasticity', this.dots)
     this.calcSizes()
     window.addEventListener('resize', this.calcSizes, false)
   },

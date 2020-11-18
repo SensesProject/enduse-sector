@@ -1,0 +1,649 @@
+Sector,Model,Region,Scenario,Year,Revenue,Elasticity
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2020,0.0,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2030,-11449569707.9472,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2040,-15328054472.369,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2050,-19789839736.4516,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2060,-27641379151.5751,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2070,-33700318140.7625,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2080,-48075758317.2296,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2090,-56758021255.4286,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2100,-61608473370.2963,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2020,-76414.30338867201,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2030,-17941771061.5901,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2040,-26793218373.2553,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2050,-45003123923.4511,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2060,-57719875726.4973,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2070,-57253715895.2584,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2080,-89672985662.3501,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2090,-96349330987.3803,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2100,-105508952489.945,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2020,0.0,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2030,-1851884047.1892397,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2040,-2747304552.73727,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2050,-3807527015.0022397,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2060,-6821845635.28672,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2070,-10366521690.0678,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2080,-14757380554.9332,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2090,-21092092423.0573,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2100,-23934028106.7712,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2020,0.0,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2030,-704588978.4551951,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2040,-840757881.406392,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2050,-1024966026.38182,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2060,-1891670600.3697102,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2070,-2822273818.3507104,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2080,-3743898430.64337,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2090,-4660382877.7849,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2100,-4774611687.31676,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2020,0.0,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2030,-287934194.234995,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2040,-391709981.688077,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2050,-313311920.002055,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2060,-459263054.056284,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2070,-531355786.024199,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2080,-699290987.127126,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2090,-793764421.2159691,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2100,-890148010.7333571,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2020,-31265.2509765625,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2030,-8724237738.55882,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2040,-10697527070.7415,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2050,-12255394452.1713,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2060,-16696755752.2844,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2070,-21140098963.095,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2080,-25835802531.166,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2090,-29230057766.6611,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2100,-29763529271.2614,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2020,0.0,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2030,-7397393288.6302,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2040,-11644095720.2372,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2050,-16962463299.1668,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2060,-22177665168.4558,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2070,-25623449678.7889,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2080,-38420553030.5817,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2090,-43514215667.5273,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2100,-48339358611.6277,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2020,-78427.1106884766,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2030,-13539104226.4659,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2040,-22896688160.2775,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2050,-40624974101.2723,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2060,-51186382409.7007,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2070,-47207990619.8714,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2080,-79421737535.2762,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2090,-82285800800.5595,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2100,-90598884485.3763,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2020,0.0,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2030,-1153577665.47498,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2040,-1933195615.7164102,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2050,-2927346842.40575,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2060,-5235253071.54136,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2070,-8230401634.4431,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2080,-11543807539.5103,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2090,-14914285623.1077,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2100,-17525955433.8783,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2020,0.0,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2030,-426825395.733532,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2040,-612163571.7656031,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2050,-867061784.859945,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2060,-1271464906.1665099,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2070,-1703686005.8721,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2080,-2346931004.00264,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2090,-2902478525.95758,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2100,-3291924546.63372,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2020,0.0,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2030,-142244861.759159,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2040,-325637661.38117003,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2050,-268445174.634904,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2060,-211237849.083381,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2070,-305150282.04599905,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2080,-405565073.971606,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2090,-479674709.88644403,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2100,-531819269.505605,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2020,-40415.1524902344,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2030,-5641834880.59079,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2040,-7375690218.807791,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2050,-9482318417.00515,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2060,-12135301238.6768,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2070,-13514254278.1437,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2080,-16555334863.2042,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2090,-18777564556.6888,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2100,-21259535777.8027,low
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2020,0.0,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2030,-114495697079.47198,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2040,-153280544723.689,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2050,-197898397364.51602,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2060,-276413791515.75104,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2070,-337003181407.625,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2080,-480757583172.296,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2090,-567580212554.286,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2100,-616084733702.963,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2020,-764143.033886719,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2030,-179417710615.901,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2040,-267932183732.553,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2050,-450031239234.511,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2060,-577198757264.973,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2070,-572537158952.584,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2080,-896729856623.501,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2090,-963493309873.803,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2100,-1055089524899.45,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2020,0.0,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2030,-18518840471.8923,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2040,-27473045527.3727,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2050,-38075270150.0224,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2060,-68218456352.8672,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2070,-103665216900.67801,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2080,-147573805549.332,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2090,-210920924230.573,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2100,-239340281067.712,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2020,0.0,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2030,-7045889784.55195,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2040,-8407578814.06392,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2050,-10249660263.8182,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2060,-18916706003.6971,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2070,-28222738183.5071,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2080,-37438984306.4337,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2090,-46603828777.84901,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2100,-47746116873.1676,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2020,0.0,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2030,-2879341942.34995,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2040,-3917099816.88077,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2050,-3133119200.02055,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2060,-4592630540.5628395,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2070,-5313557860.24199,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2080,-6992909871.27126,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2090,-7937644212.159691,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2100,-8901480107.33357,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2020,-312652.509765625,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2030,-87242377385.5882,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2040,-106975270707.415,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2050,-122553944521.71301,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2060,-166967557522.844,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2070,-211400989630.95,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2080,-258358025311.66,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2090,-292300577666.611,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2100,-297635292712.614,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2020,0.0,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2030,-73973932886.302,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2040,-116440957202.372,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2050,-169624632991.668,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2060,-221776651684.558,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2070,-256234496787.88898,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2080,-384205530305.817,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2090,-435142156675.27295,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2100,-483393586116.27704,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2020,-784271.1068847659,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2030,-135391042264.659,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2040,-228966881602.775,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2050,-406249741012.72296,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2060,-511863824097.007,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2070,-472079906198.714,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2080,-794217375352.7621,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2090,-822858008005.595,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2100,-905988844853.763,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2020,0.0,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2030,-11535776654.7498,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2040,-19331956157.1641,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2050,-29273468424.0575,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2060,-52352530715.4136,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2070,-82304016344.431,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2080,-115438075395.10301,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2090,-149142856231.077,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2100,-175259554338.78302,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2020,0.0,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2030,-4268253957.3353205,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2040,-6121635717.65603,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2050,-8670617848.59945,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2060,-12714649061.6651,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2070,-17036860058.721,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2080,-23469310040.0264,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2090,-29024785259.5758,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2100,-32919245466.3372,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2020,0.0,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2030,-1422448617.59159,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2040,-3256376613.8117,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2050,-2684451746.34904,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2060,-2112378490.83381,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2070,-3051502820.45999,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2080,-4055650739.71606,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2090,-4796747098.86444,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2100,-5318192695.05605,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2020,-404151.524902344,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2030,-56418348805.9079,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2040,-73756902188.0779,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2050,-94823184170.0514,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2060,-121353012386.768,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2070,-135142542781.437,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2080,-165553348632.042,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2090,-187775645566.888,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2100,-212595357778.02698,medium
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2020,0.0,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2030,-228991394158.943,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2040,-306561089447.37897,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2050,-395796794729.031,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2060,-552827583031.501,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2070,-674006362815.249,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2080,-961515166344.591,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2090,-1135160425108.57,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2100,-1232169467405.93,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2020,-1528286.06777344,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2030,-358835421231.801,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2040,-535864367465.106,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2050,-900062478469.021,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2060,-1154397514529.94,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2070,-1145074317905.17,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2080,-1793459713247.0,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2090,-1926986619747.6,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2100,-2110179049798.91,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2020,0.0,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2030,-37037680943.7847,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2040,-54946091054.7454,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2050,-76150540300.0447,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2060,-136436912705.73401,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2070,-207330433801.35602,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2080,-295147611098.664,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2090,-421841848461.146,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2100,-478680562135.423,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2020,0.0,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2030,-14091779569.1039,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2040,-16815157628.1278,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2050,-20499320527.6363,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2060,-37833412007.3942,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2070,-56445476367.0141,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2080,-74877968612.8673,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2090,-93207657555.6978,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2100,-95492233746.3351,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2020,0.0,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2030,-5758683884.6999,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2040,-7834199633.76154,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2050,-6266238400.0411,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2060,-9185261081.12566,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2070,-10627115720.484001,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2080,-13985819742.5425,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2090,-15875288424.3194,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2100,-17802960214.6671,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2020,-625305.01953125,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2030,-174484754771.176,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2040,-213950541414.83,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2050,-245107889043.425,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2060,-333935115045.688,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2070,-422801979261.899,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2080,-516716050623.32,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2090,-584601155333.222,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2100,-595270585425.227,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2020,0.0,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2030,-147947865772.604,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2040,-232881914404.745,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2050,-339249265983.336,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2060,-443553303369.116,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2070,-512468993575.77795,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2080,-768411060611.6329,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2090,-870284313350.5459,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2100,-966787172232.552,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2020,-1568542.21376953,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2030,-270782084529.318,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2040,-457933763205.549,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2050,-812499482025.445,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2060,-1023727648194.01,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2070,-944159812397.4259,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2080,-1588434750705.52,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2090,-1645716016011.19,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2100,-1811977689707.52,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2020,0.0,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2030,-23071553309.4996,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2040,-38663912314.3282,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2050,-58546936848.115,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2060,-104705061430.827,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2070,-164608032688.862,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2080,-230876150790.205,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2090,-298285712462.154,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2100,-350519108677.56604,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2020,0.0,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2030,-8536507914.67062,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2040,-12243271435.312,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2050,-17341235697.1989,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2060,-25429298123.3302,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2070,-34073720117.442,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2080,-46938620080.0528,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2090,-58049570519.1515,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2100,-65838490932.6744,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2020,0.0,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2030,-2844897235.18318,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2040,-6512753227.6234,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2050,-5368903492.698071,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2060,-4224756981.66761,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2070,-6103005640.91998,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2080,-8111301479.43211,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2090,-9593494197.728859,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2100,-10636385390.1121,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2020,-808303.049804687,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2030,-112836697611.816,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2040,-147513804376.156,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2050,-189646368340.103,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2060,-242706024773.536,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2070,-270285085562.87302,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2080,-331106697264.084,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2090,-375551291133.776,high
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2100,-425190715556.05396,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2020,0.0,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2030,1502955341696.21,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2040,2285731482406.69,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2050,2435850602084.03,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2060,2817914110232.49,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2070,3341759882458.42,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2080,3974932952278.33,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2090,5020581099323.27,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2100,5687412850642.37,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2020,5108084.25078125,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2030,1056387532153.93,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2040,2018151673556.33,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2050,2434076435493.1,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2060,3194479643691.87,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2070,3810985573066.78,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2080,4830889877868.58,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2090,5533637483203.32,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2100,6300211573754.17,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2020,0.0,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2030,267942410182.175,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2040,360733267965.199,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2050,368680542902.29706,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2060,459352036192.426,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2070,930161285291.6841,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2080,1427438634039.25,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2090,2450055139451.73,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2100,3096824502901.86,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2020,0.0,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2030,128703993895.409,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2040,154107793680.094,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2050,79360709516.9898,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2060,58966833241.5721,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2070,90656512333.8909,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2080,120259334707.511,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2090,212049390225.60898,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2100,220109555484.321,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2020,0.0,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2030,28452360489.8642,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2040,41594745552.5396,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2050,41830633774.7512,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2060,33917675129.1143,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2070,30462763861.3701,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2080,24580557986.5739,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2090,33367714116.9641,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2100,42236648605.0474,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2020,10211826.5515625,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2030,1315711468626.9,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2040,1609057487693.39,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2050,1688597459194.98,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2060,2616258757783.97,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2070,4453780160383.84,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2080,6286452223361.62,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2090,8219315180129.53,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2100,9484248196481.07,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2020,0.0,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2030,984845872553.763,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2040,1818652446779.73,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2050,2262102204520.52,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2060,2855572656862.08,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2070,3120077964475.28,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2080,3461543726559.4,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2090,4302821391434.14,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2100,4886828550492.69,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2020,5242634.83671875,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2030,791846550784.5309,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2040,1784152377616.41,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2050,2381856479030.03,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2060,3448199378409.31,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2070,3501983754330.49,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2080,4166865017088.89,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2090,4563549055590.81,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2100,5295590488570.18,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2020,0.0,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2030,167875529973.417,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2040,251171242964.54,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2050,329937640936.13696,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2060,475819211560.202,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2070,704880844948.756,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2080,881988946311.5,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2090,1571529319027.24,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2100,1898354956084.53,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2020,0.0,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2030,78130718551.9038,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2040,134455819390.93301,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2050,93280189232.0355,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2060,59600744951.7866,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2070,71315479044.3566,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2080,41813458148.0039,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2090,100619242723.745,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2100,111269078107.179,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2020,0.0,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2030,16173892939.5513,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2040,32143432303.515,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2050,39097035119.1549,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2060,35977720632.902,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2070,32710265041.6297,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2080,21517362621.1208,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2090,29924380250.7241,low
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2100,30840317545.155,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2020,13200358.685546901,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2030,892860755947.9109,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2040,1324410872240.36,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2050,1623696705556.91,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2060,2160533411389.42,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2070,2940019371321.36,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2080,3901573381939.59,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2090,5269822850899.66,low
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2100,5985225464485.67,low
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2020,0.0,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2030,1127216506272.16,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2040,1714298611805.01,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2050,1826887951563.02,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2060,2113435582674.37,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2070,2506319911843.81,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2080,2981199714208.75,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2090,3765435824492.45,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2100,4265559637981.78,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2020,3831063.18808594,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2030,792290649115.447,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2040,1513613755167.24,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2050,1825557326619.83,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2060,2395859732768.9,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2070,2858239179800.09,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2080,3623167408401.43,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2090,4150228112402.49,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2100,4725158680315.63,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2020,0.0,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2030,200956807636.631,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2040,270549950973.899,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2050,276510407176.723,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2060,344514027144.32,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2070,697620963968.763,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2080,1070578975529.43,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2090,1837541354588.8,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2100,2322618377176.39,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2020,0.0,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2030,96527995421.5566,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2040,115580845260.07,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2050,59520532137.7424,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2060,44225124931.1791,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2070,67992384250.4182,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2080,90194501030.6333,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2090,159037042669.207,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2100,165082166613.241,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2020,0.0,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2030,21339270367.3982,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2040,31196059164.4047,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2050,31372975331.0634,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2060,25438256346.8357,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2070,22847072896.0276,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2080,18435418489.9304,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2090,25025785587.7231,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2100,31677486453.7856,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2020,7658869.91367187,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2030,986783601470.175,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2040,1206793115770.04,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2050,1266448094396.23,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2060,1962194068337.98,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2070,3340335120287.88,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2080,4714839167521.21,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2090,6164486385097.15,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2100,7113186147360.8,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2020,0.0,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2030,738634404415.322,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2040,1363989335084.8,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2050,1696576653390.39,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2060,2141679492646.56,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2070,2340058473356.46,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2080,2596157794919.55,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2090,3227116043575.6,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2100,3665121412869.52,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2020,3931976.12753906,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2030,593884913088.398,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2040,1338114283212.31,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2050,1786392359272.52,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2060,2586149533806.98,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2070,2626487815747.87,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2080,3125148762816.67,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2090,3422661791693.11,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2100,3971692866427.64,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2020,0.0,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2030,125906647480.063,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2040,188378432223.405,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2050,247453230702.103,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2060,356864408670.151,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2070,528660633711.567,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2080,661491709733.625,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2090,1178646989270.43,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2100,1423766217063.4,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2020,0.0,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2030,58598038913.9279,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2040,100841864543.2,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2050,69960141924.0266,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2060,44700558713.84,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2070,53486609283.2674,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2080,31360093611.0029,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2090,75464432042.809,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2100,83451808580.3842,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2020,0.0,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2030,12130419704.6635,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2040,24107574227.6363,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2050,29322776339.3662,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2060,26983290474.6765,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2070,24532698781.2223,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2080,16138021965.8406,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2090,22443285188.0431,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2100,23130238158.8662,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2020,9900269.01416016,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2030,669645566960.933,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2040,993308154180.2671,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2050,1217772529167.68,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2060,1620400058542.07,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2070,2205014528491.02,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2080,2926180036454.69,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2090,3952367138174.75,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2100,4488919098364.25,medium
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2020,0.0,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2030,751477670848.105,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2040,1142865741203.34,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2050,1217925301042.02,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2060,1408957055116.24,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2070,1670879941229.21,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2080,1987466476139.17,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2090,2510290549661.64,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_400_v3,2100,2843706425321.18,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2020,2554042.12539062,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2030,528193766076.964,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2040,1009075836778.16,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2050,1217038217746.55,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2060,1597239821845.93,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2070,1905492786533.39,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2080,2415444938934.29,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2090,2766818741601.66,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_400_v3,2100,3150105786877.08,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2020,0.0,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2030,133971205091.08699,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2040,180366633982.6,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2050,184340271451.149,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2060,229676018096.213,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2070,465080642645.84204,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2080,713719317019.6229,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2090,1225027569725.86,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_400_v3,2100,1548412251450.93,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2020,0.0,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2030,64351996947.7044,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2040,77053896840.0469,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2050,39680354758.4949,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2060,29483416620.786,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2070,45328256166.9454,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2080,60129667353.7555,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2090,106024695112.805,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_400_v3,2100,110054777742.161,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2020,0.0,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2030,14226180244.9321,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2040,20797372776.2698,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2050,20915316887.3756,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2060,16958837564.5571,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2070,15231381930.6851,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2080,12290278993.2869,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2090,16683857058.4821,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_400_v3,2100,21118324302.5237,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2020,5105913.27578125,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2030,657855734313.45,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2040,804528743846.6941,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2050,844298729597.489,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2060,1308129378891.98,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2070,2226890080191.92,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2080,3143226111680.81,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2090,4109657590064.77,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_400_v3,2100,4742124098240.53,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2020,0.0,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2030,492422936276.88104,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2040,909326223389.866,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2050,1131051102260.26,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2060,1427786328431.04,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2070,1560038982237.64,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2080,1730771863279.7,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2090,2151410695717.07,high
+Transportation,REMIND-MAgPIE 1.7-3.0,World,NPi2020_1000_v3,2100,2443414275246.34,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2020,2621317.41835937,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2030,395923275392.265,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2040,892076188808.2059,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2050,1190928239515.01,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2060,1724099689204.66,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2070,1750991877165.24,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2080,2083432508544.44,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2090,2281774527795.41,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),NPi2020_1000_v3,2100,2647795244285.09,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2020,0.0,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2030,83937764986.7086,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2040,125585621482.27,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2050,164968820468.068,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2060,237909605780.101,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2070,352440422474.378,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2080,440994473155.75,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2090,785764659513.6179,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,NPi2020_1000_v3,2100,949177478042.265,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2020,0.0,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2030,39065359275.9519,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2040,67227909695.4665,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2050,46640094616.0178,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2060,29800372475.8933,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2070,35657739522.1783,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2080,20906729074.002,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2090,50309621361.8727,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,NPi2020_1000_v3,2100,55634539053.5895,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2020,0.0,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2030,8086946469.77568,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2040,16071716151.7575,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2050,19548517559.5775,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2060,17988860316.451,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2070,16355132520.8149,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2080,10758681310.5604,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2090,14962190125.3621,high
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,NPi2020_1000_v3,2100,15420158772.5775,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2020,6600179.34277344,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2030,446430377973.955,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2040,662205436120.178,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2050,811848352778.4559,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2060,1080266705694.71,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2070,1470009685660.68,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2080,1950786690969.79,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2090,2634911425449.83,high
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,NPi2020_1000_v3,2100,2992612732242.84,high

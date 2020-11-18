@@ -184,7 +184,6 @@ export default {
     }
   },
   mounted () {
-    console.log('dotsFinal', this.dots)
     this.calcSizes()
     window.addEventListener('resize', this.calcSizes, false)
   },
