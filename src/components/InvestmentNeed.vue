@@ -3,9 +3,10 @@
     <header class="key">
       <h3>Energy investment needs within the enduse sector</h3>
       <p class="model">(Model: REMIND-MAgPIE)</p>
-      <div >
-      <label class= "label"><input class = "checkbox" type="checkbox" v-model="isStacked">not stacked</label>
-      <label class= "label"><input class = "checkbox" type="checkbox" v-model="showDifference">difference highlighted</label>
+      <div>
+        <label class="label"><input class = "checkbox" type="checkbox" v-model="isStacked">not stacked</label>
+        <label class="label"><input class = "checkbox" type="checkbox" v-model="showDifference">difference highlighted</label>
+        <SensesSelect v-model="selectedRegion" :options="regions" />
       </div>
     </header>
     <div v-for="key in scenarios" :key="key" class="scenario">
@@ -17,6 +18,7 @@
         :scenario="key"
         :extents="extents"
         :variables="visibleVariables"
+        :selectedRegion="selectedRegion"
       />
     </div>
   </section>
@@ -24,13 +26,15 @@
 
 <script>
 import { groupBy, filter, map, forEach, get } from 'lodash'
+import SensesSelect from 'library/src/components/SensesSelect'
 import datum from 'dsv-loader!@/assets/data/Investments.csv' // eslint-disable-line import/no-webpack-loader-syntax
 import Chart from './InvestmentNeeds/Chart'
 
 export default {
   name: 'InvestmentNeed',
   components: {
-    Chart
+    Chart,
+    SensesSelect
   },
   props: {
     width: {
@@ -61,10 +65,19 @@ export default {
       innerHeight: 0,
       isStacked: true,
       showDifference: false,
+      selectedRegion: 'World',
       variables: [
         'Industry',
         'Transport',
         'Residential and commercial'
+      ],
+      regions: [
+        'World',
+        'Central Asia',
+        'Asia (No Japan)',
+        'Middle East + Africa',
+        'OECD90 + EU',
+        'Latin America'
       ],
       scenarios: ['CPol', 'NDC', '2C', '1.5C']
     }
@@ -89,7 +102,7 @@ export default {
       // We need the maximum value for each variable for the unstacked chart
       const maxes = {}
       forEach(this.variables, (variable) => {
-        const runs = filter(this.data, { variable })
+        const runs = filter(this.data, { variable, region: this.selectedRegion })
         // Set the max value
         maxes[variable] = Math.max(...map(runs, 'value'))
       })
@@ -103,8 +116,10 @@ export default {
   methods: {
     calcSizes () {
       const { inWrapper: el } = this.$refs
-      const innerHeight = el.clientHeight || el.parentNode.clientHeight
-      this.innerHeight = Math.max(innerHeight, 500)
+      if (el !== 'undefined') {
+        const innerHeight = el.clientHeight || el.parentNode.clientHeight
+        this.innerHeight = Math.max(innerHeight, 500)
+      }
     }
   },
   mounted () {

@@ -190,10 +190,12 @@ export default {
   methods: {
     calcSizes () {
       const { container: el } = this.$refs
-      const totalWidth = el.clientWidth
-      const totalHeight = el.clientHeight || el.parentNode.clientHeight
-      this.width = Math.max(totalWidth, 400)
-      this.height = Math.max(totalHeight, 400)
+      if (el !== 'undefined') {
+        const totalWidth = el.clientWidth
+        const totalHeight = el.clientHeight || el.parentNode.clientHeight
+        this.width = Math.max(totalWidth, 400)
+        this.height = Math.max(totalHeight, 400)
+      }
     }
   },
   mounted () {
@@ -274,6 +276,147 @@ export default {
         padding: 0 20px;
       }
     }
+  }
+}
+
+.tooltip {
+  $background-color: #fff;
+  $text-color: #222;
+
+  display: block !important;
+  z-index: 10000;
+  box-shadow: $box-shadow--strong;
+
+  font-weight: $font-weight-regular;
+  letter-spacing: 0.02em;
+  max-width: 400px;
+
+  .tooltip-inner {
+    background: $background-color;
+    color: $text-color;
+    border-radius: $border-radius;
+    padding: $spacing / 3 $spacing / 2 $spacing / 2;
+
+    header {
+      font-weight: $font-weight-bold;
+      line-height: 1.12;
+      margin: 0 0 $spacing / 6;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $color-pale-gray;
+      padding-bottom: 0.6rem;
+      margin-bottom: 0.9rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    footer {
+      border-top: 1px solid $color-pale-gray;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 0.6rem;
+      margin-top: 0.9rem;
+    }
+  }
+
+  .tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: 5px;
+    border-color: $background-color;
+    z-index: 1;
+  }
+
+  &[x-placement^="top"] {
+    margin-bottom: 5px;
+
+    .tooltip-arrow {
+      border-width: 5px 5px 0 5px;
+      border-left-color: transparent !important;
+      border-right-color: transparent !important;
+      border-bottom-color: transparent !important;
+      bottom: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &[x-placement^="bottom"] {
+    margin-top: 5px;
+
+    .tooltip-arrow {
+      border-width: 0 5px 5px 5px;
+      border-left-color: transparent !important;
+      border-right-color: transparent !important;
+      border-top-color: transparent !important;
+      top: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &[x-placement^="right"] {
+    margin-left: 5px;
+
+    .tooltip-arrow {
+      border-width: 5px 5px 5px 0;
+      border-left-color: transparent !important;
+      border-top-color: transparent !important;
+      border-bottom-color: transparent !important;
+      left: -5px;
+      top: calc(50% - 5px);
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &[x-placement^="left"] {
+    margin-right: 5px;
+
+    .tooltip-arrow {
+      border-width: 5px 0 5px 5px;
+      border-top-color: transparent !important;
+      border-right-color: transparent !important;
+      border-bottom-color: transparent !important;
+      right: -5px;
+      top: calc(50% - 5px);
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &.popover {
+    $color: #f9f9f9;
+
+    .popover-inner {
+      background: $color;
+      color: black;
+      padding: 24px;
+      border-radius: 5px;
+      box-shadow: 0 5px 30px rgba(black, .1);
+    }
+
+    .popover-arrow {
+      border-color: $color;
+    }
+  }
+
+  &[aria-hidden='true'] {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .15s, visibility .15s;
+  }
+
+  &[aria-hidden='false'] {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .15s;
   }
 }
 </style>

@@ -256,10 +256,12 @@ export default {
   methods: {
     calcSizes () {
       const { inWrapper: el } = this.$refs
-      const innerHeight = el.clientHeight || el.parentNode.clientHeight
-      const innerWidth = el.clientWidth - (this.margin.left + this.margin.right)
-      this.innerHeight = Math.max(innerHeight, 500)
-      this.innerWidth = Math.max(innerWidth, 500)
+      if (el !== 'undefined') {
+        const innerHeight = el.clientHeight || el.parentNode.clientHeight
+        const innerWidth = el.clientWidth - (this.margin.left + this.margin.right)
+        this.innerHeight = Math.max(innerHeight, 500)
+        this.innerWidth = Math.max(innerWidth, 500)
+      }
     },
     format (value) {
       return d3.format(',')(value).replace(/,/g, ' ')

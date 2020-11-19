@@ -2,7 +2,7 @@
   <div class="bars">
     <span class="label" v-html="label" />
     <div class="intro">
-      <span>{{ region }}: <strong>{{ sumThis }}</strong> BN US$ per year average 2020–2030</span>
+      <span>{{ selectedRegion }}: <strong>{{ sumThis }}</strong> BN US$ per year average 2020–2030</span>
     </div>
     <svg ref="vis" class="vis">
       <g v-if="width">
@@ -49,21 +49,24 @@ const colors = {
   Transport: '#B035C9',
   'Residential and commercial': '#00A5D5'
 }
+
 function getColorFromVariable (variable) {
   return get(colors, variable, '#000')
 }
+
 const names = {
   Industry: 'Industry',
   Transport: 'Transport',
   'Residential and commercial': 'Residential and commercial'
 }
+
 function getNameFromVariable (variable) {
   return get(names, variable, '?')
 }
 
 export default {
   name: 'InvestmentNeedsStackedBarChart',
-  props: ['data', 'scenario', 'extents', 'variables', 'gap', 'isStacked', 'showDifference'],
+  props: ['data', 'scenario', 'extents', 'variables', 'gap', 'isStacked', 'showDifference', 'selectedRegion'],
   components: {
     Bar,
     PatternDefs,
@@ -80,17 +83,17 @@ export default {
         right: 0,
         top: 70,
         bottom: 10
-      },
-      region: 'World'
+      }
     }
   },
   computed: {
     label () {
+      const subject = this.selectedRegion === 'World' ? 'We are' : `${this.selectedRegion} is`
       const labels = {
-        CPol: 'What we are <strong>currently</strong> investing (Current policies)',
-        NDC: 'What we <strong>pledged</strong> to invest (Nationally Determined Contributions)',
-        '2C': 'What we <strong>should</strong> invest for <strong>2°C</strong>',
-        '1.5C': 'What we <strong>should</strong> invest for <strong>1.5°C</strong>'
+        CPol: `What ${subject} <strong>currently</strong> investing (Current policies)`,
+        NDC: `What ${this.selectedRegion} <strong>pledged</strong> to invest (Nationally Determined Contributions)`,
+        '2C': `What ${this.selectedRegion} <strong>should</strong> invest for <strong>2°C</strong>`,
+        '1.5C': `What ${this.selectedRegion} <strong>should</strong> invest for <strong>1.5°C</strong>`
       }
       return get(labels, this.scenario)
     },
@@ -119,7 +122,7 @@ export default {
       return map(this.variables, (variable) => {
         const color = getColorFromVariable(variable)
         const name = getNameFromVariable(variable)
-        const data = get(filter(this.data, { variable }), 0)
+        const data = get(filter(this.data, { variable, region: this.selectedRegion }), 0)
 
         const value = get(data, 'value', 0)
         const ref = get(data, 'ref', 0)
@@ -165,19 +168,20 @@ export default {
   methods: {
     createTooltip (variable, value, reference, diff) {
       const { formatNumber: fN } = this
+      const subject = this.selectedRegion === 'World' ? 'We are' : `${this.selectedRegion} is`
       switch (this.scenario) {
         case 'CPol':
           return `
             <header>${variable}</header>
             <p>
-              We are currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable}.
+              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable}.
             </p>
           `
         case 'NDC':
           return `
             <header>${variable}</header>
             <p>
-              We are currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable},<br />
+              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable},<br />
               but we pledged to invest <strong>${fN(value)}</strong>.
               That means, we pledged<br />
               to invest <strong>${fN(Math.abs(diff))} ${diff > 0 ? 'more' : 'less'}</strong> in ${variable}.
@@ -187,7 +191,7 @@ export default {
           return `
             <header>${variable}</header>
             <p>
-              We are currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable},<br />
+              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable},<br />
               but for for the 1.5C target we should invest <strong>${fN(value)}</strong>.
               That means,<br />
               we should invest <strong>${fN(Math.abs(diff))} ${diff > 0 ? 'more' : 'less'}</strong> in ${variable}.
@@ -197,7 +201,7 @@ export default {
           return `
             <header>${variable}</header>
             <p>
-              We are currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable},<br />
+              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable},<br />
               but for for the 2C target we should invest <strong>${fN(value)}</strong>.
               That means,<br />
               we should invest <strong>${fN(Math.abs(diff))} ${diff > 0 ? 'more' : 'less'}</strong> in ${variable}.
@@ -285,133 +289,5 @@ export default {
       font-size: 8px;
       color: getColor(gray, 60);
     }
-  }
-  .tooltip {
- &.senses {
-  font-size: 0.8rem;
-    font-weight: $font-weight-regular;
-    letter-spacing: 0.02em;
-
-    header {
-      font-weight: $font-weight-bold;
-      font-size: 1.0rem;
-      margin: 0 0 $spacing / 6;
-    }}
-  }
-
-  .tooltip {
-
-    &.senses {
-    $background-color: #fff ;
-    $text-color: getColor(gray, 10);
-
-    display: block !important;
-    z-index: 10000;
-    box-shadow: $box-shadow--strong;
-
-    .tooltip-inner {
-      background: $background-color;
-      color: $text-color;
-      border-radius: $border-radius;
-      padding: $spacing / 3 $spacing / 2 $spacing / 2;
-    }
-
-    .tooltip-arrow {
-      width: 0;
-      height: 0;
-      border-style: solid;
-      position: absolute;
-      margin: 5px;
-      border-color: $background-color;
-      z-index: 1;
-    }
-
-    &[x-placement^="top"] {
-      margin-bottom: 5px;
-
-      .tooltip-arrow {
-        border-width: 5px 5px 0 5px;
-        border-left-color: transparent !important;
-        border-right-color: transparent !important;
-        border-bottom-color: transparent !important;
-        bottom: -5px;
-        left: calc(50% - 5px);
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-    }
-
-    &[x-placement^="bottom"] {
-      margin-top: 5px;
-
-      .tooltip-arrow {
-        border-width: 0 5px 5px 5px;
-        border-left-color: transparent !important;
-        border-right-color: transparent !important;
-        border-top-color: transparent !important;
-        top: -5px;
-        left: calc(50% - 5px);
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-    }
-
-    &[x-placement^="right"] {
-      margin-left: 5px;
-
-      .tooltip-arrow {
-        border-width: 5px 5px 5px 0;
-        border-left-color: transparent !important;
-        border-top-color: transparent !important;
-        border-bottom-color: transparent !important;
-        left: -5px;
-        top: calc(50% - 5px);
-        margin-left: 0;
-        margin-right: 0;
-      }
-    }
-
-    &[x-placement^="left"] {
-      margin-right: 5px;
-
-      .tooltip-arrow {
-        border-width: 5px 0 5px 5px;
-        border-top-color: transparent !important;
-        border-right-color: transparent !important;
-        border-bottom-color: transparent !important;
-        right: -5px;
-        top: calc(50% - 5px);
-        margin-left: 0;
-        margin-right: 0;
-      }
-    }
-
-    &.popover {
-      $color: #f9f9f9;
-
-      .popover-inner {
-        background: $color;
-        color: black;
-        padding: 24px;
-        border-radius: 5px;
-        box-shadow: 0 5px 30px rgba(black, .1);
-      }
-
-      .popover-arrow {
-        border-color: $color;
-      }
-    }
-
-    &[aria-hidden='true'] {
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity .15s, visibility .15s;
-    }
-
-    &[aria-hidden='false'] {
-      visibility: visible;
-      opacity: 1;
-      transition: opacity .15s;
-    }}
   }
 </style>
