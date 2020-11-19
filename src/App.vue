@@ -86,7 +86,7 @@
           </div>
         </template>
         <div slot="text" class="observer">
-        <IntersectionObserver :step="0"  align="left">
+        <IntersectionObserver :step="0"  align="right">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -247,7 +247,7 @@ export default {
         padding-top: 30px;
       }
     }
-    .intersection-observer .default.left {
+    .intersection-observer .default.right {
       // -webkit-box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
       // -moz-box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
       // box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);

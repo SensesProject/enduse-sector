@@ -7,12 +7,7 @@
     </div>
     <div class="key" :class=" mobile ? 'mobile' : 'desktop'">
       <SensesSelect class="region_selector" :options="regions" v-model="currentRegion"/>
-      <!-- <SensesSelect class="elasticity_selector" :options="elasticity" v-model="currentElasticity"/> -->
-      <span class="SliderLabel">Elasticity</span>
-      <input type="range" min="0" max="2" step="1" name="elasticitySlider" list="tickmarks" v-model="currentElasticity">
-      <span class="SliderValues">{{ elasticityArray[currentElasticity] }}</span>
-    </div>
-    <div>
+      <SensesSelect class="elasticity_selector" :options="elasticity" v-model="currentElasticity"/>
     </div>
     <p class="legend">
       <span class="dot-two"></span>
@@ -22,9 +17,9 @@
       <span class="dot-cpol"></span>
       <span>Current Policy Scenario</span>
     </p>
-    <svg :width="(innerWidth)" :height="innerHeight" :transform="`translate(${innerWidth * 0.01}, 0)`">
-      <text class="sector-label" x="0" :y="(0.02*innerHeight)" > Transportation Sector: Revenue in BN$/yr</text>
-      <text class="sector-label" x="0" :y="(0.55*innerHeight)"> Industry Sector: Revenue in BN$/yr </text>
+    <svg :width="(innerWidth)" :height="innerHeight" :transform="`translate(${innerWidth * 0.4}, 0)`">
+      <text class="sector-label" x="0" :y="(0.02*innerHeight)" > Transportation Sector: Revenue (log) in BN$/yr</text>
+      <text class="sector-label" x="0" :y="(0.55*innerHeight)"> Industry Sector: Revenue (log) in BN$/yr </text>
       <!--x Axis-->
       <g v-for="(year, j) in years" v-bind:key="j+'year'">
           <g v-if="j == 1 || j == 8">
@@ -33,37 +28,37 @@
       </g>
       <g v-for="(year, j) in years" v-bind:key="j+'industry'+'year'">
           <g v-if="j == 1 || j == 8">
-            <text class="year-label" :x="scale.x(year)+(barXshift[1]*0.5)" :y="(0.8*innerHeight)">{{ years[j]}}</text>
+            <text class="year-label" :x="scale.x(year)+(barXshift[1]*0.5)" :y="(0.85*innerHeight)">{{ years[j]}}</text>
           </g>
       </g>
       <!--graph-->
       <g v-for="(group, g) in dots.slice(0, 2)" v-bind:key="g + 'group'" :class="`${labels[g]}-group`" :transform="`translate(0, ${groupPosition[g]})`">
         <g v-for="(rec, r) in group" v-bind:key="labels[g] + r + 'rect two'">
-          <g v-if="r !== 0"  @mouseover="[activeBar = true, over = r + labels[g]]" @mouseleave="activeBar = false">
-            <rect :class="`${labels[g]}-two`" :width="rec.barWidth" :x="(rec.year-1.1*rec.barWidth)" :y="rec.twoValueY" :height="rec.twoValue"/>
-            <rect :class="`${labels[g]}-one`" :width="rec.barWidth" :x="(rec.year+barXshift[1]-1.1*rec.barWidth)" :y="rec.oneValueY" :height="rec.oneValue"/>
+          <g v-if="r !== 0">
+            <rect  class="scenario-two" :width="rec.barWidth" :x="(rec.year-1.1*rec.barWidth)" :y="rec.twoValueY" :height="rec.twoValue"/>
+            <rect  class="scenario-one" :width="rec.barWidth" :x="(rec.year+barXshift[1]-1.1*rec.barWidth)" :y="rec.oneValueY" :height="rec.oneValue"/>
           </g>
         </g>
         <g v-for="(circ, c) in group" v-bind:key="g + c + 'circbase'">
             <g v-if="c !== 0">
               <g>
                   <g v-if="circ.twoValueDollar >= 0">
-                  <circle :class="`${labels[g]}-baseline-two`" :cx="(circ.year - (0.6 * circ.barWidth))" :cy="(0.3 * innerHeight)-scale.y(0)" r="4"/>
-                  <circle :class="`${labels[g]}-two`" :cx="(circ.year - 0.6 * circ.barWidth)" :cy="circ.twoValueY" r="4"/>
+                  <circle class="baseline-circle-two" :cx="(circ.year - (0.6 * circ.barWidth))" :cy="(0.3 * innerHeight)" r="6"/>
+                  <circle class="scenario-two" :cx="(circ.year - 0.6 * circ.barWidth)" :cy="circ.twoValueY" r="6"/>
                 </g>
                 <g v-else >
-                  <circle :class="`${labels[g]}-baseline-two`" :cx="(circ.year - (0.6 * circ.barWidth))" :cy="(0.3 * innerHeight)-scale.y(0)" r="4"/>
-                  <circle :class="`${labels[g]}-two`" :cx="(circ.year - 0.6 * circ.barWidth)" :cy="circ.twoValueY + circ.twoValue" r="4"/>
+                  <circle class="baseline-circle-two" :cx="(circ.year - (0.6 * circ.barWidth))" :cy="(0.3 * innerHeight)" r="6"/>
+                  <circle class="scenario-two" :cx="(circ.year - 0.6 * circ.barWidth)" :cy="circ.twoValueY + circ.twoValue" r="6"/>
                 </g>
               </g>
               <g>
                 <g v-if="circ.oneValueDollar >= 0">
-                  <circle :class="`${labels[g]}-baseline-one`" :cx="(circ.year + barXshift[1] - (0.6 * circ.barWidth))" :cy="(0.3 * innerHeight)-scale.y(0)" r="4"/>
-                  <circle :class="`${labels[g]}-one`" :cx="(circ.year + barXshift[1] - 0.6 * circ.barWidth)" :cy="circ.oneValueY" r="4"/>
+                  <circle class="baseline-circle-one" :cx="(circ.year + barXshift[1] - (0.6 * circ.barWidth))" :cy="(0.3 * innerHeight)" r="6"/>
+                  <circle class="scenario-one" :cx="(circ.year + barXshift[1] - 0.6 * circ.barWidth)" :cy="circ.oneValueY" r="6"/>
                 </g>
                 <g v-else >
-                  <circle :class="`${labels[g]}-baseline-one`" :cx="(circ.year + barXshift[1] - (0.6 * circ.barWidth))" :cy="(0.3 * innerHeight)-scale.y(0)" r="4"/>
-                  <circle :class="`${labels[g]}-one`" :cx="(circ.year + barXshift[1] - 0.6 * circ.barWidth)" :cy="circ.oneValueY + circ.oneValue" r="4"/>
+                  <circle class="baseline-circle-one" :cx="(circ.year + barXshift[1] - (0.6 * circ.barWidth))" :cy="(0.3 * innerHeight)" r="6"/>
+                  <circle class="scenario-one" :cx="(circ.year + barXshift[1] - 0.6 * circ.barWidth)" :cy="circ.oneValueY + circ.oneValue" r="6"/>
                 </g>
               </g>
           </g>
@@ -73,18 +68,6 @@
           <g v-for="(val, v) in yTicks[g][0]" v-bind:key="v+'val'">
             <line class="axis" x1="28" :y1="(0.3 * innerHeight) - yTicks[g][1][v]" x2="32" :y2="(0.3 * innerHeight) - yTicks[g][1][v]"/>
             <text class="axis-label" x="13" :y="(0.3 * innerHeight) - yTicks[g][1][v] + 3" > {{ val }} </text>
-          </g>
-          <g v-for="(group, g) in dots" v-bind:key="g + 'textgroup'" :class="`${labels[g]}-group`" >
-            <g v-if="g !== 1">
-            <g v-for="(text, t) in group" v-bind:key="t + 'textAll'" >
-              <text class="year-label" :x="(text.year)" :y="(0.3*innerHeight)">{{ format(Math.round(dots[0][t].twoValueDollar)) }} BN$</text>
-              <text class="year-label" :x="(text.year)" :y="(0.35*innerHeight)">{{ format(Math.round(dots[0][t].oneValueDollar)) }} BN$</text>
-            </g>
-            </g>
-              <!--Line and circle for hover over indicator
-              <line class="line-label" :x1="text.year" :x2="text.year" :y1="(0.81*innerHeight)" :y2="(0.78*innerHeight)"/>
-              <circle class="year-dot" :cx="text.year" :cy="(0.81*innerHeight)" r="2"/> -->
-
           </g>
       </g>
     </svg>
@@ -124,11 +107,9 @@ export default {
   data () {
     return {
       revenueData,
-
       sector: _.groupBy(revenueData, d => d.Sector),
       model: [...new Set(revenueData.map(r => r.Model))],
       elasticity: [...new Set(revenueData.map(r => r.Elasticity))],
-      elasticityArray: ['low', 'medium', 'high'],
       years: [...new Set(revenueData.map(r => r.Year))],
       labels: [...new Set(revenueData.map(r => r.Sector))],
       scenario: [...new Set(revenueData.map(r => r.Scenario))],
@@ -138,9 +119,8 @@ export default {
       revenueValues: [...new Set(revenueData.map(r => r.oneValue || r.twoValue))],
       currentScenario: '1.5ºC',
       currentRegion: 'World',
-      currentElasticity: '1',
-      elasticityDict: { 0: 'low', 1: 'medium', 2: 'high' },
-      activeBar: false,
+      currentElasticity: 'low',
+      active: false,
       over: '',
       margin: {
         top: 10,
@@ -155,7 +135,7 @@ export default {
   computed: {
     // scenarioFilter () { return _.map(this.sector, (sc, s) => _.filter(sc, d => d.Scenario === this.scenDict[this.currentScenario])) },
     regionFilter () { return _.map(this.sector, (re, r) => _.filter(re, d => d.Region === this.currentRegion)) },
-    elasticityFilter () { return _.map(this.regionFilter, (el, r) => _.filter(el, d => d.Elasticity === this.elasticityArray[this.currentElasticity])) },
+    elasticityFilter () { return _.map(this.regionFilter, (el, r) => _.filter(el, d => d.Elasticity === this.currentElasticity)) },
     // worldFilter () { return _.map(this.sector, (re, r) => _.filter(re, d => d.Region === 'World')) },
     // filters world and baseline Values
     // worldBaseFilter () { return _.map(this.sector, (sc, s) => _.filter(sc, d => (d.Scenario === 'NPi_v3' && d.Region === this.currentRegion))) },
@@ -177,27 +157,27 @@ export default {
     },
 
     // Scale for Barchart for Revenue
+    //  scale () {
+    //  return {
+    //  x: d3.scaleLinear()
+    //  .range([4 * this.margin.left, this.innerWidth - (this.margin.right * 30)])
+    //  .domain([2020, 2110]),
+    //  y: d3.scaleLinear()
+    //    .range([0, 0.5 * this.innerHeight])
+    // .domain([d3.min(this.revenueValues, s => +s), d3.max(this.revenueValues, s => +s)])
+    //  }
+    // },
     scale () {
       return {
         x: d3.scaleLinear()
-          .range([4 * this.margin.left, this.innerWidth - (this.margin.right * 30)])
+          .range([5 * this.margin.left, this.innerWidth - (this.margin.right * 30)])
           .domain([2030, 2110]),
-        y: d3.scaleLinear()
-          .range([0, 0.5 * this.innerHeight])
-          .domain([d3.min(this.revenueValues, s => +s), d3.max(this.revenueValues, s => +s)])
+        y: d3.scaleLog()
+          .range([0, 0.3 * this.innerHeight])
+          // .domain([d3.min(this.revenueValues, s => +s), d3.max(this.revenueValues, s => +s)])
+          .domain([1, d3.max(this.revenueValues, s => +s)])
       }
     },
-    // scale () {
-    //  return {
-    //    x: d3.scaleLinear()
-    //      .range([5 * this.margin.left, this.innerWidth - (this.margin.right * 30)])
-    //      .domain([2030, 2110]),
-    //    y: d3.scaleLog()
-    //      .range([0, 0.3 * this.innerHeight])
-    //      // .domain([d3.min(this.revenueValues, s => +s), d3.max(this.revenueValues, s => +s)])
-    //      .domain([1, d3.max(this.revenueValues, s => +s)])
-    //  }
-    // },
     dots () {
       return _.map(this.elasticityFilter, (sector, s) => {
         return _.map(sector, (single, i) => {
@@ -206,35 +186,27 @@ export default {
             barWidth: (0.8 * this.sectWidth) / 55,
             // Values for Bars Height
             // heightValue: this.scale.y(Math.abs(single.Revenue)) - this.scale.y(0),
-            // twoValue: this.scale.y(Math.abs(single.twoValue)),
-            // oneValue: this.scale.y(Math.abs(single.oneValue)),
-            twoValue: this.scale.y(Math.abs(single.twoValue)) - this.scale.y(0),
-            oneValue: this.scale.y(Math.abs(single.oneValue)) - this.scale.y(0),
+            twoValue: this.scale.y(Math.abs(single.twoValue)),
+            oneValue: this.scale.y(Math.abs(single.oneValue)),
+            // twoValue: this.scale.y(Math.abs(single.twoValue)) - this.scale.y(0),
+            // oneValue: this.scale.y(Math.abs(single.oneValue)) - this.scale.y(0),
             // Y Values for Barchart
             // yValue: single.Revenue >= 0 ? (0.5 * this.innerHeight) - this.scale.y(single.Revenue) : (0.5 * this.innerHeight) - this.scale.y(0),
-            // twoValueY: single.twoValue >= 0 ? (0.3 * this.innerHeight) - this.scale.y(Math.abs(single.twoValue)) : (0.3 * this.innerHeight),
-            // oneValueY: single.oneValue >= 0 ? (0.3 * this.innerHeight) - this.scale.y(Math.abs(single.oneValue)) : (0.3 * this.innerHeight),
-            twoValueY: single.twoValue >= 0 ? (0.3 * this.innerHeight) - this.scale.y(single.twoValue) : (0.3 * this.innerHeight) - this.scale.y(0),
-            oneValueY: single.oneValue >= 0 ? (0.3 * this.innerHeight) - this.scale.y(single.oneValue) : (0.3 * this.innerHeight) - this.scale.y(0),
+            twoValueY: single.twoValue >= 0 ? (0.3 * this.innerHeight) - this.scale.y(Math.abs(single.twoValue)) : (0.3 * this.innerHeight),
+            oneValueY: single.oneValue >= 0 ? (0.3 * this.innerHeight) - this.scale.y(Math.abs(single.oneValue)) : (0.3 * this.innerHeight),
+            // twoValueY: single.twoValue >= 0 ? (0.5 * this.innerHeight) - this.scale.y(single.twoValue) : (0.5 * this.innerHeight) - this.scale.y(0),
+            // oneValueY: single.oneValue >= 0 ? (0.5 * this.innerHeight) - this.scale.y(single.oneValue) : (0.5 * this.innerHeight) - this.scale.y(0),
             // Hover Over real values
             dollarValue: parseFloat(single.Revenue),
             twoValueDollar: parseFloat(single.twoValue),
-            oneValueDollar: parseFloat(single.oneValue),
-            twoOecdDollar: parseFloat(single.twoOecd),
-            oneOecdDollar: parseFloat(single.oneOecd)
+            oneValueDollar: parseFloat(single.oneValue)
           }
         })
       })
     },
-    CostTotalExtremes () {
-      return {
-        min: d3.min(this.revenueValues, s => +s),
-        max: d3.max(this.revenueValues, s => +s)
-      }
-    },
     groupPosition () {
       const dotsArray = this.dots.slice(0, 2)
-      let pos = 100
+      let pos = 50
       return _.map(this.regionFilter, (sector, s, l) => {
         if (s !== 0) { pos = pos + this.innerHeight / dotsArray.length - 180 }
         return pos
@@ -244,11 +216,12 @@ export default {
       const shiftarray = [0, (0.8 * this.sectWidth) / 3.3]
       return shiftarray
     },
+    // Calculation of values for y-Axis Scales
     yTicks () {
-      const ticksArrayT = [['0', '2000', '3000', '4000', '5000', '6000', '8000', '10000'],
-        [this.scale.y(0), this.scale.y(2000), this.scale.y(3000), this.scale.y(4000), this.scale.y(5000), this.scale.y(6000), this.scale.y(8000), this.scale.y(10000)]]
-      const ticksArrayI = [['-1000', '0'],
-        [this.scale.y(-1000), this.scale.y(0)]]
+      const ticksArrayT = [['0', '100', '1000', '3000', '6000'],
+        [this.scale.y(1), this.scale.y(100), this.scale.y(1000), this.scale.y(3000), this.scale.y(6000)]]
+      const ticksArrayI = [['-1000', '-100', '0'],
+        [0 - this.scale.y(1000), 0 - this.scale.y(100), this.scale.y(1)]]
       const tickVal = [ticksArrayT, ticksArrayI]
       return tickVal
     }
@@ -266,7 +239,7 @@ export default {
     }
   },
   mounted () {
-    console.log('CostTotalExtremes', this.CostTotalExtremes)
+    console.log('dotsElasticity', this.dots)
     this.calcSizes()
     window.addEventListener('resize', this.calcSizes, false)
   },
@@ -294,6 +267,7 @@ $margin-space: $spacing / 2;
     padding: 10px 0px 20px 0px;
     top: 10px;
     background: hsla(0,0%,100%,.90);
+
     .highlight {
       margin-right: $margin-space*2;
       margin-top: 5px;
@@ -306,110 +280,8 @@ $margin-space: $spacing / 2;
     }
     .region_selector {
       margin-top: $margin-space;
-      margin-left: $margin-space;
+      margin-left: $margin-space*22;
       //margin-right: $margin-space/2;
-    }
-    .SliderLabel{
-      margin-left: $margin-space;
-      margin-right: $margin-space/4;
-    }
-    .SliderValues {
-      margin-left: $margin-space/2;
-      margin-right: $margin-space/4;
-    }
-    input[type=range] {
-      width: 10%;
-      margin-left: $margin-space*0.2;
-      margin-right: $margin-space*0.2;
-      background-color: transparent;
-      -webkit-appearance: none;
-      vertical-align: middle;
-      // display: flex;
-      // flex-direction: row;
-      // align-items: center;
-    }
-    input[type=range]:focus {
-    outline: none;
-    }
-    input[type=range]::-webkit-slider-runnable-track {
-    background: #969696;
-    border: 0.1px solid #010101;
-    border-radius: 25px;
-    width: 100%;
-    height: 2.3px;
-    cursor: pointer;
-    }
-    input[type=range]::-webkit-slider-thumb {
-    margin-top: -6.45px;
-    width: 15px;
-    height: 15px;
-    background: #ffffff;
-    border: 0.1px solid #969696;
-    border-radius: 50px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    }
-    input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #a3a3a3;
-    }
-    input[type=range]::-moz-range-track {
-    background: #969696;
-    border: 0.1px solid #010101;
-    border-radius: 25px;
-    width: 100%;
-    height: 2.3px;
-    cursor: pointer;
-    }
-    input[type=range]::-moz-range-thumb {
-    width: 15px;
-    height: 15px;
-    background: #ffffff;
-    border: 0.1px solid #969696;
-    border-radius: 50px;
-    cursor: pointer;
-    }
-    input[type=range]::-ms-track {
-    background: transparent;
-    border-color: transparent;
-    border-width: 6.35px 0;
-    color: transparent;
-    width: 100%;
-    height: 2.3px;
-    cursor: pointer;
-    }
-    input[type=range]::-ms-fill-lower {
-    background: #898989;
-    border: 0.1px solid #010101;
-    border-radius: 50px;
-    }
-    input[type=range]::-ms-fill-upper {
-    background: #969696;
-    border: 0.1px solid #010101;
-    border-radius: 50px;
-    }
-    input[type=range]::-ms-thumb {
-    width: 15px;
-    height: 15px;
-    background: #ffffff;
-    border: 0.1px solid #969696;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-top: 0px;
-    /*Needed to keep the Edge thumb centred*/
-    }
-    input[type=range]:focus::-ms-fill-lower {
-    background: #969696;
-    }
-    input[type=range]:focus::-ms-fill-upper {
-    background: #a3a3a3;
-    }
-    @supports (-ms-ime-align:auto) {
-    input[type=range] {
-      margin: 0;
-    }
-    }
-    .datalist {
-      display: inline-block;
     }
     .v-popover {
       display: inline;
@@ -430,7 +302,7 @@ $margin-space: $spacing / 2;
   }
   .legend{
     margin-top: $margin-space*1.5;
-    margin-left: $margin-space;
+    margin-left: $margin-space*22;
     margin-bottom: $margin-space;
     font-size: 0.7em;
     display: flex;
@@ -469,7 +341,7 @@ $margin-space: $spacing / 2;
   h3 {
     padding-bottom: 10px;
     display: inline-block;
-    margin-left: $margin-space;
+    margin-left: $margin-space*22;
   }
   a{
     margin-top: 5px;
@@ -518,33 +390,31 @@ $margin-space: $spacing / 2;
       fill: white;
       stroke: getColor(grey, 20);
     }
-    .Transportation-two {
+    .scenario-two {
       fill: $color-purple;
     }
-    .Transportation-one {
-      fill: getColor(purple, 80);
-    }
-    .Industrial.processes-two {
+    .scenario-one {
       fill: $color-yellow;
     }
-    .Industrial.processes-one {
-      fill: getColor(yellow, 80);
-    }
-    .Transportation-baseline-one {
-      fill: white;
-      stroke: getColor(purple, 80);
-    }
-    .Transportation-baseline-two {
-      fill: white;
-      stroke: $color-purple;
-    }
-    .Industrial.processes-baseline-two {
+    .baseline-circle-one {
       fill: white;
       stroke: $color-yellow;
     }
-    .Industrial.processes-baseline-one {
+    .baseline-circle-two {
       fill: white;
-      stroke: getColor(yellow, 80);
+      stroke: $color-purple;
+    }
+    .Residential.and.commercial-circle {
+      fill: white;
+      stroke: $color-purple;
+    }
+    .Transportation-circle {
+      fill: $color-purple;
+      stroke: $color-purple;
+    }
+    .Industrial.processes-circle {
+      fill: $color-yellow;
+      stroke: $color-yellow;
     }
   }
 }
