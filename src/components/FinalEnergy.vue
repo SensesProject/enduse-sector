@@ -179,8 +179,10 @@ export default {
   methods: {
     calcSizes () {
       const { inWrapper: el } = this.$refs
-      const innerHeight = el.clientHeight || el.parentNode.clientHeight
-      this.innerHeight = Math.max(innerHeight, 500)
+      if (el !== 'undefined') {
+        const innerHeight = el.clientHeight || el.parentNode.clientHeight
+        this.innerHeight = Math.max(innerHeight, 500)
+      }
     }
   },
   mounted () {
