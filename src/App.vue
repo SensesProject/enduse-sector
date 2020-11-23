@@ -40,7 +40,7 @@
           sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.</p>
       </div>
-<!--      <LayoutScrollytelling>
+     <LayoutScrollytelling>
               <template v-slot:vis="{ width, height, step }">
                 <div class="vis-inner" :style="{width: `${width}px`, height: `${height}px`}">
                   <Costs :width="width" :height="height" :step="step"/>
@@ -78,7 +78,7 @@
                 <p></p>
               </IntersectionObserver>
             </div>
-          </LayoutScrollytelling> -->
+          </LayoutScrollytelling>
       <LayoutScrollytelling>
         <template v-slot:vis="{ width, height, step }">
           <div class="vis-inner" :style="{width: `${width}px`, height: `${height}px`}">
@@ -132,7 +132,7 @@ import SensesMenu from 'library/src/components/SensesMenu.vue'
 import RiskPathway from './components/RiskPathway.vue'
 import FinalEnergy from './components/FinalEnergy.vue'
 import Revenue from './components/Revenue.vue'
-// import Costs from './components/Costs.vue'
+import Costs from './components/Costs.vue'
 import SensesMeta from 'library/src/components/SensesMeta.vue'
 import LayoutScrollytelling from 'library/src/components/LayoutScrollytelling.vue'
 import IntersectionObserver from 'library/src/components/IntersectionObserver.vue'
@@ -144,7 +144,7 @@ export default {
     RiskPathway,
     FinalEnergy,
     Revenue,
-    // Costs,
+    Costs,
     SensesMeta,
     LayoutScrollytelling,
     IntersectionObserver

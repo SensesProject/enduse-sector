@@ -196,7 +196,7 @@ export default {
     },
     dots () {
       return _.map(this.regionFilter, (sector, s) => {
-        console.log('sector', sector)
+        // console.log('sector', sector)
         return _.map(sector, (single, i) => {
           return {
             year: this.scale.x(single.Year),
@@ -263,11 +263,11 @@ export default {
   },
   mounted () {
     this.calcSizes()
-    console.log('sector', this.sector)
-    console.log('regionFilter', this.regionFilter)
-    console.log('dotsRevenue', this.dots)
-    console.log('inwidth', this.innerWidth)
-    console.log('sectWidth', this.sectWidth)
+    // console.log('sector', this.sector)
+    // console.log('regionFilter', this.regionFilter)
+    // console.log('dotsRevenue', this.dots)
+    // console.log('inwidth', this.innerWidth)
+    // console.log('sectWidth', this.sectWidth)
     window.addEventListener('resize', this.calcSizes, false)
   },
   updated () {
