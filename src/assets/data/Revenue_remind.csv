@@ -1,0 +1,325 @@
+Sector,Model,Region,Year,Elasticity,cpolValue,oneValue,twoValue
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2020,low,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2030,low,0,1502.9553416962,984.8458725538
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2040,low,0,2285.7314824067,1818.6524467797
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2050,low,0,2435.850602084,2262.1022045205
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2060,low,0,2817.9141102325,2855.5726568621
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2070,low,0,3341.7598824584,3120.0779644753
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2080,low,0,3974.9329522783,3461.5437265594
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2090,low,0,5020.5810993233,4302.8213914341
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2100,low,0,5687.4128506424,4886.8285504927
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2020,low,0,0.0051080843,0.0052426348
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2030,low,0,1056.3875321539,791.8465507845
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2040,low,0,2018.1516735563,1784.1523776164
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2050,low,0,2434.0764354931,2381.85647903
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2060,low,0,3194.4796436919,3448.1993784093
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2070,low,0,3810.9855730668,3501.9837543305
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2080,low,0,4830.8898778686,4166.8650170889
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2090,low,0,5533.6374832033,4563.5490555908
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2100,low,0,6300.2115737542,5295.5904885702
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2020,low,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2030,low,0,267.9424101822,167.8755299734
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2040,low,0,360.7332679652,251.1712429645
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2050,low,0,368.6805429023,329.9376409361
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2060,low,0,459.3520361924,475.8192115602
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2070,low,0,930.1612852917,704.8808449488
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2080,low,0,1427.4386340393,881.9889463115
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2090,low,0,2450.0551394517,1571.5293190272
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2100,low,0,3096.8245029019,1898.3549560845
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2020,low,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2030,low,0,128.7039938954,78.1307185519
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2040,low,0,154.1077936801,134.4558193909
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2050,low,0,79.360709517,93.280189232
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2060,low,0,58.9668332416,59.6007449518
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2070,low,0,90.6565123339,71.3154790444
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2080,low,0,120.2593347075,41.813458148
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2090,low,0,212.0493902256,100.6192427237
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2100,low,0,220.1095554843,111.2690781072
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2020,low,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2030,low,0,28.4523604899,16.1738929396
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2040,low,0,41.5947455525,32.1434323035
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2050,low,0,41.8306337748,39.0970351192
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2060,low,0,33.9176751291,35.9777206329
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2070,low,0,30.4627638614,32.7102650416
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2080,low,0,24.5805579866,21.5173626211
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2090,low,0,33.367714117,29.9243802507
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2100,low,0,42.236648605,30.8403175452
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2020,low,0,0.0102118266,0.0132003587
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2030,low,0,1315.7114686269,892.8607559479
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2040,low,0,1609.0574876934,1324.4108722404
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2050,low,0,1688.597459195,1623.6967055569
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2060,low,0,2616.258757784,2160.5334113894
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2070,low,0,4453.7801603838,2940.0193713214
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2080,low,0,6286.4522233616,3901.5733819396
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2090,low,0,8219.3151801295,5269.8228508997
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2100,low,0,9484.2481964811,5985.2254644857
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2020,medium,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2030,medium,0,1127.2165062722,738.6344044153
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2040,medium,0,1714.298611805,1363.9893350848
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2050,medium,0,1826.887951563,1696.5766533904
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2060,medium,0,2113.4355826744,2141.6794926466
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2070,medium,0,2506.3199118438,2340.0584733565
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2080,medium,0,2981.1997142088,2596.1577949196
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2090,medium,0,3765.4358244925,3227.1160435756
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2100,medium,0,4265.5596379818,3665.1214128695
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2020,medium,0,0.0038310632,0.0039319761
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2030,medium,0,792.2906491154,593.8849130884
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2040,medium,0,1513.6137551672,1338.1142832123
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2050,medium,0,1825.5573266198,1786.3923592725
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2060,medium,0,2395.8597327689,2586.149533807
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2070,medium,0,2858.2391798001,2626.4878157479
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2080,medium,0,3623.1674084014,3125.1487628167
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2090,medium,0,4150.2281124025,3422.6617916931
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2100,medium,0,4725.1586803156,3971.6928664276
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2020,medium,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2030,medium,0,200.9568076366,125.9066474801
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2040,medium,0,270.5499509739,188.3784322234
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2050,medium,0,276.5104071767,247.4532307021
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2060,medium,0,344.5140271443,356.8644086702
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2070,medium,0,697.6209639688,528.6606337116
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2080,medium,0,1070.5789755294,661.4917097336
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2090,medium,0,1837.5413545888,1178.6469892704
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2100,medium,0,2322.6183771764,1423.7662170634
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2020,medium,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2030,medium,0,96.5279954216,58.5980389139
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2040,medium,0,115.5808452601,100.8418645432
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2050,medium,0,59.5205321377,69.960141924
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2060,medium,0,44.2251249312,44.7005587138
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2070,medium,0,67.9923842504,53.4866092833
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2080,medium,0,90.1945010306,31.360093611
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2090,medium,0,159.0370426692,75.4644320428
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2100,medium,0,165.0821666132,83.4518085804
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2020,medium,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2030,medium,0,21.3392703674,12.1304197047
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2040,medium,0,31.1960591644,24.1075742276
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2050,medium,0,31.3729753311,29.3227763394
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2060,medium,0,25.4382563468,26.9832904747
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2070,medium,0,22.847072896,24.5326987812
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2080,medium,0,18.4354184899,16.1380219658
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2090,medium,0,25.0257855877,22.443285188
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2100,medium,0,31.6774864538,23.1302381589
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2020,medium,0,0.0076588699,0.009900269
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2030,medium,0,986.7836014702,669.6455669609
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2040,medium,0,1206.79311577,993.3081541803
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2050,medium,0,1266.4480943962,1217.7725291677
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2060,medium,0,1962.194068338,1620.4000585421
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2070,medium,0,3340.3351202879,2205.014528491
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2080,medium,0,4714.8391675212,2926.1800364547
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2090,medium,0,6164.4863850972,3952.3671381748
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2100,medium,0,7113.1861473608,4488.9190983643
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2020,high,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2030,high,0,751.4776708481,492.4229362769
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2040,high,0,1142.8657412033,909.3262233899
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2050,high,0,1217.925301042,1131.0511022603
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2060,high,0,1408.9570551162,1427.786328431
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2070,high,0,1670.8799412292,1560.0389822376
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2080,high,0,1987.4664761392,1730.7718632797
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2090,high,0,2510.2905496616,2151.4106957171
+Transportation,REMIND-MAgPIE 1.7-3.0,World,2100,high,0,2843.7064253212,2443.4142752463
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2020,high,0,0.0025540421,0.0026213174
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2030,high,0,528.193766077,395.9232753923
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2040,high,0,1009.0758367782,892.0761888082
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2050,high,0,1217.0382177466,1190.928239515
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2060,high,0,1597.2398218459,1724.0996892047
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2070,high,0,1905.4927865334,1750.9918771652
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2080,high,0,2415.4449389343,2083.4325085444
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2090,high,0,2766.8187416017,2281.7745277954
+Transportation,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2100,high,0,3150.1057868771,2647.7952442851
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2020,high,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2030,high,0,133.9712050911,83.9377649867
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2040,high,0,180.3666339826,125.5856214823
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2050,high,0,184.3402714511,164.9688204681
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2060,high,0,229.6760180962,237.9096057801
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2070,high,0,465.0806426458,352.4404224744
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2080,high,0,713.7193170196,440.9944731558
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2090,high,0,1225.0275697259,785.7646595136
+Transportation,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2100,high,0,1548.4122514509,949.1774780423
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2020,high,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2030,high,0,64.3519969477,39.065359276
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2040,high,0,77.05389684,67.2279096955
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2050,high,0,39.6803547585,46.640094616
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2060,high,0,29.4834166208,29.8003724759
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2070,high,0,45.3282561669,35.6577395222
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2080,high,0,60.1296673538,20.906729074
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2090,high,0,106.0246951128,50.3096213619
+Transportation,REMIND-MAgPIE 1.7-3.0,Latin America,2100,high,0,110.0547777422,55.6345390536
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2020,high,0,0,0
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2030,high,0,14.2261802449,8.0869464698
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2040,high,0,20.7973727763,16.0717161518
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2050,high,0,20.9153168874,19.5485175596
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2060,high,0,16.9588375646,17.9888603165
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2070,high,0,15.2313819307,16.3551325208
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2080,high,0,12.2902789933,10.7586813106
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2090,high,0,16.6838570585,14.9621901254
+Transportation,REMIND-MAgPIE 1.7-3.0,Central Asia,2100,high,0,21.1183243025,15.4201587726
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2020,high,0,0.0051059133,0.0066001793
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2030,high,0,657.8557343135,446.430377974
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2040,high,0,804.5287438467,662.2054361202
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2050,high,0,844.2987295975,811.8483527785
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2060,high,0,1308.129378892,1080.2667056947
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2070,high,0,2226.8900801919,1470.0096856607
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2080,high,0,3143.2261116808,1950.7866909698
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2090,high,0,4109.6575900648,2634.9114254498
+Transportation,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2100,high,0,4742.1240982405,2992.6127322428
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2020,low,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2030,low,0,-11.4495697079,-7.3973932886
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2040,low,0,-15.3280544724,-11.6440957202
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2050,low,0,-19.7898397365,-16.9624632992
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2060,low,0,-27.6413791516,-22.1776651685
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2070,low,0,-33.7003181408,-25.6234496788
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2080,low,0,-48.0757583172,-38.4205530306
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2090,low,0,-56.7580212554,-43.5142156675
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2100,low,0,-61.6084733703,-48.3393586116
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2020,low,0,-7.6414303388672E-005,-7.84271106884766E-005
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2030,low,0,-17.9417710616,-13.5391042265
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2040,low,0,-26.7932183733,-22.8966881603
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2050,low,0,-45.0031239235,-40.6249741013
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2060,low,0,-57.7198757265,-51.1863824097
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2070,low,0,-57.2537158953,-47.2079906199
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2080,low,0,-89.6729856624,-79.4217375353
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2090,low,0,-96.3493309874,-82.2858008006
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2100,low,0,-105.5089524899,-90.5988844854
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2020,low,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2030,low,0,-1.8518840472,-1.1535776655
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2040,low,0,-2.7473045527,-1.9331956157
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2050,low,0,-3.807527015,-2.9273468424
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2060,low,0,-6.8218456353,-5.2352530715
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2070,low,0,-10.3665216901,-8.2304016344
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2080,low,0,-14.7573805549,-11.5438075395
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2090,low,0,-21.0920924231,-14.9142856231
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2100,low,0,-23.9340281068,-17.5259554339
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2020,low,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2030,low,0,-0.7045889785,-0.4268253957
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2040,low,0,-0.8407578814,-0.6121635718
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2050,low,0,-1.0249660264,-0.8670617849
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2060,low,0,-1.8916706004,-1.2714649062
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2070,low,0,-2.8222738184,-1.7036860059
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2080,low,0,-3.7438984306,-2.346931004
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2090,low,0,-4.6603828778,-2.902478526
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2100,low,0,-4.7746116873,-3.2919245466
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2020,low,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2030,low,0,-0.2879341942,-0.1422448618
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2040,low,0,-0.3917099817,-0.3256376614
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2050,low,0,-0.31331192,-0.2684451746
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2060,low,0,-0.4592630541,-0.2112378491
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2070,low,0,-0.531355786,-0.305150282
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2080,low,0,-0.6992909871,-0.405565074
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2090,low,0,-0.7937644212,-0.4796747099
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2100,low,0,-0.8901480107,-0.5318192695
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2020,low,0,-3.12652509765625E-005,-4.04151524902344E-005
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2030,low,0,-8.7242377386,-5.6418348806
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2040,low,0,-10.6975270707,-7.3756902188
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2050,low,0,-12.2553944522,-9.482318417
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2060,low,0,-16.6967557523,-12.1353012387
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2070,low,0,-21.1400989631,-13.5142542781
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2080,low,0,-25.8358025312,-16.5553348632
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2090,low,0,-29.2300577667,-18.7775645567
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2100,low,0,-29.7635292713,-21.2595357778
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2020,medium,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2030,medium,0,-114.4956970795,-73.9739328863
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2040,medium,0,-153.2805447237,-116.4409572024
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2050,medium,0,-197.8983973645,-169.6246329917
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2060,medium,0,-276.4137915158,-221.7766516846
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2070,medium,0,-337.0031814076,-256.2344967879
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2080,medium,0,-480.7575831723,-384.2055303058
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2090,medium,0,-567.5802125543,-435.1421566753
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2100,medium,0,-616.084733703,-483.3935861163
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2020,medium,0,-0.000764143,-0.0007842711
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2030,medium,0,-179.4177106159,-135.3910422647
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2040,medium,0,-267.9321837326,-228.9668816028
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2050,medium,0,-450.0312392345,-406.2497410127
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2060,medium,0,-577.198757265,-511.863824097
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2070,medium,0,-572.5371589526,-472.0799061987
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2080,medium,0,-896.7298566235,-794.2173753528
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2090,medium,0,-963.4933098738,-822.8580080056
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2100,medium,0,-1055.0895248995,-905.9888448538
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2020,medium,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2030,medium,0,-18.5188404719,-11.5357766547
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2040,medium,0,-27.4730455274,-19.3319561572
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2050,medium,0,-38.07527015,-29.2734684241
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2060,medium,0,-68.2184563529,-52.3525307154
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2070,medium,0,-103.6652169007,-82.3040163444
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2080,medium,0,-147.5738055493,-115.4380753951
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2090,medium,0,-210.9209242306,-149.1428562311
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2100,medium,0,-239.3402810677,-175.2595543388
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2020,medium,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2030,medium,0,-7.0458897846,-4.2682539573
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2040,medium,0,-8.4075788141,-6.1216357177
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2050,medium,0,-10.2496602638,-8.6706178486
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2060,medium,0,-18.9167060037,-12.7146490617
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2070,medium,0,-28.2227381835,-17.0368600587
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2080,medium,0,-37.4389843064,-23.46931004
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2090,medium,0,-46.6038287778,-29.0247852596
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2100,medium,0,-47.7461168732,-32.9192454663
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2020,medium,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2030,medium,0,-2.8793419423,-1.4224486176
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2040,medium,0,-3.9170998169,-3.2563766138
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2050,medium,0,-3.1331192,-2.6844517463
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2060,medium,0,-4.5926305406,-2.1123784908
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2070,medium,0,-5.3135578602,-3.0515028205
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2080,medium,0,-6.9929098713,-4.0556507397
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2090,medium,0,-7.9376442122,-4.7967470989
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2100,medium,0,-8.9014801073,-5.3181926951
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2020,medium,0,-0.0003126525,-0.0004041515
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2030,medium,0,-87.2423773856,-56.4183488059
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2040,medium,0,-106.9752707074,-73.7569021881
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2050,medium,0,-122.5539445217,-94.8231841701
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2060,medium,0,-166.9675575228,-121.3530123868
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2070,medium,0,-211.400989631,-135.1425427814
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2080,medium,0,-258.3580253117,-165.553348632
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2090,medium,0,-292.3005776666,-187.7756455669
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2100,medium,0,-297.6352927126,-212.595357778
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2020,high,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2030,high,0,-228.9913941589,-147.9478657726
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2040,high,0,-306.5610894474,-232.8819144047
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2050,high,0,-395.796794729,-339.2492659833
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2060,high,0,-552.8275830315,-443.5533033691
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2070,high,0,-674.0063628153,-512.4689935758
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2080,high,0,-961.5151663446,-768.4110606116
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2090,high,0,-1135.1604251086,-870.2843133505
+Industrial processes,REMIND-MAgPIE 1.7-3.0,World,2100,high,0,-1232.1694674059,-966.7871722326
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2020,high,0,-0.0015282861,-0.0015685422
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2030,high,0,-358.8354212318,-270.7820845293
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2040,high,0,-535.8643674651,-457.9337632055
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2050,high,0,-900.062478469,-812.4994820254
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2060,high,0,-1154.3975145299,-1023.727648194
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2070,high,0,-1145.0743179052,-944.1598123974
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2080,high,0,-1793.459713247,-1588.4347507055
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2090,high,0,-1926.9866197476,-1645.7160160112
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Asia (No Japan),2100,high,0,-2110.1790497989,-1811.9776897075
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2020,high,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2030,high,0,-37.0376809438,-23.0715533095
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2040,high,0,-54.9460910547,-38.6639123143
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2050,high,0,-76.1505403,-58.5469368481
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2060,high,0,-136.4369127057,-104.7050614308
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2070,high,0,-207.3304338014,-164.6080326889
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2080,high,0,-295.1476110987,-230.8761507902
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2090,high,0,-421.8418484611,-298.2857124622
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Middle East + Africa,2100,high,0,-478.6805621354,-350.5191086776
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2020,high,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2030,high,0,-14.0917795691,-8.5365079147
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2040,high,0,-16.8151576281,-12.2432714353
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2050,high,0,-20.4993205276,-17.3412356972
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2060,high,0,-37.8334120074,-25.4292981233
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2070,high,0,-56.445476367,-34.0737201174
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2080,high,0,-74.8779686129,-46.9386200801
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2090,high,0,-93.2076575557,-58.0495705192
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Latin America,2100,high,0,-95.4922337463,-65.8384909327
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2020,high,0,0,0
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2030,high,0,-5.7586838847,-2.8448972352
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2040,high,0,-7.8341996338,-6.5127532276
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2050,high,0,-6.2662384,-5.3689034927
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2060,high,0,-9.1852610811,-4.2247569817
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2070,high,0,-10.6271157205,-6.1030056409
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2080,high,0,-13.9858197425,-8.1113014794
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2090,high,0,-15.8752884243,-9.5934941977
+Industrial processes,REMIND-MAgPIE 1.7-3.0,Central Asia,2100,high,0,-17.8029602147,-10.6363853901
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2020,high,0,-0.000625305,-0.000808303
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2030,high,0,-174.4847547712,-112.8366976118
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2040,high,0,-213.9505414148,-147.5138043762
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2050,high,0,-245.1078890434,-189.6463683401
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2060,high,0,-333.9351150457,-242.7060247735
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2070,high,0,-422.8019792619,-270.2850855629
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2080,high,0,-516.7160506233,-331.1066972641
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2090,high,0,-584.6011553332,-375.5512911338
+Industrial processes,REMIND-MAgPIE 1.7-3.0,OECD90 + EU,2100,high,0,-595.2705854252,-425.1907155561
