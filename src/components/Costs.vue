@@ -3,24 +3,18 @@
     <CostsSelector/>
     <div>
       <svg :width="innerWidth" :height="innerHeight - margin.bottom" :transform="`translate(${margin.left}, 0)`">
-        <text x="0" :y="margin.top">Direct Emissions cost</text>
+        <text x="0" :y="10">Direct Emissions cost</text>
         <text x="0" :y="innerHeight / 2">Indirect Emissions cost</text>
         <g v-for="(charts, cs) in bubbleCharts" :key="cs">
           <g class="sector-container" :class="charts.klass" :transform="`translate(${charts.horizontalPosition + (margin.left * 3)}, 0)`">
             <g v-for="(chart,c) in charts.groups" :key="c" class="comparison-container" :transform="`translate(0, ${chart.verticalPosition})`">
               <CostsTicks :data="chart.yTicks" :scale="chart.scale" :xScale="scales.x"/>
               <g v-for="(bubble, b) in chart.data" :key="b" class="bubbles">
-                <line :x1="bubble.xPos" :x2="bubble.xPos" :y1="chart.scale(0)" :y2="bubble.yPos" stroke="black"/>
+                <BubblesLabels :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabel, bubble.ejLabel, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
+                <line :x1="bubble.xPos" :x2="bubble.xPos" :y1="chart.scale(0)" :y2="bubble.yPos"/>
                 <circle :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.radius" />
                 <g v-if="comparison === 'relative'" class="difference-bubbles">
                   <circle v-for="(bubble, b) in chart.data" :key="`${b}-compar`" :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.diffRadius" fill="black"/>
-                </g>
-                <g class="labels" :transform="`translate(0, 0)`">
-                  <line :x2="bubble.xPos" :x1="scales.x(2020)" :y1="bubble.yPos" :y2="bubble.yPos" stroke="black"/>
-                  <text :x="bubble.xPos" :y="bubble.yPos" class="ej">{{bubble.costLabel}} Bn/$
-                    <tspan>{{bubble.ejLabel}} Ej/y</tspan>
-                  </text>
-                  <text :x="bubble.xPos -15" :y="chart.scale(0) + 20" class="year">{{bubble.yearLabel}}</text>
                 </g>
               </g>
             </g>
@@ -37,13 +31,15 @@ import { map, filter, groupBy, range } from 'lodash'
 import { max, min } from 'd3-array'
 import { scaleLinear } from 'd3-scale'
 import CostsSelector from './Costs/CostsSelector.vue'
+import BubblesLabels from './Costs/BubblesLabels.vue'
 import CostsTicks from './Costs/CostsTicks.vue'
 
 export default {
   name: 'Costs',
   components: {
     CostsSelector,
-    CostsTicks
+    CostsTicks,
+    BubblesLabels
   },
   props: {
     width: {
@@ -100,7 +96,7 @@ export default {
       const yDom = [0, maxDirCost]
       const yDomInd = [0, maxIndCost]
 
-      const yRan = [(this.innerHeight - this.margin.bottom) / 2.5, 50]
+      const yRan = [(this.innerHeight - this.margin.bottom) / 2.5, 10]
       const yRangeDiff = [50, (this.innerHeight - this.margin.bottom) / 2.5]
       const yRange = comparison === 'relative' ? yRangeDiff : yRan
 
@@ -136,7 +132,7 @@ export default {
           klass: i,
           groups: {
             direct: {
-              verticalPosition: this.margin.top,
+              verticalPosition: this.margin.top * 2,
               scale: scales.yDirect,
               yTicks: range(0, this.maxIndCost, rangeIntervals.dirRange),
               data: map(sector, (el, i) => {
@@ -268,6 +264,9 @@ $margin-space: $spacing / 2;
     }
 
     g.bubbles {
+      line {
+        stroke: gray;
+      }
       circle {
         fill-opacity: 0.4;
         stroke-opacity: 0;
@@ -282,6 +281,9 @@ $margin-space: $spacing / 2;
     }
 
     g.bubbles:hover {
+      line {
+        stroke: black;
+      }
       circle {
         stroke-opacity: 1;
         fill-opacity: 1;
