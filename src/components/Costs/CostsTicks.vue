@@ -33,6 +33,7 @@ g {
   line {
     stroke: gray;
     stroke-dasharray: 1 2;
+    transition: y1 0.5, y2 0.5;
   }
 
   text {

@@ -15,9 +15,12 @@
                 <g v-if="comparison === 'relative'" class="difference-bubbles">
                   <circle v-for="(bubble, b) in chart.data" :key="`${b}-compar`" :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.diffRadius" fill="black"/>
                 </g>
-                <g class="labels" :transform="`translate(${bubble.xPos}, 0)`">
-                  <text x="0" :y="bubble.yPos" class="ej">{{bubble.ejLabel}} Ej/y</text>
-                  <text x="-15" :y="chart.scale(0) + 20" class="year">{{bubble.yearLabel}}</text>
+                <g class="labels" :transform="`translate(0, 0)`">
+                  <line :x2="bubble.xPos" :x1="scales.x(2020)" :y1="bubble.yPos" :y2="bubble.yPos" stroke="black"/>
+                  <text :x="bubble.xPos" :y="bubble.yPos" class="ej">{{bubble.costLabel}} Bn/$
+                    <tspan>{{bubble.ejLabel}} Ej/y</tspan>
+                  </text>
+                  <text :x="bubble.xPos -15" :y="chart.scale(0) + 20" class="year">{{bubble.yearLabel}}</text>
                 </g>
               </g>
             </g>
@@ -142,7 +145,7 @@ export default {
                 return {
                   yearLabel: el.year,
                   ejLabel: Math.round(el.value * 10) / 10,
-                  costLabel: el.directEmissionsCosts,
+                  costLabel: Math.round(el.directEmissionsCosts / 1000000000),
                   klass: scenarioKlass,
                   xPos: scales.x(el.year),
                   yPos: scales.yDirect(costValue),
@@ -161,7 +164,7 @@ export default {
                 return {
                   yearLabel: el.year,
                   ejLabel: Math.round(el.value * 10) / 10,
-                  costLabel: el.indEmissionsCosts,
+                  costLabel: Math.round(el.indEmissionsCosts / 1000000000),
                   klass: scenarioKlass,
                   xPos: scales.x(el.year),
                   yPos: scales.yIndirect(costValue),
@@ -245,7 +248,6 @@ $margin-space: $spacing / 2;
   svg {
     g.ResidentialCommercial {
       circle {
-        fill-opacity: 0.8;
         fill: rgb(255,187,51);
         stroke: rgb(179,119,0);
       }
@@ -253,7 +255,6 @@ $margin-space: $spacing / 2;
 
     g.Industry {
       circle {
-        fill-opacity: 0.8;
         fill: rgb(196,77,255);
         stroke: rgb(140,25,255);
       }
@@ -261,13 +262,16 @@ $margin-space: $spacing / 2;
 
     g.Transportation {
       circle {
-        fill-opacity: 0.8;
         fill: rgb(102,127,255);
         stroke: rgb(25,64,255);
       }
     }
 
     g.bubbles {
+      circle {
+        fill-opacity: 0.4;
+        stroke-opacity: 0;
+      }
       .labels {
         opacity: 0;
 
@@ -278,6 +282,10 @@ $margin-space: $spacing / 2;
     }
 
     g.bubbles:hover {
+      circle {
+        stroke-opacity: 1;
+        fill-opacity: 1;
+      }
       .labels {
         opacity: 1;
       }
