@@ -3,12 +3,13 @@
     <CostsSelector/>
     <div>
       <svg :width="innerWidth" :height="innerHeight - margin.bottom" :transform="`translate(${margin.left}, 0)`">
-        <text x="0" :y="10">Direct Emissions cost</text>
+        <text x="0" y="10">Direct Emissions cost</text>
         <text x="0" :y="innerHeight / 2">Indirect Emissions cost</text>
         <g v-for="(charts, cs) in bubbleCharts" :key="cs">
           <g class="sector-container" :class="charts.klass" :transform="`translate(${charts.horizontalPosition + (margin.left * 3)}, 0)`">
+            <text x="0" y="40" class="title">{{charts.klass}}</text>
+            <text x="0" :y="innerHeight / 2 + 30" class="title">{{charts.klass}}</text>
             <g v-for="(chart,c) in charts.groups" :key="c" class="comparison-container" :transform="`translate(0, ${chart.verticalPosition})`">
-              <CostsTicks :data="chart.yTicks" :scale="chart.scale" :xScale="scales.x"/>
               <g v-for="(bubble, b) in chart.data" :key="b" class="bubbles">
                 <BubblesLabels :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabel, bubble.ejLabel, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
                 <line :x1="bubble.xPos" :x2="bubble.xPos" :y1="chart.scale(0)" :y2="bubble.yPos"/>
@@ -17,6 +18,7 @@
                   <circle v-for="(bubble, b) in chart.data" :key="`${b}-compar`" :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.diffRadius" fill="black"/>
                 </g>
               </g>
+              <CostsTicks :data="chart.yTicks" :scale="chart.scale" :xScale="scales.x"/>
             </g>
           </g>
         </g>
@@ -27,7 +29,7 @@
 
 <script>
 import { mapState } from 'vuex'
-import { map, filter, groupBy, range } from 'lodash'
+import { map, filter, groupBy } from 'lodash'
 import { max, min } from 'd3-array'
 import { scaleLinear } from 'd3-scale'
 import CostsSelector from './Costs/CostsSelector.vue'
@@ -96,13 +98,13 @@ export default {
       const yDom = [0, maxDirCost]
       const yDomInd = [0, maxIndCost]
 
-      const yRan = [(this.innerHeight - this.margin.bottom) / 2.5, 10]
-      const yRangeDiff = [50, (this.innerHeight - this.margin.bottom) / 2.5]
-      const yRange = comparison === 'relative' ? yRangeDiff : yRan
+      const yRange = [(this.innerHeight - this.margin.bottom) / 2.5, 50]
+      // const yRangeDiff = [50, (this.innerHeight - this.margin.bottom) / 2.5]
+      // const yRange = comparison === 'relative' ? yRangeDiff : yRan
 
       const rDom = [0, Math.sqrt(maxEj)]
       const rDomDiff = [0, Math.sqrt(maxEj)]
-      const rRange = [0, 1]
+      const rRange = [1, 2]
       const rDomain = comparison === 'relative' ? rDomDiff : rDom
 
       return {
@@ -112,14 +114,8 @@ export default {
         radius: scaleLinear().domain(rDomain).range(rRange)
       }
     },
-    rangeIntervals () {
-      return {
-        dirRange: this.calcRange(this.maxDirCost),
-        indRange: this.calcRange(this.maxIndCost)
-      }
-    },
     bubbleCharts () {
-      const { scales, comparison, rangeIntervals } = this
+      const { scales, comparison } = this
       let groupCount = 0
       let horizontalPosition = 0
       return map(this.sectorData, (sector, i) => {
@@ -127,6 +123,7 @@ export default {
           horizontalPosition = (this.innerWidth - this.margin.left * 30) / groupCount
         }
         groupCount = groupCount + 1
+
         return {
           horizontalPosition: horizontalPosition,
           klass: i,
@@ -134,7 +131,7 @@ export default {
             direct: {
               verticalPosition: this.margin.top * 2,
               scale: scales.yDirect,
-              yTicks: range(0, this.maxIndCost, rangeIntervals.dirRange),
+              yTicks: scales.yDirect.ticks(5),
               data: map(sector, (el, i) => {
                 const scenarioKlass = el.scenario === 'Current Policies' ? 'CurrentPolicies' : el.scenario
                 const costValue = comparison === 'relative' ? el.directEmissionCosts_diff : el.directEmissionsCosts
@@ -153,7 +150,7 @@ export default {
             indirect: {
               verticalPosition: this.innerHeight / 2,
               scale: scales.yIndirect,
-              yTicks: range(0, this.maxIndCost, rangeIntervals.indRange),
+              yTicks: scales.yIndirect.ticks(5),
               data: map(sector, (el, i) => {
                 const scenarioKlass = el.scenario === 'Current Policies' ? 'CurrentPolicies' : el.scenario
                 const costValue = comparison === 'relative' ? el.indEmissionCosts_diff : el.indEmissionsCosts
@@ -209,16 +206,6 @@ export default {
       const { inCosts: el } = this.$refs
       const innerHeight = el.clientHeight || el.parentNode.clientHeight
       this.innerHeight = Math.max(innerHeight, 500)
-    },
-    calcRange (range) {
-      range = range.toString()
-      let i = range.length <= 12 ? 2 : 1
-      let num = 2
-      while (range[i] && range[i] !== '.') {
-        num += '0'
-        i++
-      }
-      return Number(num)
     }
   },
   mounted () {
@@ -238,11 +225,15 @@ export default {
 <style scoped lang="scss">
 @import "library/src/style/variables.scss";
 $margin-space: $spacing / 2;
+$transition-time: 0.5s;
 .fossil-costs {
   height: 90%;
 
   svg {
     g.ResidentialCommercial {
+      text.title {
+        fill: rgb(179,119,0);
+      }
       circle {
         fill: rgb(255,187,51);
         stroke: rgb(179,119,0);
@@ -250,6 +241,9 @@ $margin-space: $spacing / 2;
     }
 
     g.Industry {
+      text.title {
+        fill: rgb(140,25,255);
+      }
       circle {
         fill: rgb(196,77,255);
         stroke: rgb(140,25,255);
@@ -257,6 +251,9 @@ $margin-space: $spacing / 2;
     }
 
     g.Transportation {
+      text.title {
+        fill: rgb(25,64,255);
+      }
       circle {
         fill: rgb(102,127,255);
         stroke: rgb(25,64,255);
@@ -265,9 +262,11 @@ $margin-space: $spacing / 2;
 
     g.bubbles {
       line {
+        transition: all $transition-time;
         stroke: gray;
       }
       circle {
+        transition: all $transition-time;
         fill-opacity: 0.4;
         stroke-opacity: 0;
       }
@@ -289,6 +288,7 @@ $margin-space: $spacing / 2;
         fill-opacity: 1;
       }
       .labels {
+        transition: all $transition-time;
         opacity: 1;
       }
     }
