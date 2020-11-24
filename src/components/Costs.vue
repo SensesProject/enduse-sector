@@ -12,6 +12,9 @@
               <g v-for="(bubble, b) in chart.data" :key="b" class="bubbles">
                 <line :x1="bubble.xPos" :x2="bubble.xPos" :y1="chart.scale(0)" :y2="bubble.yPos" stroke="black"/>
                 <circle :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.radius" />
+                <g v-if="comparison === 'relative'" class="difference-bubbles">
+                  <circle v-for="(bubble, b) in chart.data" :key="`${b}-compar`" :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.diffRadius" fill="black"/>
+                </g>
                 <g class="labels" :transform="`translate(${bubble.xPos}, 0)`">
                   <text x="0" :y="bubble.yPos" class="ej">{{bubble.ejLabel}} Ej/y</text>
                   <text x="-15" :y="chart.scale(0) + 20" class="year">{{bubble.yearLabel}}</text>
@@ -60,7 +63,6 @@ export default {
   data () {
     return {
       currentSelection: null,
-      comparison: 'absolute',
       active: false,
       over: '',
       margin: {
@@ -73,7 +75,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['CostsData', 'years', 'scenarios', 'sectors', 'regions', 'currentScenario', 'currentRegion']),
+    ...mapState(['CostsData', 'years', 'scenarios', 'sectors', 'regions', 'currentScenario', 'currentRegion', 'comparison']),
     innerWidth () { return this.width - this.margin.left },
     innerGraph () {
       return {
@@ -96,7 +98,7 @@ export default {
       const yDomInd = [0, maxIndCost]
 
       const yRan = [(this.innerHeight - this.margin.bottom) / 2.5, 50]
-      const yRangeDiff = [100, this.innerHeight - this.margin.bottom * 25]
+      const yRangeDiff = [50, (this.innerHeight - this.margin.bottom) / 2.5]
       const yRange = comparison === 'relative' ? yRangeDiff : yRan
 
       const rDom = [0, Math.sqrt(maxEj)]
@@ -111,15 +113,20 @@ export default {
         radius: scaleLinear().domain(rDomain).range(rRange)
       }
     },
+    rangeIntervals () {
+      return {
+        dirRange: this.calcRange(this.maxDirCost),
+        indRange: this.calcRange(this.maxIndCost)
+      }
+    },
     bubbleCharts () {
-      const { scales } = this
+      const { scales, comparison, rangeIntervals } = this
       let groupCount = 0
       let horizontalPosition = 0
       return map(this.sectorData, (sector, i) => {
         if (groupCount !== 0) {
           horizontalPosition = (this.innerWidth - this.margin.left * 30) / groupCount
         }
-
         groupCount = groupCount + 1
         return {
           horizontalPosition: horizontalPosition,
@@ -128,36 +135,38 @@ export default {
             direct: {
               verticalPosition: this.margin.top,
               scale: scales.yDirect,
-              yTicks: range(0, this.maxDirCost, 20000000000),
+              yTicks: range(0, this.maxIndCost, rangeIntervals.dirRange),
               data: map(sector, (el, i) => {
                 const scenarioKlass = el.scenario === 'Current Policies' ? 'CurrentPolicies' : el.scenario
-                // const costValue = comparison === 'relative' ? el.indEmissionCosts_diff : el.indEmissionCosts
+                const costValue = comparison === 'relative' ? el.directEmissionCosts_diff : el.directEmissionsCosts
                 return {
                   yearLabel: el.year,
                   ejLabel: Math.round(el.value * 10) / 10,
                   costLabel: el.directEmissionsCosts,
                   klass: scenarioKlass,
                   xPos: scales.x(el.year),
-                  yPos: scales.yDirect(el.directEmissionsCosts),
-                  radius: scales.radius(el.value)
+                  yPos: scales.yDirect(costValue),
+                  radius: scales.radius(el.value),
+                  diffRadius: scales.radius(el.value_diff)
                 }
               })
             },
             indirect: {
               verticalPosition: this.innerHeight / 2,
               scale: scales.yIndirect,
-              yTicks: range(0, this.maxIndCost, 2000000000000),
+              yTicks: range(0, this.maxIndCost, rangeIntervals.indRange),
               data: map(sector, (el, i) => {
                 const scenarioKlass = el.scenario === 'Current Policies' ? 'CurrentPolicies' : el.scenario
-                // const costValue = comparison === 'relative' ? el.indEmissionCosts_diff : el.indEmissionCosts
+                const costValue = comparison === 'relative' ? el.indEmissionCosts_diff : el.indEmissionsCosts
                 return {
                   yearLabel: el.year,
                   ejLabel: Math.round(el.value * 10) / 10,
                   costLabel: el.indEmissionsCosts,
                   klass: scenarioKlass,
                   xPos: scales.x(el.year),
-                  yPos: scales.yIndirect(el.indEmissionsCosts),
-                  radius: scales.radius(el.value)
+                  yPos: scales.yIndirect(costValue),
+                  radius: scales.radius(el.value),
+                  diffRadius: scales.radius(el.value_diff)
                 }
               })
             }
@@ -201,6 +210,16 @@ export default {
       const { inCosts: el } = this.$refs
       const innerHeight = el.clientHeight || el.parentNode.clientHeight
       this.innerHeight = Math.max(innerHeight, 500)
+    },
+    calcRange (range) {
+      range = range.toString()
+      let i = range.length <= 12 ? 2 : 1
+      let num = 2
+      while (range[i] && range[i] !== '.') {
+        num += '0'
+        i++
+      }
+      return Number(num)
     }
   },
   mounted () {

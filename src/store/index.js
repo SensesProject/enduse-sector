@@ -38,7 +38,8 @@ export default new Vuex.Store({
     sectors,
     regions,
     currentScenario: 'Current Policies',
-    currentRegion: 'World'
+    currentRegion: 'World',
+    comparison: 'absolute'
   },
   mutations: {
     changeScenario (state, value) {
@@ -46,6 +47,9 @@ export default new Vuex.Store({
     },
     changeRegion (state, value) {
       state.currentRegion = value
+    },
+    changeComparison (state, value) {
+      state.comparison = value
     }
   },
   actions: {
