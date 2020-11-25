@@ -11,12 +11,15 @@
     </div>
     <div></div>
     <svg :width="innerWidth" :height="innerHeight" :transform="`translate(0, 0)`">
+      <g v-for="(group, g) in dots" v-bind:key="g + 'grou' + 'header'" :class="`${labels[g]}-group`" :transform="`translate(${headerPosition[g]}, 0)`">
+      <text class="sectorHeader" :x="scale.x(2009)" y="10">{{ enduse[g] }}</text>
+      </g>
       <g v-for="(group, g) in dots" v-bind:key="g + 'group'" :class="`${labels[g]}-group`" :transform="`translate(${horizontalPosition[g]}, ${groupPosition[g]})`">
         <!-- draws dots for energy carrier with index g   -->
         <circle v-for="(dot, d) in group" v-bind:key="d + 'dot'" @mouseover="[active = true, over = d + labels[g]]" @mouseleave="active = false" :class="labels[g]" :cx="dot.year" cy="5" :r="dot.value"/>
         <!-- labels for energy carrier g-->
       <!-- labels for energy carrier -->
-        <text :x="scale.x(2009)" y="50">{{ labels[g] }}</text>
+        <text class="carrier-labels" :x="scale.x(2009)" y="50">{{ labels[g] }}</text>
       </g>
       <g v-for="(group, g) in world" v-bind:key="g + 'wgroup'" :class="`${labels[g]}-wgroup`" :transform="`translate(${horizontalPosition[g]}, ${groupPosition[g]})`">
           <!--draws hotizontal axis line through dots and small circles at the beginning and end of axis -->
@@ -67,24 +70,11 @@ export default {
   },
   data () {
     return {
-      // Dataset FinalEnergy is array with objects
-      // [{},...,{}]
       FinalEnergy,
-      // groupBy creates object composed of keys (coal, wind, ...)
-      // generated from the results of running each
-      // element of FinalEnergy thru iteratee d = {}
-      // {"coal": [{},{}...],
-      //   "wind": [{},{}...],
-      //    ...
-      //  }
       energy: _.groupBy(FinalEnergy, d => d.EnergySource),
-      // map erstellt einen Array mit allen values des keys model
-      // set erstellt einen Array mit allen einzigartigen Einträgen für Model
-      // Model,Scenario,Region,Unit,Year,Value,Enduse,EnergySource
       model: [...new Set(FinalEnergy.map(r => r.Model))],
       years: [...new Set(FinalEnergy.map(r => r.Year))],
-      labels: [...new Set(FinalEnergy.map(r => r.EnergySource))],
-      // scenarios: [...new Set(FinalEnergy.map(r => r.Scenario))],
+      labels: ['Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids'],
       enduse: [...new Set(FinalEnergy.map(r => r.Enduse))],
       regions: [...new Set(FinalEnergy.map(r => r.Region))],
       allValues: [...new Set(FinalEnergy.map(r => r.Value))],
@@ -148,16 +138,20 @@ export default {
     },
     groupPosition () {
     // const dotsArray = this.dots
-      let pos = -90
-      let posDx = -90
+      let pos = -50
+      let posTwo = -50
+      let posThree = -50
       const positions = []
       _.map(this.regionFilter, (energy, e, l) => {
-        if (e > 3) {
+        if (e <= 3) {
           pos = pos + this.innerHeight / 6
           positions.push(pos)
+        } else if (e >= 10) {
+          posThree = posThree + this.innerHeight / 6
+          positions.push(posThree)
         } else {
-          posDx = posDx + this.innerHeight / 6
-          positions.push(posDx)
+          posTwo = posTwo + this.innerHeight / 6
+          positions.push(posTwo)
         }
       })
       return positions
@@ -165,7 +159,16 @@ export default {
     horizontalPosition () {
       let pos = 0
       return _.map(this.regionFilter, (energy, e, l) => {
-        if (e <= 3) { pos = this.innerWidth / 3 + 5 } else { pos = 0 }
+        if (e <= 3) { pos = 0 } else if (e >= 10) { pos = (this.innerWidth / 3) * 2 } else { pos = (this.innerWidth / 3) }
+
+        return pos
+      })
+    },
+    headerPosition () {
+      let pos = 0
+      return _.map(this.regionFilter, (energy, e, l) => {
+        if (e === 0) { pos = 0 } else if (e === 1) { pos = (this.innerWidth / 3) } else { pos = (this.innerWidth / 3) * 2 }
+
         return pos
       })
     }
@@ -273,6 +276,9 @@ $margin-space: $spacing / 2;
       stroke-dasharray: 2 2;
     }
     g {
+      .sectorHeader {
+        font-weight: 600;
+      }
       .year-label {
         text-anchor: middle;
         fill: black;

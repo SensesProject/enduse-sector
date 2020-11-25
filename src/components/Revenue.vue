@@ -372,7 +372,7 @@ $margin-space: $spacing / 2;
       // align-items: center;
     }
     input[type=range]:focus {
-    outline: none !important;
+    outline: none;
     }
     input[type=range]::-webkit-slider-runnable-track {
     background: #969696;
