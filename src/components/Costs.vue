@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 import { map, filter, groupBy } from 'lodash'
 import { max, min } from 'd3-array'
 import { scaleLinear } from 'd3-scale'
@@ -67,7 +67,7 @@ export default {
   data () {
     return {
       currentSelection: null,
-      active: false,
+      active: true,
       over: '',
       current: '',
       margin: {
@@ -179,37 +179,39 @@ export default {
       })
     }
   },
-  // watch: {
-  //   comparison (current, previous) {
-  //     if (current === 'relative') {
-  //       const newscenarios = filter(this.scenarios, (s) => { return s !== 'NPi_v3' })
-  //       this.scenarios = newscenarios
-  //       this.currentScenario = 'NPi2020_1000_v3'
-  //     } else {
-  //       // this.scenarios = [...new Set(Costs.map(r => r.Scenario))]
-  //       // this.currentScenario = 'Current Policies'
-  //     }
-  //   },
-  //   step (currentStep, previousStep) {
-  //     if (currentStep === 0) {
-  //       this.currentScenario = 'NPi_v3'
-  //       this.comparison = 'absolute'
-  //     } else if (currentStep === 1) {
-  //       this.currentScenario = 'NPi2020_1000_v3'
-  //       this.comparison = 'absolute'
-  //     } else if (currentStep === 2) {
-  //       this.comparison = 'absolute'
-  //       this.currentScenario = 'NPi2020_400_v3'
-  //     } else if (currentStep === 3) {
-  //       this.currentScenario = 'NPi2020_1000_v3'
-  //       this.comparison = 'relative'
-  //     } else if (currentStep === 4) {
-  //       this.currentScenario = 'NPi_v3'
-  //       this.comparison = 'absolute'
-  //     }
-  //   }
-  // },
+  watch: {
+    comparison (current, previous) {
+      if (current === 'relative') {
+        const relativescenarios = filter(this.scenarios, (s) => { return s !== 'Current Policies' })
+        this.newScenarios(relativescenarios)
+        this.changeScenario('2.0ºC')
+      } else if (previous === 'relative') {
+        const absolutescenarios = [...new Set(this.CostsData.map(r => r.scenario))]
+        this.newScenarios(absolutescenarios)
+        this.changeScenario('Current Policies')
+      }
+    }
+    // step (currentStep, previousStep) {
+    //   if (currentStep === 0) {
+    //     this.currentScenario = 'NPi_v3'
+    //     this.comparison = 'absolute'
+    //   } else if (currentStep === 1) {
+    //     this.currentScenario = 'NPi2020_1000_v3'
+    //     this.comparison = 'absolute'
+    //   } else if (currentStep === 2) {
+    //     this.comparison = 'absolute'
+    //     this.currentScenario = 'NPi2020_400_v3'
+    //   } else if (currentStep === 3) {
+    //     this.currentScenario = 'NPi2020_1000_v3'
+    //     this.comparison = 'relative'
+    //   } else if (currentStep === 4) {
+    //     this.currentScenario = 'NPi_v3'
+    //     this.comparison = 'absolute'
+    //   }
+    // }
+  },
   methods: {
+    ...mapMutations(['newScenarios', 'changeScenario']),
     calcSizes () {
       const { inCosts: el } = this.$refs
       const innerHeight = el.clientHeight || el.parentNode.clientHeight
@@ -217,9 +219,9 @@ export default {
     }
   },
   mounted () {
-    console.log('CostsData', this.CostsData)
-    console.log('sectorData', this.sectorData)
-    console.log('bubbleCharts', this.bubbleCharts)
+    // console.log('CostsData', this.CostsData)
+    // console.log('sectorData', this.sectorData)
+    // console.log('bubbleCharts', this.bubbleCharts)
     this.calcSizes()
     window.addEventListener('resize', this.calcSizes, false)
   },

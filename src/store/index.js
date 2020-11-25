@@ -50,6 +50,9 @@ export default new Vuex.Store({
     },
     changeComparison (state, value) {
       state.comparison = value
+    },
+    newScenarios (state, value) {
+      state.scenarios = value
     }
   },
   actions: {
