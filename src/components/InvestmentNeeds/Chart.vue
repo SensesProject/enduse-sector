@@ -45,8 +45,8 @@ import DiffMore from './DiffMore'
 import Label from './Label'
 
 const colors = {
-  Industry: '#FFAC00',
   Transport: '#B035C9',
+  Industry: '#FFAC00',
   'Residential and commercial': '#00A5D5'
 }
 

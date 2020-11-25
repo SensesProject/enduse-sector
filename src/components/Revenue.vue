@@ -3,7 +3,7 @@
     <div></div>
     <div class="key" :class=" mobile ? 'mobile' : 'desktop'">
       <h3 >Changes in revenue in BN$/yr</h3>
-      <a href="https://docs.messageix.org/projects/global/en/latest/" target="_blank">(Model: MESSAGEix-GLOBIOM_1.0)</a>
+      <a>(Model: REMIND-MAgPIE)</a>
     </div>
     <div class="key" :class=" mobile ? 'mobile' : 'desktop'">
       <SensesSelect class="region_selector" :options="regions" v-model="currentRegion"/>
@@ -26,8 +26,8 @@
       <g v-for="(group, g) in dots.slice(0, 2)" v-bind:key="g + 'group'" :class="`${labels[g]}-group`" :transform="`translate(0, ${groupPosition[g]})`">
         <!--Axis -->
         <g v-for="(val, v) in yTicks[g][0]" v-bind:key="v+'val'">
-        <!--  <line class="axis" :x1="scale.x(2028.5)" :y1="(0.3 * innerHeight) - yTicks[g][1][v]" :x2="scale.x(2028.9)" :y2="(0.3 * innerHeight) - yTicks[g][1][v]"/> -->
-          <text class="axis-label" x="0" :y="(0.3 * innerHeight) - yTicks[g][1][v] + 4" > {{ val }} </text>
+        <line class="axis" :x1="scale.x(2029)" :y1="(0.3 * innerHeight) - yTicks[g][1][v]" :x2="scale.x(2029.5)" :y2="(0.3 * innerHeight) - yTicks[g][1][v]"/>
+          <text class="axis-label" x="0" :y="(0.3 * innerHeight) - yTicks[g][1][v] - 2" > {{ val }} </text>
         </g>
         <g v-for="(val, v) in yTicks.slice(0,1)" v-bind:key="v+'valHeader'">
           <g v-if="g === 0" >
@@ -372,7 +372,7 @@ $margin-space: $spacing / 2;
       // align-items: center;
     }
     input[type=range]:focus {
-    outline: none;
+    outline: none !important;
     }
     input[type=range]::-webkit-slider-runnable-track {
     background: #969696;
@@ -494,7 +494,7 @@ $margin-space: $spacing / 2;
     height: 100%;
     margin-top: $margin-space*2;
     .axis {
-      stroke: getColor(grey, 60);
+      stroke: getColor(grey, 20);
       stroke-width: 0.5;
       stroke-linecap: round;
     }
@@ -511,8 +511,8 @@ $margin-space: $spacing / 2;
     g {
       .year-label {
         text-anchor: middle;
-        fill: black;
-        font-size: 0.6em;
+        fill: getColor(grey, 60);
+        font-size: 0.8em;
       }
       .hover-label {
         fill: black;
@@ -520,8 +520,8 @@ $margin-space: $spacing / 2;
         text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
       }
       .axis-label{
-        fill: black;
-        font-size: 0.6em;
+        fill: getColor(grey, 60);
+        font-size: 0.8em;
         //text-anchor: middle;
       }
       .line-label {

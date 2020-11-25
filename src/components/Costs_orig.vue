@@ -11,11 +11,12 @@
             <text x="0" :y="innerHeight / 2 + 30" class="title">{{charts.klass}}</text>
             <g v-for="(chart,c) in charts.groups" :key="c" class="comparison-container" :transform="`translate(0, ${chart.verticalPosition})`">
               <g v-for="(bubble, b) in chart.data" :key="b" class="bubbles">
-                <BubblesLabels v-if="comparison == 'absolute'" :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabel, bubble.ejLabel, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
-                <BubblesLabels v-else :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabelDiff, bubble.ejLabelDiff, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
+                <BubblesLabels :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabel, bubble.ejLabel, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
                 <line :x1="bubble.xPos" :x2="bubble.xPos" :y1="chart.scale(0)" :y2="bubble.yPos"/>
                 <circle :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.radius" />
-                <circle v-if="comparison == 'relative'"  class= "difference-bubbles" :key="`${b}-compar`" :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.baseRadius"/>
+                <g v-if="comparison === 'relative'" class="difference-bubbles">
+                  <circle v-for="(bubble, b) in chart.data" :key="`${b}-compar`" :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.diffRadius" fill="black"/>
+                </g>
               </g>
               <CostsTicks :data="chart.yTicks" :scale="chart.scale" :xScale="scales.x"/>
             </g>
@@ -137,14 +138,12 @@ export default {
                 return {
                   yearLabel: el.year,
                   ejLabel: Math.round(el.value * 10) / 10,
-                  ejLabelDiff: Math.round(el.value_diff * 10) / 10,
                   costLabel: Math.round(el.directEmissionsCosts / 1000000000),
-                  costLabelDiff: Math.round(el.directEmissionCosts_diff / 1000000000),
                   klass: scenarioKlass,
                   xPos: scales.x(el.year),
                   yPos: scales.yDirect(costValue),
                   radius: scales.radius(el.value),
-                  baseRadius: scales.radius(el.value_baseline)
+                  diffRadius: scales.radius(el.value_diff)
                 }
               })
             },
@@ -158,14 +157,12 @@ export default {
                 return {
                   yearLabel: el.year,
                   ejLabel: Math.round(el.value * 10) / 10,
-                  ejLabelDiff: Math.round(el.value_diff * 10) / 10,
                   costLabel: Math.round(el.indEmissionsCosts / 1000000000),
-                  costLabelDiff: Math.round(el.indEmissionCosts_diff / 1000000000),
                   klass: scenarioKlass,
                   xPos: scales.x(el.year),
                   yPos: scales.yIndirect(costValue),
                   radius: scales.radius(el.value),
-                  baseRadius: scales.radius(el.value_baseline)
+                  diffRadius: scales.radius(el.value_diff)
                 }
               })
             }
@@ -212,9 +209,6 @@ export default {
     }
   },
   mounted () {
-    console.log('CostsData', this.CostsData)
-    console.log('sectorData', this.sectorData)
-    console.log('bubbleCharts', this.bubbleCharts)
     this.calcSizes()
     window.addEventListener('resize', this.calcSizes, false)
   },
@@ -236,7 +230,7 @@ $transition-time: 0.5s;
   height: 90%;
 
   svg {
-    g.Industry {
+    g.ResidentialCommercial {
       text.title {
         fill: rgb(179,119,0);
       }
@@ -246,7 +240,7 @@ $transition-time: 0.5s;
       }
     }
 
-    g.Transportation  {
+    g.Industry {
       text.title {
         fill: rgb(140,25,255);
       }
@@ -256,7 +250,7 @@ $transition-time: 0.5s;
       }
     }
 
-    g.ResidentialCommercial {
+    g.Transportation {
       text.title {
         fill: rgb(25,64,255);
       }
@@ -284,6 +278,7 @@ $transition-time: 0.5s;
         }
       }
     }
+
     g.bubbles:hover {
       line {
         stroke: black;
@@ -296,16 +291,6 @@ $transition-time: 0.5s;
         transition: all $transition-time;
         opacity: 1;
       }
-    }
-
-    g.difference-bubbles {
-      transition: all $transition-time;
-      fill-opacity: 0.4;
-      stroke-opacity: 0;
-    }
-    g.difference-bubbles:hover {
-      fill-opacity: 1;
-      stroke-opacity: 1;
     }
   }
 

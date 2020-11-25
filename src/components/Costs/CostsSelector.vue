@@ -2,7 +2,7 @@
   <div class="key">
     <div class="title">
       <h3>Fuel costs and final energy use</h3>
-      <a href="https://docs.messageix.org/projects/global/en/latest/" target="_blank">(Model: MESSAGEix-GLOBIOM_1.0)</a>
+      <a>(Model: REMIND-MAgPIE)</a>
     </div>
     <div class="selectors">
       <SensesSelect :options="scenarios" v-model="currentScenario"/>

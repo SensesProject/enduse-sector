@@ -6,6 +6,7 @@
         Select:
         <SensesSelect class="scenario_selector" :options="scenarios" v-model="currentScenario"/>
         <SensesSelect class="region_selector" :options="regions" v-model="currentRegion"/>
+        <SensesSelect class="enduse_selector" :options="enduse" v-model="currentEnduse"/>
       </p>
       <p class="model-label">REMIND-MAgPIE</p>
     </div>
@@ -92,6 +93,7 @@ export default {
       scenDict: { '1.5ºC': 'NPi2020_400_V3', '2.0ºC': 'NPi2020_1000_V3', 'Current Policies': 'NPi_v3' },
       currentScenario: '1.5ºC',
       currentRegion: 'World',
+      currentEnduse: 'Industry',
       active: false,
       over: '',
       margin: {
@@ -105,22 +107,26 @@ export default {
   },
   computed: {
     innerWidth () { return this.width - (this.margin.left + this.margin.right) },
-
+    // scenario Filter takes Energy Array and returns Array where Objects with Scenario = currentScenario are filtered
+    // ["coal": [{scenario: 1.5,...},{scenario: 1.5,...}...],
+    //   "wind": [{scenario: 1.5,...},{scenario: 1.5,...}...],
+    //    ...
+    //  ]
     scenarioFilter () { return _.map(this.energy, (sc, s) => _.filter(sc, d => d.Scenario === this.scenDict[this.currentScenario])) },
     // filters over regioFilter Array, returns same array only with objects with CurrentEnduse
-    // enduseFilter () { return _.map(this.scenarioFilter, (end, e) => _.filter(end, d => d.Enduse === this.currentEnduse)) },
+    enduseFilter () { return _.map(this.scenarioFilter, (end, e) => _.filter(end, d => d.Enduse === this.currentEnduse)) },
     // filters over scenrioFilter Array, returns same array only with objects with CurrentRegion
-    regionFilter () { return _.map(this.scenarioFilter, (re, r) => _.filter(re, d => d.Region === this.currentRegion)) },
+    regionFilter () { return _.map(this.enduseFilter, (re, r) => _.filter(re, d => d.Region === this.currentRegion)) },
     // filters over scenrioFilter Array, returns same array only with objects with region = World
-    worldFilter () { return _.map(this.scenarioFilter, (re, r) => _.filter(re, d => d.Region === 'World')) },
+    worldFilter () { return _.map(this.enduseFilter, (re, r) => _.filter(re, d => d.Region === 'World')) },
     scale () {
       // domain-> observartio EJ/yr, range-> visual variable px
       return {
         x: d3.scaleLinear()
-          .range([35, (this.innerWidth - (this.margin.right * 10)) / 3.1])
+          .range([35, (this.innerWidth - (this.margin.right * 10)) / 2.1])
           .domain([2010, 2100]),
         y: d3.scaleLinear()
-          .range([2, 230])
+          .range([2, 330])
           .domain([d3.min(this.allValues), d3.max(this.allValues)])
       }
     },
@@ -152,11 +158,11 @@ export default {
       let posDx = -90
       const positions = []
       _.map(this.regionFilter, (energy, e, l) => {
-        if (e > 3) {
-          pos = pos + this.innerHeight / 6
+        if (e > 2) {
+          pos = pos + this.innerHeight / 4
           positions.push(pos)
         } else {
-          posDx = posDx + this.innerHeight / 6
+          posDx = posDx + this.innerHeight / 4
           positions.push(posDx)
         }
       })
@@ -165,7 +171,7 @@ export default {
     horizontalPosition () {
       let pos = 0
       return _.map(this.regionFilter, (energy, e, l) => {
-        if (e <= 3) { pos = this.innerWidth / 3 + 5 } else { pos = 0 }
+        if (e <= 2) { pos = this.innerWidth / 2 + 5 } else { pos = 0 }
         return pos
       })
     }
@@ -180,8 +186,6 @@ export default {
     }
   },
   mounted () {
-    console.log('dots', this.dots)
-    console.log('regionFilter', this.regionFilter)
     this.calcSizes()
     window.addEventListener('resize', this.calcSizes, false)
   },

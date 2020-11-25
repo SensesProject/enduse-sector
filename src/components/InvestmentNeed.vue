@@ -67,8 +67,8 @@ export default {
       showDifference: false,
       selectedRegion: 'World',
       variables: [
-        'Industry',
         'Transport',
+        'Industry',
         'Residential and commercial'
       ],
       regions: [
