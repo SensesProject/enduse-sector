@@ -1,11 +1,11 @@
 <template>
   <g class="labels">
     <line :x2="xPos" :x1="xScale(2020)" :y1="yPos" :y2="yPos"/>
-    <text :x="xPos - radius" :y="yPos - radius - 20" class="ej shadow">{{labels[0]}} Bn/$
-      <tspan :x="xPos - radius" :y="yPos - radius - 5">{{labels[1]}} Ej/y</tspan>
+    <text :x="xPos - radius" :y="yPos - radius - 20" class="ej shadow">{{labels[0]}} Bn$/yr
+      <tspan :x="xPos - radius" :y="yPos - radius - 5">{{labels[1]}} Ej/yr</tspan>
     </text>
-    <text :x="xPos - radius" :y="yPos - radius - 20" class="ej">{{labels[0]}} Bn/$
-      <tspan :x="xPos - radius" :y="yPos - radius - 5">{{labels[1]}} Ej/y</tspan>
+    <text :x="xPos - radius" :y="yPos - radius - 20" class="ej">{{labels[0]}} Bn$/yr
+      <tspan :x="xPos - radius" :y="yPos - radius - 5">{{labels[1]}} Ej/yr</tspan>
     </text>
     <text :x="xPos -15" :y="scale(0) + 20" class="year">{{labels[2]}}</text>
   </g>

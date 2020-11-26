@@ -2,7 +2,7 @@
   <div class="bars">
     <span class="label" v-html="label" />
     <div class="intro">
-      <span>{{ selectedRegion }}: <strong>{{ sumThis }}</strong> BN US$ per year average 2020–2030</span>
+      <span>{{ selectedRegion }}: <strong>{{ sumThis }}</strong> BN US$ per year average 2025–2030</span>
     </div>
     <svg ref="vis" class="vis">
       <g v-if="width">
@@ -174,16 +174,16 @@ export default {
           return `
             <header>${variable}</header>
             <p>
-              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable}.
+              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in <br /> ${variable}.
             </p>
           `
         case 'NDC':
           return `
             <header>${variable}</header>
             <p>
-              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable},<br />
+              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in <br /> ${variable},
               but we pledged to invest <strong>${fN(value)}</strong>.
-              That means, we pledged<br />
+              That means, we pledged
               to invest <strong>${fN(Math.abs(diff))} ${diff > 0 ? 'more' : 'less'}</strong> in ${variable}.
             </p>
           `
@@ -191,9 +191,9 @@ export default {
           return `
             <header>${variable}</header>
             <p>
-              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable},<br />
+              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in <br /> ${variable},
               but for for the 1.5C target we should invest <strong>${fN(value)}</strong>.
-              That means,<br />
+              That means,
               we should invest <strong>${fN(Math.abs(diff))} ${diff > 0 ? 'more' : 'less'}</strong> in ${variable}.
             </p>
           `
@@ -201,9 +201,9 @@ export default {
           return `
             <header>${variable}</header>
             <p>
-              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in ${variable},<br />
+              ${subject} currently investing <strong>${fN(reference)}</strong> BN US$ per year in <br /> ${variable},
               but for for the 2C target we should invest <strong>${fN(value)}</strong>.
-              That means,<br />
+              That means,
               we should invest <strong>${fN(Math.abs(diff))} ${diff > 0 ? 'more' : 'less'}</strong> in ${variable}.
             </p>
           `

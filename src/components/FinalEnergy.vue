@@ -1,13 +1,11 @@
 <template>
   <div class="final-energy" ref="inWrapper">
     <div class="key" :class=" mobile ? 'mobile' : 'desktop'">
-      <h4>Final energy use (Ej/year)</h4>
+      <h3>Final energy use in Ej/yr<span class="model-label">(Model: REMIND-MAgPIE)</span></h3>
       <p class="selectors">
-        Select:
         <SensesSelect class="scenario_selector" :options="scenarios" v-model="currentScenario"/>
         <SensesSelect class="region_selector" :options="regions" v-model="currentRegion"/>
       </p>
-      <p class="model-label">REMIND-MAgPIE</p>
     </div>
     <div></div>
     <svg :width="innerWidth" :height="innerHeight" :transform="`translate(0, 0)`">
@@ -66,6 +64,10 @@ export default {
     mobile: {
       type: Boolean,
       default: false
+    },
+    step: {
+      type: Number,
+      default: 0
     }
   },
   data () {
@@ -208,38 +210,45 @@ $margin-space: $spacing / 2;
   .key {
     z-index: 9;
     width: 100%;
-    height: 100px;
-    margin-bottom: 7%;
-    padding: 10px 0px;
+    height: 80px;
+    margin-bottom: 1%;
+    padding:  5px 0px;
 
-    position:sticky;
     top: 50px;
 
-    border-bottom:0.5px solid grey;
     background: hsla(0,0%,100%,.90);
 
-    .model-label    {
-      margin-top: 5px;
-      color: #424ab9;
-      font-weight: normal;
-      display: inline;
-      // margin-left: 10px;
+    h3 {
+      margin-left: $margin-space*2;
+      padding-bottom: $margin-space/4;
+      display: inline-block;
       margin-right: $margin-space;
+      font-size: 0.8em;
+      .model-label    {
+        color: getColor(neon, 40);
+        font-weight: normal;
+        display: inline;
+        // margin-left: 10px;
+        margin-left: $margin-space/2;
+      }
+    }
+    a{
+      margin-top: 5px;
+      margin-left: 5px;
+      fill: getColor(neon, 40);
+      text-decoration: none;
+      background: none;
+      font-size: 0.8em;
     }
     .selectors {
+      margin-left: $margin-space*2;
       display: inline-block;
       width: 65%;
-      // margin-left: 10px;
+      font-size: 0.8em;
     }
     .scenario_selector {
       margin-top: $margin-space;
-      margin-left: $margin-space;
       margin-right: $margin-space;
-    }
-
-    h4 {
-    //  padding-left: 10px;
-      margin-bottom: $margin-space/2;
     }
 
     .v-popover {
@@ -277,7 +286,7 @@ $margin-space: $spacing / 2;
     }
     g {
       .sectorHeader {
-        font-weight: 600;
+        //font-weight: 600;
       }
       .year-label {
         text-anchor: middle;
@@ -289,7 +298,9 @@ $margin-space: $spacing / 2;
         fill-opacity: 0.6;
         fill: white;
       }
-
+      .carrier-labels {
+        fill: $color-gray;
+      }
       .line-label {
         stroke: $color-gray;
         stroke-width: 0.5;

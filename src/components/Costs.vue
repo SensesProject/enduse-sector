@@ -3,12 +3,18 @@
     <CostsSelector/>
     <div>
       <svg :width="innerWidth" :height="innerHeight - margin.bottom" :transform="`translate(${margin.left}, 0)`">
-        <text x="0" y="10">Direct Emissions cost</text>
-        <text x="0" :y="innerHeight / 2">Indirect Emissions cost</text>
+        <g>
+          <text v-if="comparison == 'absolute'" x="0" y="30">Direct Emissions costs Bn$/yr</text>
+          <text v-else x="0" y="30">Changes in direct Emissions costs Bn$/yr</text>
+        </g>
+        <g>
+          <text v-if="comparison == 'absolute'" x="0" :y="innerHeight / 1.95">Fuel costs Bn$/yr</text>
+          <text v-else x="0" :y="innerHeight / 1.95">Changes in fuel costs Bn$/yr</text>
+        </g>
         <g v-for="(charts, cs) in bubbleCharts" :key="cs">
           <g class="sector-container" :class="charts.klass" :transform="`translate(${charts.horizontalPosition + (margin.left * 3)}, 0)`">
-            <text x="0" y="40" class="title">{{charts.klass}}</text>
-            <text x="0" :y="innerHeight / 2 + 30" class="title">{{charts.klass}}</text>
+            <text x="-30" y="50" class="title">{{charts.klass}}</text>
+            <text x="-30" :y="innerHeight / 2 + 30" class="title">{{charts.klass}}</text>
             <g v-for="(chart,c) in charts.groups" :key="c" class="comparison-container" :transform="`translate(0, ${chart.verticalPosition})`">
               <g class="bubbles" v-for="(bubble, b) in chart.data" :key="b" @mouseenter="[(active = false), (current = b)]" @mouseleave="active = true">
                 <g class="labels">
