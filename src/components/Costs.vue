@@ -225,9 +225,6 @@ export default {
     }
   },
   mounted () {
-    // console.log('CostsData', this.CostsData)
-    // console.log('sectorData', this.sectorData)
-    // console.log('bubbleCharts', this.bubbleCharts)
     this.calcSizes()
     window.addEventListener('resize', this.calcSizes, false)
   },

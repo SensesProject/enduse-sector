@@ -2,19 +2,22 @@
   <div id="app">
     <SensesMenu :id="'power-sector'"/>
     <div class="content" :class="mobile ? 'isMobile' : 'isDesktop'" ref="container">
-      <div class="text-wrapper">
-        <h1 class="module-title">Transition risks Enduse Sector</h1>
-        <p class="two-column-paragraph" >This is the third chapter of the Transition Risks modules. You can select another chapter below.
+      <div class="title-wrapper">
+        <h1 class="module-title">Transition risks <br>Enduse Sector Transformation</h1>
+        <div class="text-wrapper">
+        <p class="intro-paragraph" >This is the third chapter of the Transition Risks modules. You can select another chapter below.
           The Transition Risks modules are based on the Risk Factor Pathways as created by the UNEP
-          Finance Initiative and Olyver Wyman in their report Extending Our Horizons. These Risk Factor Pathways
-          (RFPs) structure the different types of risks that emerge for the finance sector from the transition
+          Finance Initiative and Olyver Wyman in their report <a id="link" href="https://www.unepfi.org/wordpress/wp-content/uploads/2018/04/EXTENDING-OUR-HORIZONS.pdf" target="_blank">Extending Our Horizons</a>.
+          These Risk Factor Pathways (RFPs) structure the different types of risks that emerge for the finance sector from the transition
           to a low-carbon future.</p>
       </div>
+    </div>
+      <h3 id="header">Transition Risks modules:</h3>
       <RiskPathway :mobile="mobile"/>
       <div class="text-wrapper">
-        <h2 class="chapter-title" id="introduction">
+        <h3 class="chapter-title" id="introduction">
           What risks will be discussed?
-        </h2>
+        </h3>
         <p class="two-column-paragraph">The Enduse sector goes through a transition from Lorem ipsum dolor sit amet, consetetur
           sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
@@ -254,12 +257,34 @@ export default {
   margin: 0 auto;
 
   .changeheight {
-    padding-bottom: 800px;
+    padding-bottom: 2000px;
+  }
+  .changeheightstructure {
+    padding-bottom: 1000px;
+  }
+  #link {
+    background: none;
   }
   .content {
     max-width: 900px;
     margin: 0 auto;
-
+    .title-wrapper {
+      margin-bottom: $spacing;
+      .module-title {
+        font-size: 40px;
+        margin-bottom: $spacing *1.5;
+        padding-top: $spacing;
+      }
+    }
+    .not-available {
+      cursor: not-allowed;
+        color: gray;
+        opacity: 0.7;
+        background: none;
+    }
+    #header {
+      margin-bottom: $spacing/2;
+    }
     .text-wrapper {
       margin-top: $spacing;
       margin-bottom: $spacing;
@@ -268,19 +293,18 @@ export default {
         margin-bottom: $spacing * 2;
         column-count: 2;
       }
-
-      .module-title {
-        font-size: 40px;
-        margin-bottom: $spacing / 2;
-        padding-top: $spacing;
+      .intro-paragraph {
+        margin-bottom: $spacing * 0.5;
+        column-count: 2;
       }
-
       .chapter-title {
         margin-bottom: $spacing;
-      }
+        padding-top: $spacing;
+        &#introduction {
+          margin-bottom: $spacing/3;
 
-      .chapter-title-transition{
-        margin-bottom: $spacing/4;
+        }
+
       }
 
       &#last-text {
@@ -288,7 +312,6 @@ export default {
       }
 
       #conclusion {
-        border-top: 1px solid $color-gray;
         padding-top: 30px;
       }
     }
@@ -317,6 +340,12 @@ export default {
     &.isMobile {
       .text-wrapper {
         padding: 0 20px;
+      }
+      .module-title {
+        padding-left: $spacing/2;
+      }
+      #header {
+        padding-left: $spacing/2;
       }
     }
   }
