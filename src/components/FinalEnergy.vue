@@ -76,7 +76,7 @@ export default {
       energy: _.groupBy(FinalEnergy, d => d.EnergySource),
       model: [...new Set(FinalEnergy.map(r => r.Model))],
       years: [...new Set(FinalEnergy.map(r => r.Year))],
-      labels: ['Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids'],
+      labels: ['Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids'],
       enduse: [...new Set(FinalEnergy.map(r => r.Enduse))],
       regions: [...new Set(FinalEnergy.map(r => r.Region))],
       allValues: [...new Set(FinalEnergy.map(r => r.Value))],
@@ -140,15 +140,15 @@ export default {
     },
     groupPosition () {
     // const dotsArray = this.dots
-      let pos = -50
-      let posTwo = -50
-      let posThree = -50
+      let pos = -35
+      let posTwo = -35
+      let posThree = -35
       const positions = []
       _.map(this.regionFilter, (energy, e, l) => {
-        if (e <= 3) {
+        if (e <= 5) {
           pos = pos + this.innerHeight / 6
           positions.push(pos)
-        } else if (e >= 10) {
+        } else if (e >= 12) {
           posThree = posThree + this.innerHeight / 6
           positions.push(posThree)
         } else {
@@ -161,7 +161,7 @@ export default {
     horizontalPosition () {
       let pos = 0
       return _.map(this.regionFilter, (energy, e, l) => {
-        if (e <= 3) { pos = 0 } else if (e >= 10) { pos = (this.innerWidth / 3) * 2 } else { pos = (this.innerWidth / 3) }
+        if (e <= 5) { pos = 0 } else if (e >= 12) { pos = (this.innerWidth / 3) * 2 } else { pos = (this.innerWidth / 3) }
 
         return pos
       })
@@ -185,8 +185,6 @@ export default {
     }
   },
   mounted () {
-    console.log('dots', this.dots)
-    console.log('regionFilter', this.regionFilter)
     this.calcSizes()
     window.addEventListener('resize', this.calcSizes, false)
   },

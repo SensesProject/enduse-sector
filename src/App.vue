@@ -38,14 +38,14 @@
           </div>
         </template>
         <div slot="text" class="observer">
-          <IntersectionObserver :step="0"  align="left">
+          <IntersectionObserver :step="0"  align="right">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
               minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
               ex ea commodo consequat.
             </p>
           </IntersectionObserver>
-          <IntersectionObserver :step="1"  align="left" class="changeheight">
+          <IntersectionObserver :step="1"  align="right" class="changeheight">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
               minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -94,7 +94,7 @@
                   ex ea commodo consequat.
                 </p>
               </IntersectionObserver>
-              <IntersectionObserver :step="3"  align="right" class="changeheight">
+              <IntersectionObserver :step="3"  align="right" >
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                   minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip

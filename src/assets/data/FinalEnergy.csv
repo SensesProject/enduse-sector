@@ -1,8 +1,4 @@
 Model,Scenario,Region,Unit,Year,Value,Enduse,EnergySource
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0.8814,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,97.8818,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0.3936,Industry,HydrogenIndus
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,32.4348,Industry,GasesIndus
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,27.3012,Industry,ElectricityIndus
@@ -15,6 +11,10 @@ REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,34.6223,Residential and Commercial
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,13.3544,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,6.5086,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,34.6228,Residential and Commercial,Solids
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0.8814,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,97.8818,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,R5ASIA,EJ/yr,2010,11.9939,Industry,ElectricityIndus
 REMIND-MAgPIE 1.7-3.0,NPi_v3,R5ASIA,EJ/yr,2010,7.4677,Industry,GasesIndus
 REMIND-MAgPIE 1.7-3.0,NPi_v3,R5ASIA,EJ/yr,2010,2.1688,Industry,HeatIndus

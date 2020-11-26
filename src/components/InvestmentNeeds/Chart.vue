@@ -247,7 +247,7 @@ export default {
     }
 
     .vis {
-      width: 100%;
+      width: 65%;
       height: calc(70px + 5px + #{8px});
 
       rect, text {
