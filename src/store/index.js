@@ -40,7 +40,7 @@ export default new Vuex.Store({
     scenarios,
     sectors,
     regions,
-    currentScenario: 'Current Policies',
+    currentScenario: '1.5ºC',
     currentRegion: 'World',
     comparison: 'absolute'
   },

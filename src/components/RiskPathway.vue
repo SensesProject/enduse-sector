@@ -1,23 +1,25 @@
 <template>
   <div class="risk-card" :class="mobile ? 'mobileCard' : 'desktopCard'">
+    <div class="other-chapters">
+    </div>
     <nav class="risk-menu pathway">
       <section>
-        <a class="wrapper" href="https://climatescenarios.org/fossil-fuels/">
-          <div><span class="glyph-oil"/></div>
-          <div><h4>Chapter 1</h4><span>Fossil Fuels</span></div>
+        <a class="wrapper" href="https://climatescenarios.org/fossil-fuels/" target="_blank">
+          <div class="svg fossils"></div>
+          <div><p>Chapter 1</p><span>Fossil Fuels&nbsp;&nearr;</span></div>
         </a>
       </section>
       <section>
-        <a class="wrapper" href="https://dev.climatescenarios.org/power-sector">
-          <div><span class="glyph-power"/></div>
-          <div><h4>Chapter 2</h4><span>Power Sector&nbsp;&nearr;</span></div>
+        <a class="wrapper" href="https://climatescenarios.org/power-sector/" target="_blank">
+          <div class="svg power"></div>
+          <div><p>Chapter 2</p><span>Power Sector&nbsp;&nearr;</span></div>
         </a>
       </section>
       <section>
-        <a class="wrapper active">
-          <div><span class="glyph-building"/></div>
-          <div><h4>Chapter 3</h4><span>End Use&nbsp;&nearr;</span></div>
-        </a>
+        <div class="wrapper active">
+          <div class="svg enduse"></div>
+          <div><p>Chapter 3</p><span>End Use</span></div>
+        </div>
       </section>
     </nav>
   </div>
@@ -40,10 +42,14 @@ export default {
 @import "library/src/style/variables.scss";
 
 .risk-card {
-  border: 1px solid #d8d8e4;
-  padding: $spacing;
+  padding: $spacing*1.5;
   border-radius: 4px;
-  margin-top: $spacing;
+  background-color: rgba(221,214,255,.3);
+
+  .other-chapters {
+    text-align: center;
+    font-size: 11px;
+  }
 }
 
 .pathway {
@@ -51,15 +57,14 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   max-width: 1100px;
   flex-direction: column;
-
   a {
     text-decoration: none;
     background: none;
-    color: #000;
-  }
+    //color: getColor(neon, 60);
+    }
 
   .active {
-    color: #B035C9;
+    color: getColor(violet, 40);
   }
 
   .risk-menu {
@@ -72,23 +77,32 @@ export default {
   }
 
   .wrapper {
-    padding: $spacing / 2 $spacing / 1.5 $spacing / 2 0;
+    padding: 0 $spacing / 1.5 $spacing / 2 0;
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
-  }
+    outline: none;
+      div.svg {
+        display: block;
+        background-size: 80px 80px;
+        width: 80px;
+        height: 80px;
+        color: getColor(violet, 40);
+        &.fossils
+        {filter: invert(30%) sepia(91%) saturate(2513%) hue-rotate(227deg) brightness(106%) contrast(102%);
+          background-image: url('~@/assets/fossils.svg');
+        }
+        &.power
+        {filter: invert(30%) sepia(91%) saturate(2513%) hue-rotate(227deg) brightness(106%) contrast(102%);
+          background-image: url('~@/assets/power.svg');
+        }
+        &.enduse
+        {filter: invert(18%) sepia(19%) saturate(6441%) hue-rotate(234deg) brightness(92%) contrast(91%);
+          background-image: url('~@/assets/enduse.svg');
+        }
+      }
 
-  .glyph-building, .glyph-oil, .glyph-power {
-    font-size: 5rem;
-  }
-
-  .glyph-building {
-    color: #B035C9;
-  }
-
-  .glyph-power, .glyph-oil {
-    color: #d8d8e4;
   }
 }
 

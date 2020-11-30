@@ -3,12 +3,18 @@
     <CostsSelector/>
     <div>
       <svg :width="innerWidth" :height="innerHeight - margin.bottom" :transform="`translate(${margin.left}, 0)`">
-        <text x="0" y="10">Direct Emissions cost</text>
-        <text x="0" :y="innerHeight / 2">Indirect Emissions cost</text>
+        <g>
+          <text v-if="comparison == 'absolute'" x="0" y="30">Direct Emissions costs Bn$/yr</text>
+          <text v-else x="0" y="30">Changes in direct Emissions costs Bn$/yr</text>
+        </g>
+        <g>
+          <text v-if="comparison == 'absolute'" x="0" :y="innerHeight / 1.95">Fuel costs Bn$/yr</text>
+          <text v-else x="0" :y="innerHeight / 1.95">Changes in fuel costs Bn$/yr</text>
+        </g>
         <g v-for="(charts, cs) in bubbleCharts" :key="cs">
           <g class="sector-container" :class="charts.klass" :transform="`translate(${charts.horizontalPosition + (margin.left * 3)}, 0)`">
-            <text x="0" y="40" class="title">{{charts.klass}}</text>
-            <text x="0" :y="innerHeight / 2 + 30" class="title">{{charts.klass}}</text>
+            <text x="-30" y="50" class="title">{{charts.klass}}</text>
+            <text x="-30" :y="innerHeight / 2 + 30" class="title">{{charts.klass}}</text>
             <g v-for="(chart,c) in charts.groups" :key="c" class="comparison-container" :transform="`translate(0, ${chart.verticalPosition})`">
               <CostsTicks :data="chart.yTicks" :scale="chart.scale" :xScale="scales.x" :active="active"/>
               <g class="bubbles" v-for="(bubble, b) in chart.data" :key="b" @mouseenter="[(active = false), (current = b)]" @mouseleave="active = true" :class="{activesibiling: active === false && current === b}">
@@ -141,8 +147,8 @@ export default {
                 const costValue = comparison === 'relative' ? el.directEmissionCosts_diff : el.directEmissionsCosts
                 return {
                   yearLabel: el.year,
-                  ejLabel: Math.round(el.value * 10) / 10,
-                  ejLabelDiff: Math.round(el.value_diff * 10) / 10,
+                  ejLabel: Math.round(el.value * 277.78), // conversion from EJ to TWh
+                  ejLabelDiff: Math.round(el.value_diff * 277.78), // conversion from EJ to TWh
                   costLabel: Math.round(el.directEmissionsCosts / 1000000000),
                   costLabelDiff: Math.round(el.directEmissionCosts_diff / 1000000000),
                   klass: scenarioKlass,
@@ -162,8 +168,8 @@ export default {
                 const costValue = comparison === 'relative' ? el.indEmissionCosts_diff : el.indEmissionsCosts
                 return {
                   yearLabel: el.year,
-                  ejLabel: Math.round(el.value * 10) / 10,
-                  ejLabelDiff: Math.round(el.value_diff * 10) / 10,
+                  ejLabel: Math.round(el.value * 277.78),
+                  ejLabelDiff: Math.round(el.value_diff * 277.78),
                   costLabel: Math.round(el.indEmissionsCosts / 1000000000),
                   costLabelDiff: Math.round(el.indEmissionCosts_diff / 1000000000),
                   klass: scenarioKlass,
@@ -215,9 +221,6 @@ export default {
     }
   },
   mounted () {
-    // console.log('CostsData', this.CostsData)
-    // console.log('sectorData', this.sectorData)
-    // console.log('bubbleCharts', this.bubbleCharts)
     this.calcSizes()
     window.addEventListener('resize', this.calcSizes, false)
   },
@@ -242,6 +245,7 @@ $transition-time: 0.5s;
     g.Industry {
       text.title {
         fill: rgb(179,119,0);
+        font-weight: 600;
       }
       circle {
         fill: rgb(255,187,51);
@@ -252,6 +256,7 @@ $transition-time: 0.5s;
     g.Transportation  {
       text.title {
         fill: rgb(140,25,255);
+        font-weight: 600;
       }
       circle {
         fill: rgb(196,77,255);
@@ -261,11 +266,12 @@ $transition-time: 0.5s;
 
     g.ResidentialCommercial {
       text.title {
-        fill: rgb(25,64,255);
+        fill: getColor(blue, 40);
+        font-weight: 600;
       }
       circle {
-        fill: rgb(102,127,255);
-        stroke: rgb(25,64,255);
+        fill: getColor(blue, 60);
+        stroke: getColor(blue, 40);
       }
     }
 

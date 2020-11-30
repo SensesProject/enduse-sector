@@ -1,12 +1,12 @@
 <template>
   <section class="investments" ref="inWrapper">
     <header class="key">
-      <h3>Energy investment needs within the enduse sector</h3>
+      <h3>Energy efficiency investment needs within the enduse sector</h3>
       <p class="model">(Model: REMIND-MAgPIE)</p>
       <div>
         <label class="label"><input class = "checkbox" type="checkbox" v-model="isStacked">not stacked</label>
         <label class="label"><input class = "checkbox" type="checkbox" v-model="showDifference">difference highlighted</label>
-        <SensesSelect v-model="selectedRegion" :options="regions" />
+        <SensesSelect class="regionSelector" v-model="selectedRegion" :options="regions" />
       </div>
     </header>
     <div v-for="key in scenarios" :key="key" class="scenario">
@@ -67,9 +67,9 @@ export default {
       showDifference: false,
       selectedRegion: 'World',
       variables: [
-        'Transport',
         'Industry',
-        'Residential and commercial'
+        'Residential and commercial',
+        'Transport'
       ],
       regions: [
         'World',
@@ -151,9 +151,11 @@ export default {
   h3{
     display: inline-block;
     padding-bottom: 5px;
+    font-size: 0.8em;
   }
+
   .model {
-    margin-top: 5px;
+    font-size: 0.8em;
     color: getColor(neon, 40);
     font-weight: normal;
     display: inline;
@@ -166,6 +168,15 @@ export default {
   }
   .label {
     margin-right: 15px;
+    align-items: center;
+    font-size: 0.8em;
+    display: inline-flex;
+  }
+  .regionSelector {
+    font-size: 0.8em;
+  }
+  .scenario {
+    align: right;
   }
 }
 
