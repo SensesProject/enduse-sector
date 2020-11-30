@@ -10,18 +10,18 @@
             <text x="0" y="40" class="title">{{charts.klass}}</text>
             <text x="0" :y="innerHeight / 2 + 30" class="title">{{charts.klass}}</text>
             <g v-for="(chart,c) in charts.groups" :key="c" class="comparison-container" :transform="`translate(0, ${chart.verticalPosition})`">
-              <g class="bubbles" v-for="(bubble, b) in chart.data" :key="b" @mouseenter="[(active = false), (current = b)]" @mouseleave="active = true">
-                <g class="labels">
-                  <BubblesLabels v-if="comparison == 'absolute'" :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabel, bubble.ejLabel, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
-                  <BubblesLabels v-else :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabelDiff, bubble.ejLabelDiff, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
-                </g>
-                <g class="bubbles-elements" :class="{inactive: active === false && current !== b}">
+              <CostsTicks :data="chart.yTicks" :scale="chart.scale" :xScale="scales.x" :active="active"/>
+              <g class="bubbles" v-for="(bubble, b) in chart.data" :key="b" @mouseenter="[(active = false), (current = b)]" @mouseleave="active = true" :class="{activesibiling: active === false && current === b}">
+                <g class="bubbles-elements">
                   <line :x1="bubble.xPos" :x2="bubble.xPos" :y1="chart.scale(0)" :y2="bubble.yPos"/>
                   <circle v-if="comparison == 'relative'"  class= "difference-bubbles" :key="`${b}-compar`" :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.baseRadius"/>
                   <circle :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.radius" :class="{blend: comparison === 'relative'}"/>
                 </g>
+                <g class="labels">
+                  <BubblesLabels v-if="comparison == 'absolute'" :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabel, bubble.ejLabel, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
+                  <BubblesLabels v-else :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabelDiff, bubble.ejLabelDiff, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
+                </g>
               </g>
-              <CostsTicks :data="chart.yTicks" :scale="chart.scale" :xScale="scales.x"/>
             </g>
           </g>
         </g>
@@ -182,13 +182,9 @@ export default {
   watch: {
     comparison (current, previous) {
       if (current === 'relative') {
-        const relativescenarios = filter(this.scenarios, (s) => { return s !== 'Current Policies' })
-        this.newScenarios(relativescenarios)
-        this.changeScenario('2.0ºC')
+        this.changeScenario(this.currentScenario)
       } else if (previous === 'relative') {
-        const absolutescenarios = [...new Set(this.CostsData.map(r => r.scenario))]
-        this.newScenarios(absolutescenarios)
-        this.changeScenario('Current Policies')
+        this.changeScenario(this.currentScenario)
       }
     }
     // step (currentStep, previousStep) {
@@ -211,7 +207,7 @@ export default {
     // }
   },
   methods: {
-    ...mapMutations(['newScenarios', 'changeScenario']),
+    ...mapMutations(['changeScenario']),
     calcSizes () {
       const { inCosts: el } = this.$refs
       const innerHeight = el.clientHeight || el.parentNode.clientHeight
@@ -273,6 +269,20 @@ $transition-time: 0.5s;
       }
     }
 
+    g.bubbles.activesibiling {
+      line {
+        stroke: black;
+      }
+      circle {
+        stroke-opacity: 1;
+        fill-opacity: 0.8;
+      }
+      .labels {
+        transition: all $transition-time;
+        opacity: 1;
+      }
+    }
+
     g.bubbles {
       transition: all $transition-time;
       line {
@@ -281,7 +291,7 @@ $transition-time: 0.5s;
       }
       circle {
         transition: all $transition-time;
-        fill-opacity: 0.4;
+        fill-opacity: 0.3;
         stroke-opacity: 0;
       }
 

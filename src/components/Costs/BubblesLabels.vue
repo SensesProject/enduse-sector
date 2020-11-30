@@ -1,13 +1,13 @@
 <template>
   <g class="labels">
-    <line :x2="xPos" :x1="xScale(2020)" :y1="yPos" :y2="yPos"/>
-    <text :x="xPos - radius" :y="yPos - radius - 20" class="ej shadow">{{labels[0]}} Bn/$
-      <tspan :x="xPos - radius" :y="yPos - radius - 5">{{labels[1]}} Ej/y</tspan>
+    <line :x2="xPos" :x1="xScale(2020)" :y1="yPos" :y2="yPos" class="year"/>
+    <text :x="xPos - radius" :y="yPos - radius - 35" class="ej shadow">{{labels[0]}} Bn/$
+      <tspan :x="xPos - radius" :y="yPos - radius - 5" class="shadow">{{labels[1]}} Ej/y</tspan>
     </text>
-    <text :x="xPos - radius" :y="yPos - radius - 20" class="ej">{{labels[0]}} Bn/$
-      <tspan :x="xPos - radius" :y="yPos - radius - 5">{{labels[1]}} Ej/y</tspan>
+    <text :x="xPos - radius" :y="yPos - radius - 35" class="ej">{{labels[0]}} Bn/$
+      <tspan :x="xPos - radius" :y="yPos - radius - 20">{{labels[1]}} Ej/y</tspan>
     </text>
-    <text :x="xPos -15" :y="scale(0) + 20" class="year">{{labels[2]}}</text>
+    <text :x="xPos -15" :y="scale(0) + 15" class="year">{{labels[2]}}</text>
   </g>
 </template>
 
@@ -42,9 +42,19 @@ export default {
 <style scoped lang="scss">
 @import "library/src/style/variables.scss";
 
+text.year {
+  font-size: 12px;
+  fill: gray;
+}
+
 text.shadow {
+
+  tspan {
+    stroke: white;
+    stroke-width: 8px;
+  }
   stroke: white;
-  stroke-width: 10px;
+  stroke-width: 8px;
 }
 
 line {
