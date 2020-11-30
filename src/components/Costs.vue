@@ -147,8 +147,8 @@ export default {
                 const costValue = comparison === 'relative' ? el.directEmissionCosts_diff : el.directEmissionsCosts
                 return {
                   yearLabel: el.year,
-                  ejLabel: Math.round(el.value * 10) / 10,
-                  ejLabelDiff: Math.round(el.value_diff * 10) / 10,
+                  ejLabel: Math.round(el.value * 277.78), // conversion from EJ to TWh
+                  ejLabelDiff: Math.round(el.value_diff * 277.78), // conversion from EJ to TWh
                   costLabel: Math.round(el.directEmissionsCosts / 1000000000),
                   costLabelDiff: Math.round(el.directEmissionCosts_diff / 1000000000),
                   klass: scenarioKlass,
@@ -168,8 +168,8 @@ export default {
                 const costValue = comparison === 'relative' ? el.indEmissionCosts_diff : el.indEmissionsCosts
                 return {
                   yearLabel: el.year,
-                  ejLabel: Math.round(el.value * 10) / 10,
-                  ejLabelDiff: Math.round(el.value_diff * 10) / 10,
+                  ejLabel: Math.round(el.value * 277.78),
+                  ejLabelDiff: Math.round(el.value_diff * 277.78),
                   costLabel: Math.round(el.indEmissionsCosts / 1000000000),
                   costLabelDiff: Math.round(el.indEmissionCosts_diff / 1000000000),
                   klass: scenarioKlass,
