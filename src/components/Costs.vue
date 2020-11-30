@@ -249,6 +249,7 @@ $transition-time: 0.5s;
     g.Industry {
       text.title {
         fill: rgb(179,119,0);
+        font-weight: 600;
       }
       circle {
         fill: rgb(255,187,51);
@@ -259,6 +260,7 @@ $transition-time: 0.5s;
     g.Transportation  {
       text.title {
         fill: rgb(140,25,255);
+        font-weight: 600;
       }
       circle {
         fill: rgb(196,77,255);
@@ -268,11 +270,12 @@ $transition-time: 0.5s;
 
     g.ResidentialCommercial {
       text.title {
-        fill: rgb(25,64,255);
+        fill: getColor(blue, 40);
+        font-weight: 600;
       }
       circle {
-        fill: rgb(102,127,255);
-        stroke: rgb(25,64,255);
+        fill: getColor(blue, 60);
+        stroke: getColor(blue, 40);
       }
     }
 
@@ -284,7 +287,7 @@ $transition-time: 0.5s;
       }
       circle {
         transition: all $transition-time;
-        fill-opacity: 0.4;
+        fill-opacity: 0.6;
         stroke-opacity: 0;
       }
 
