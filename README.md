@@ -10,7 +10,7 @@ The source code is licensed under the [ISC license](LICENSE.md). Text and graphi
 
 Data sources and if applicable licenses are listed below:
 
-- [CD-LINKS Scenario and Data hosted by IIASA]( https://data.ene.iiasa.ac.at/cd-links/); [Licence for the CD-LINKS scenario ensemble data](https://data.ene.iiasa.ac.at/cd-links/#/license)
+- `*/EndEnergyAndCosts.csv``*/FinalEnergy.csv` `*/Investments.csv` `*/Revenue.csv`[CD-LINKS Scenario and Data hosted by IIASA]( https://data.ene.iiasa.ac.at/cd-links/); [Licence for the CD-LINKS scenario ensemble data](https://data.ene.iiasa.ac.at/cd-links/#/license)
 
 ## Development
 
