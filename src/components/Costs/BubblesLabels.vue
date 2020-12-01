@@ -1,10 +1,10 @@
 <template>
   <g class="labels">
     <line :x2="xPos" :x1="xScale(2020)" :y1="yPos" :y2="yPos" class="year"/>
-    <text :x="xPos - radius" :y="yPos - radius - 35" class="ej shadow">{{labels[0]}} Bn/$
-      <tspan :x="xPos - radius" :y="yPos - radius - 5" class="shadow">{{labels[1]}} Ej/y</tspan>
+    <text :x="xPos - radius" :y="yPos - radius - 35" class="ej shadow">{{labels[0]}} Bn$/yr
+      <tspan :x="xPos - radius" :y="yPos - radius - 20" class="shadow">{{labels[1]}} Ej/y</tspan>
     </text>
-    <text :x="xPos - radius" :y="yPos - radius - 35" class="ej">{{labels[0]}} Bn/$
+    <text :x="xPos - radius" :y="yPos - radius - 35" class="ej">{{labels[0]}} Bn$/yr
       <tspan :x="xPos - radius" :y="yPos - radius - 20">{{labels[1]}} Ej/y</tspan>
     </text>
     <text :x="xPos -15" :y="scale(0) + 15" class="year">{{labels[2]}}</text>
@@ -51,10 +51,10 @@ text.shadow {
 
   tspan {
     stroke: white;
-    stroke-width: 8px;
+    stroke-width: 2px;
   }
-  stroke: white;
-  stroke-width: 8px;
+   stroke: white;
+   stroke-width: 2px;
 }
 
 line {

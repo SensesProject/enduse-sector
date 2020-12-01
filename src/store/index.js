@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import Costs from 'dsv-loader!@/assets/data/EndEnergyAndCosts.csv' // eslint-disable-line import/no-webpack-loader-syntax
 import { map, uniq } from 'lodash'
-import { ascending } from 'd3-array'
+import { descending } from 'd3-array'
 
 Vue.use(Vuex)
 
@@ -25,7 +25,7 @@ const CostsData = map(Costs, (d, i) => {
     value_baseline: +d['Value baseline']
   }
 }).sort(function (x, y) {
-  return ascending(x.sector, y.sector)
+  return descending(x.sector, y.sector)
 })
 
 const years = uniq(map(CostsData, (y, i) => { return y.year }))

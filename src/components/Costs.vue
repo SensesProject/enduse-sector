@@ -23,6 +23,8 @@
                   <circle v-if="comparison == 'relative'"  class= "difference-bubbles" :key="`${b}-compar`" :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.baseRadius"/>
                   <circle :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.radius" :class="{blend: comparison === 'relative'}"/>
                 </g>
+              </g>
+              <g class="bubbles" v-for="(bubble, b) in chart.data" :key="b + 'labels'" @mouseenter="[(active = false), (current = b)]" @mouseleave="active = true" :class="{activesibiling: active === false && current === b}">
                 <g class="labels">
                   <BubblesLabels v-if="comparison == 'absolute'" :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabel, bubble.ejLabel, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
                   <BubblesLabels v-else :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabelDiff, bubble.ejLabelDiff, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
@@ -192,28 +194,17 @@ export default {
       } else if (previous === 'relative') {
         this.changeScenario(this.currentScenario)
       }
+    },
+    step (currentStep, previousStep) {
+      if (currentStep <= 1) {
+        this.changeComparison('absolute')
+      } else {
+        this.changeComparison('relative')
+      }
     }
-    // step (currentStep, previousStep) {
-    //   if (currentStep === 0) {
-    //     this.currentScenario = 'NPi_v3'
-    //     this.comparison = 'absolute'
-    //   } else if (currentStep === 1) {
-    //     this.currentScenario = 'NPi2020_1000_v3'
-    //     this.comparison = 'absolute'
-    //   } else if (currentStep === 2) {
-    //     this.comparison = 'absolute'
-    //     this.currentScenario = 'NPi2020_400_v3'
-    //   } else if (currentStep === 3) {
-    //     this.currentScenario = 'NPi2020_1000_v3'
-    //     this.comparison = 'relative'
-    //   } else if (currentStep === 4) {
-    //     this.currentScenario = 'NPi_v3'
-    //     this.comparison = 'absolute'
-    //   }
-    // }
   },
   methods: {
-    ...mapMutations(['changeScenario']),
+    ...mapMutations(['changeScenario', 'changeComparison']),
     calcSizes () {
       const { inCosts: el } = this.$refs
       const innerHeight = el.clientHeight || el.parentNode.clientHeight
@@ -253,7 +244,7 @@ $transition-time: 0.5s;
       }
     }
 
-    g.Transportation  {
+    g.Transport {
       text.title {
         fill: rgb(140,25,255);
         font-weight: 600;
@@ -264,7 +255,7 @@ $transition-time: 0.5s;
       }
     }
 
-    g.ResidentialCommercial {
+    g.Buildings {
       text.title {
         fill: getColor(blue, 40);
         font-weight: 600;

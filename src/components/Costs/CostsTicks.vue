@@ -1,6 +1,6 @@
 <template>
   <g>
-    <text transform="rotate(90, 60, 170)">Costs in Bn/$</text>
+    <text transform="rotate(90, 60, 170)">Costs in Bn$/yr</text>
     <g v-for="(tick, t) in data" :key="t">
       <line :x1="xScale(2020)" :x2="xScale(2100)" :y1="scale(tick)" :y2="scale(tick)" stroke="black"/>
       <text x="0" :y="scale(tick)">{{tick / 1000000000}}</text>

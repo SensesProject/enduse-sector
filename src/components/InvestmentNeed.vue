@@ -67,9 +67,9 @@ export default {
       showDifference: false,
       selectedRegion: 'World',
       variables: [
-        'Industry',
+        'Transport',
         'Residential and commercial',
-        'Transport'
+        'Industry'
       ],
       regions: [
         'World',
@@ -174,9 +174,6 @@ export default {
   }
   .regionSelector {
     font-size: 0.8em;
-  }
-  .scenario {
-    align: right;
   }
 }
 

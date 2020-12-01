@@ -23,7 +23,7 @@
         <circle v-for="(dot, d) in group" v-bind:key="d + 'dot'" @mouseover="[active = true, over = d + labels[g]]" @mouseleave="active = false" :class="labelsColors[g]" :cx="dot.year" cy="5" :r="dot.value"/>
         <!-- labels for energy carrier g-->
       <!-- labels for energy carrier -->
-        <text class="carrier-labels" :x="scale.x(2009)" y="50">{{ labels[g] }}</text>
+        <text class="carrier-labels" :x="scale.x(2009)" y="40">{{ labels[g] }}</text>
       </g>
       <g v-for="(group, g) in world" v-bind:key="g + 'wgroup'" :class="`${labels[g]}-wgroup`" :transform="`translate(${horizontalPosition[g]}, ${groupPosition[g]})`">
           <!--draws hotizontal axis line through dots and small circles at the beginning and end of axis -->
@@ -82,9 +82,9 @@ export default {
       energy: _.groupBy(FinalEnergy, d => d.EnergySource),
       model: [...new Set(FinalEnergy.map(r => r.Model))],
       years: [...new Set(FinalEnergy.map(r => r.Year))],
-      labels: ['Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids'],
-      labelsColors: ['HydrogenIndus', 'GasesIndus', 'ElectricityIndus', 'LiquidsIndus', 'HeatIndus', 'SolidsIndus', 'HydrogenRyc', 'GasesRyc', 'ElectricityRyc', 'LiquidsRyc', 'HeaRyct', 'SolidsRyc', 'HydrogenTrans', 'GasesTrans', 'ElectricityTrans', 'LiquidsTrans'],
-      enduse: [...new Set(FinalEnergy.map(r => r.Enduse))],
+      labels: ['Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids'],
+      labelsColors: ['HydrogenTrans', 'GasesTrans', 'ElectricityTrans', 'LiquidsTrans', 'HydrogenRyc', 'GasesRyc', 'ElectricityRyc', 'LiquidsRyc', 'HeaRyct', 'SolidsRyc', 'HydrogenIndus', 'GasesIndus', 'ElectricityIndus', 'LiquidsIndus', 'HeatIndus', 'SolidsIndus'],
+      enduse: ['Transport', 'Buildings', 'Industry'],
       regions: [...new Set(FinalEnergy.map(r => r.Region))],
       allValues: [...new Set(FinalEnergy.map(r => r.Value))],
       scenarios: ['1.5ºC', '2.0ºC', 'Current Policies'],
@@ -154,14 +154,14 @@ export default {
       let posThree = -35
       const positions = []
       _.map(this.regionFilter, (energy, e, l) => {
-        if (e <= 5) {
-          pos = pos + this.innerHeight / 6
+        if (e <= 3) {
+          pos = pos + this.innerHeight / 6.1
           positions.push(pos)
-        } else if (e >= 12) {
-          posThree = posThree + this.innerHeight / 6
+        } else if (e >= 10) {
+          posThree = posThree + this.innerHeight / 6.1
           positions.push(posThree)
         } else {
-          posTwo = posTwo + this.innerHeight / 6
+          posTwo = posTwo + this.innerHeight / 6.1
           positions.push(posTwo)
         }
       })
@@ -170,7 +170,7 @@ export default {
     horizontalPosition () {
       let pos = 0
       return _.map(this.regionFilter, (energy, e, l) => {
-        if (e <= 5) { pos = 0 } else if (e >= 12) { pos = (this.innerWidth / 3) * 2 } else { pos = (this.innerWidth / 3) }
+        if (e <= 3) { pos = 0 } else if (e >= 10) { pos = (this.innerWidth / 3) * 2 } else { pos = (this.innerWidth / 3) }
 
         return pos
       })
@@ -216,7 +216,7 @@ $margin-space: $spacing / 2;
 
 .final-energy {
   // height: 170vh;
-  height: 80%;
+  height: 70%;
   .key {
     z-index: 9;
     width: 100%;
@@ -322,11 +322,11 @@ $margin-space: $spacing / 2;
         //fill: getColor(yellow, 60);
         font-weight: 600;
       }
-      .Transportation-labels {
+      .Transport-labels {
         //fill: $color-violet;
         font-weight: 600;
       }
-      .Residential.and.Commercial-labels {
+      .Buildings-labels {
         //fill: $color-blue;
         font-weight: 600;
       }
