@@ -17,16 +17,16 @@
             <text x="-30" :y="innerHeight / 2 + 30" class="title">{{charts.klass}}</text>
             <g v-for="(chart,c) in charts.groups" :key="c" class="comparison-container" :transform="`translate(0, ${chart.verticalPosition})`">
               <CostsTicks :data="chart.yTicks" :scale="chart.scale" :xScale="scales.x" :active="active"/>
-              <g class="bubbles" v-for="(bubble, b) in chart.data" :key="b" @mouseenter="[(active = false), (current = b)]" @mouseleave="active = true" :class="{activesibiling: active === false && current === b}">
-                <g class="bubbles-elements">
-                  <line :x1="bubble.xPos" :x2="bubble.xPos" :y1="chart.scale(0)" :y2="bubble.yPos"/>
+              <g class="bubbles" v-for="(bubble, b) in chart.data" :key="b">
+                <g class="bubbles-elements" @mouseenter="[(active = false), (current = b)]" @mouseleave="active = true">
+                  <line :x1="bubble.xPos" :x2="bubble.xPos" :y1="chart.scale(0)" :y2="bubble.yPos" stroke="gray"/>
                   <circle v-if="comparison == 'relative'"  class= "difference-bubbles" :key="`${b}-compar`" :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.baseRadius"/>
                   <circle :cx="bubble.xPos" :cy="bubble.yPos" :r="bubble.radius" :class="{blend: comparison === 'relative'}"/>
                 </g>
-                <g class="labels">
-                  <BubblesLabels v-if="comparison == 'absolute'" :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabel, bubble.ejLabel, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
-                  <BubblesLabels v-else :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabelDiff, bubble.ejLabelDiff, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
-                </g>
+              </g>
+              <g class="labels" v-for="(bubble, b) in chart.data" :key="`${b}-labels`" :class="{activesibiling: active === false && current === b}">
+                <BubblesLabels v-if="comparison == 'absolute'" :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabel, bubble.ejLabel, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
+                <BubblesLabels v-else :xPos="bubble.xPos" :yPos="bubble.yPos" :radius="bubble.radius" :labels="[bubble.costLabelDiff, bubble.ejLabelDiff, bubble.yearLabel]" :xScale="scales.x" :scale="chart.scale"/>
               </g>
             </g>
           </g>
@@ -283,6 +283,20 @@ $transition-time: 0.5s;
         stroke-opacity: 1;
         fill-opacity: 0.8;
       }
+    }
+
+    g.labels {
+      pointer-events: none;
+      .labels {
+        opacity: 0;
+
+        .year {
+          text-anchor: center;
+        }
+      }
+    }
+
+    g.activesibiling {
       .labels {
         transition: all $transition-time;
         opacity: 1;
@@ -311,24 +325,15 @@ $transition-time: 0.5s;
         stroke-opacity: 1;
         stroke-dasharray: 2 2;
       }
-
-      .labels {
-        opacity: 0;
-
-        .year {
-          text-anchor: center;
-        }
-      }
     }
+
     g.inactive {
       transition: all $transition-time;
       opacity: 0.2;
 
-    &.bubbles {
-        .labels {
+    &.labels {
             transition: all $transition-time;
             opacity: 1;
-          }
       }
     }
 
@@ -340,11 +345,12 @@ $transition-time: 0.5s;
         stroke-opacity: 1;
         fill-opacity: 1;
       }
-      .labels {
-        transition: all $transition-time;
-        opacity: 1;
-      }
     }
+
+    // g.labels {
+    //   transition: all $transition-time;
+    //   opacity: 1;
+    // }
 
     g.difference-bubbles {
       transition: all $transition-time;
