@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <SensesMenu :id="'power-sector'"/>
+    <SensesMenu :id="'end-use'" :minWidth="900"/>
     <div class="content" :class="mobile ? 'isMobile' : 'isDesktop'" ref="container">
       <div class="title-wrapper">
-        <h1 class="module-title">Transition risks <br>Enduse Sector Transformation</h1>
+        <h1 class="module-title">Transition risks <br>End-use Sector Transformation</h1>
         <div class="text-wrapper">
         <p class="intro-paragraph" >This is the third chapter of the Transition Risks modules. You can select another chapter below.
           The Transition Risks modules are based on the Risk Factor Pathways as created by the UNEP
@@ -18,18 +18,30 @@
         <h3 class="chapter-title" id="introduction">
           What risks will be discussed?
         </h3>
-        <p class="two-column-paragraph">The Enduse sector goes through a transition from Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-          no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
+        <p class="two-column-paragraph">The end-use sector goes through a transition from carbon-emitting fuels towards cleaner
+          fuels that don’t emit CO2. These cleaner fuels are for example electricity, hydrogen or biofuels. This transition is
+          primarily driven by climate policies, posing several transition risks to investors in the industry, transport and
+          residential and commercial (or buildings) sectors. The consumption of energy is associated with both direct and
+          indirect emissions of energy. Direct emissions occur when energy consumers burn fossil fuels themselves, whereas
+          indirect emissions occur when they consume carbon-free energy carriers (like electricity) that have been produced
+          from fossil fuels. Once climate policies are introduced, both these direct emission costs and the indirect changes
+          in fuel costs create a risk for companies in these sectors by changing their cost structures. When these new costs
+          are trickling through towards the prices of the product or services that these sectors provide, customers can respond
+          by consuming more or less of these services. Depending on this customer response, the revenue for the sector can increase
+          or decrease during the transition. Finally, the transition to a low-carbon system requires investments in efficiency
+          in these end-use sectors as well, increasing  the capital requirements for these end-use sectors.
           </p>
       </div>
       <div class="text-wrapper">
-        <h2 class="chapter-title-transition">
+        <h2 class="chapter-title">
           Physical Transition
         </h2>
+        <p class="two-column-paragraph">We first look into the physical changes occuring in the three end-use sectors.
+          Under a 1.5 degree scenario, we see a strong increase in electricity across all three sectors, followed by an
+          increase of hydrogen later in the century. The use of liquids and gases, which are mostly based on fossil fuels,
+          is reduced. The speed of this transition is determined by the uptake and diffusion of new technologies. On top of
+          these changes in fuel use, increased efficiency also reduces the demand for energy.
+        </p>
       </div>
       <LayoutScrollytelling>
         <template v-slot:vis="{ width, height, step }">
@@ -38,18 +50,17 @@
           </div>
         </template>
         <div slot="text" class="observer">
-          <IntersectionObserver :step="0"  align="right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
+          <IntersectionObserver :step="0"  align="left">
+            <p>The industry sector sees the strongest increase in hydrogen use and a large growth in electricity demand.
             </p>
           </IntersectionObserver>
-          <IntersectionObserver :step="1"  align="right" class="changeheight">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
+          <IntersectionObserver :step="1"  align="left">
+            <p>The buildings sector shows a strong electrification as well, combined with reduction of gases and liquids.
+            </p>
+          </IntersectionObserver>
+          <IntersectionObserver :step="2"  align="left" class="changeheight">
+            <p>In the transport sector, liquids keep playing a larger role, even though a lot of transport energy demand
+              is electrified. These liquids can however be based on biofuels, rather than fossil oil.
             </p>
           </IntersectionObserver>
         </div>
@@ -58,13 +69,15 @@
         <h2 class="chapter-title" id="costs">
           Costs risks
         </h2>
-        <p class="two-column-paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.</p>
+        <p class="two-column-paragraph">The end use sectors face two types of cost risks. First, change in direct emission costs,
+          as the introduction of carbon pricing for end-users of fossil fuels leads to a cost increase associated with the use of
+          fossil fuels. A present day example of this risk is the European Emission Trading System (ETS) which requires industry
+          and airlines to obtain emission rights.
+          The second cost risk is about indirect changes in fuels costs. These can either be driven by emission costs that are
+          incurred upstream (for instance if electricity is produced from fossil fuels) or by changes in the fuel markets in
+          response to climate policies. An example of the latter dynamic would be the reduction of oil prices in response to
+          lower demand under climate policy scenarios.
+        </p>
       </div>
      <LayoutScrollytelling>
               <template v-slot:vis="{ width, height, step }">
@@ -73,35 +86,21 @@
                 </div>
               </template>
               <div slot="text" class="observer">
-              <IntersectionObserver :step="0"  align="right">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                  ex ea commodo consequat.
+              <IntersectionObserver :step="0"  align="left">
+                <p>The absolute levels of direct emission costs differ between sectors, depending on the use of fossil fuels
+                  and the ease of substituting these fuels for low-carbon options.
                 </p>
               </IntersectionObserver>
-              <IntersectionObserver :step="1"  align="right">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                  ex ea commodo consequat.
+              <IntersectionObserver :step="1"  align="left">
+                <p>Fuel costs changes over time in all scenarios, with and without climate policy due to changes in the upstream
+                  sector and an increased energy demand. Therefore these costs are best viewed relative to a current policies scenario.
                 </p>
               </IntersectionObserver>
-              <IntersectionObserver :step="2"  align="right">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                  ex ea commodo consequat.
+              <IntersectionObserver :step="2"  align="left" class="changeheight">
+                <p>The change in total fuel costs, without accounting for direct emission costs, is largest in the industry and building
+                  sectors. In the transport sector, the switch to electricity and the associated efficiency increases can sometimes
+                  even lead to a gain in fuel costs.
                 </p>
-              </IntersectionObserver>
-              <IntersectionObserver :step="3"  align="right" >
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                  ex ea commodo consequat...</p>
-              </IntersectionObserver>
-              <IntersectionObserver no-styling :step="4"  align="right" class="changeheight">
-                <p></p>
               </IntersectionObserver>
             </div>
           </LayoutScrollytelling>
@@ -109,13 +108,12 @@
         <h2 class="chapter-title" id="costs">
           Revenue changes
         </h2>
-        <p class="two-column-paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.</p>
+        <p class="two-column-paragraph">If the energy expenditures of the end-use sectors increase, the costs of goods and services
+          that these sectors produce will increase as well. Consumers can respond to these cost changes in different ways, by
+          consuming more or less of the goods and services. The changes in demand depend on so-called elasticities, which economists
+          have derived historically for many different goods and services. These elasticities can vary widely across specific goods
+          and services. In general, transport demand has been relatively inelastic, whereas demand for industrial goods has been elastic.
+        </p>
       </div>
       <LayoutScrollytelling>
         <template v-slot:vis="{ width, height, step }">
@@ -125,14 +123,20 @@
         </template>
         <div slot="text" class="observer">
         <IntersectionObserver :step="0"  align="right">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+          <p>If the consumer response is unit elastic, the increase in costs of the end-use sectors is compensated equally with an
+            increase in revenues and the revenue-risk would be zero.
           </p>
+        </IntersectionObserver>
+        <IntersectionObserver :step="1"  align="right">
+          <p>If consumers respond relatively inelastic, they keep consuming the goods and services even at a higher price.
+            Hence, the increase in costs for the end-use sectors is more than compensated by a higher revenue.
+          </p>
+        </IntersectionObserver>
+        <IntersectionObserver :step="2"  align="right">
+          <p>However, if consumers respond relatively elastic, the increase in prices leads to a drop in the consumption of
+            goods and services. In this case, the end-use sector not only risk an increase in their costs, but also a decrease
+            in their revenues.
+            </p>
         </IntersectionObserver>
       </div>
       </LayoutScrollytelling>
@@ -140,13 +144,13 @@
         <h2 class="chapter-title" id="structure">
           Investment need
         </h2>
-        <p class="two-column-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.</p>
+        <p class="two-column-paragraph">The increase in the costs of energy also stimulates a shift towards higher efficiency
+          in the end-use sectors. This higher efficiency can be reached by switching to more efficient fuels, such as electric
+          transport or by using energy more efficiently, such as home insulation. The former of these two options is not included
+          in the numbers below, which only look into additional energy efficiency measures.  As increasing energy efficiency
+          requires investments in more efficient equipment or insulation,these investments are adding to the cost profile of
+          the Industry, Transport and Building sectors.
+        </p>
       </div>
       <LayoutScrollytelling>
         <template v-slot:vis="{ width, height, step }">
@@ -156,17 +160,9 @@
         </template>
         <div slot="text" class="observer">
           <IntersectionObserver :step="0"  align="right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
-            </p>
-          </IntersectionObserver>
-          <IntersectionObserver :step="1"  align="right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
+            <p>Under a current policy scenario, we are globally investing a total of 250 Bn$ per year in energy efficiency measures,
+              which increases to 300 or 333 Bn$ per year in the 2 degrees and 1.5 degrees scenarios. The largest shares of these
+              investments go towards the buildings and transport sectors.
             </p>
           </IntersectionObserver>
         </div>
@@ -175,15 +171,15 @@
         <h2 class="chapter-title" id="conclusion">
           Assessing risks with the help of climate scenarios
         </h2>
-        <p class="two-column-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.</p>
+        <p class="two-column-paragraph">Climate scenarios can help assessing transition risks in the end-use sectors.
+          We have seen that the industry, transport and buildings sector are exposed to different types of risk during the
+          transition to a low-carbon future. They may see an increase of costs due to pricing of carbon emissions and changes
+          in the costs of the fuels that they use. They also need increased investments in more energy efficient equipment and
+          buildings. As the costs for these sectors increase, the response of the consumer to price changes in the goods and services
+          that they produce is uncertain and poses a revenue risk.
+        </p>
       </div>
-      <SensesMeta :id="'power-sector'"/>
+      <SensesMeta :id="'end-use'"/>
     </div>
   </div>
 </template>
@@ -315,11 +311,15 @@ export default {
         padding-top: 30px;
       }
     }
-    .intersection-observer .default {
+    .intersection-observer .default.left{
       -webkit-box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
       -moz-box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
       box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
       width: 33%;
+    }
+    .intersection-observer .default.right{
+      width: 33%;
+      padding-top: 20vh;
     }
 
     .vis-wrapper {

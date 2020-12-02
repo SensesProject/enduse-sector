@@ -6,7 +6,7 @@
       <div>
         <label class="label"><input class = "checkbox" type="checkbox" v-model="isStacked">not stacked</label>
         <label class="label"><input class = "checkbox" type="checkbox" v-model="showDifference">difference highlighted</label>
-        <SensesSelect class="regionSelector" v-model="selectedRegion" :options="regions" />
+        <!-- <SensesSelect class="regionSelector" v-model="selectedRegion" :options="regions" /> -->
       </div>
     </header>
     <div v-for="key in scenarios" :key="key" class="scenario">
@@ -26,15 +26,15 @@
 
 <script>
 import { groupBy, filter, map, forEach, get } from 'lodash'
-import SensesSelect from 'library/src/components/SensesSelect'
+// import SensesSelect from 'library/src/components/SensesSelect'
 import datum from 'dsv-loader!@/assets/data/Investments.csv' // eslint-disable-line import/no-webpack-loader-syntax
 import Chart from './InvestmentNeeds/Chart'
 
 export default {
   name: 'InvestmentNeed',
   components: {
-    Chart,
-    SensesSelect
+    Chart
+  // SensesSelect
   },
   props: {
     width: {
@@ -67,9 +67,9 @@ export default {
       showDifference: false,
       selectedRegion: 'World',
       variables: [
-        'Industry',
+        'Transport',
         'Residential and commercial',
-        'Transport'
+        'Industry'
       ],
       regions: [
         'World',
@@ -174,9 +174,6 @@ export default {
   }
   .regionSelector {
     font-size: 0.8em;
-  }
-  .scenario {
-    align: right;
   }
 }
 

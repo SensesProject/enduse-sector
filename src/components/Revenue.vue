@@ -2,8 +2,9 @@
   <div class="secondary-energy" ref="inWrapper">
     <div></div>
     <div class="key" :class=" mobile ? 'mobile' : 'desktop'">
-      <h3 >Changes in revenue</h3>
-      <a>(Model: REMIND-MAgPIE)</a>
+      <h3 >Changes in revenue
+      <span class="model-label">(Model: REMIND-MAgPIE)</span>
+      </h3>
     </div>
     <div class="key" :class=" mobile ? 'mobile' : 'desktop'">
       <span class="SliderLabel">Elasticity</span>
@@ -121,7 +122,7 @@ export default {
       regions: [...new Set(revenueData.map(r => r.Region))],
       revenueValues: [...new Set(revenueData.map(r => r.oneValue || r.twoValue))],
       currentRegion: 'World',
-      currentElasticity: '0',
+      currentElasticity: '2',
       activeBar: false,
       over: '',
       margin: {
@@ -205,6 +206,17 @@ export default {
       return tickVal
     }
   },
+  watch: {
+    step (currentStep, previousStep) {
+      if (currentStep === 0) {
+        this.currentElasticity = '2'
+      } else if (currentStep === 1) {
+        this.currentElasticity = '1'
+      } else {
+        this.currentElasticity = '3'
+      }
+    }
+  },
   methods: {
     calcSizes () {
       const { inWrapper: el } = this.$refs
@@ -220,13 +232,7 @@ export default {
     }
   },
   mounted () {
-    console.log('sector', this.sector)
-    console.log('revenueData', this.revenueData)
-    console.log('elasticityFilter', this.elasticityFilter)
     this.calcSizes()
-    console.log('revDots', this.dots)
-    console.log('innerHeight', this.innerHeight)
-    console.log('scale0', this.scale.y(0))
     window.addEventListener('resize', this.calcSizes, false)
   },
   updated () {
@@ -424,16 +430,14 @@ $margin-space: $spacing / 2;
     display: inline-block;
     margin-left: $margin-space/2;
     font-size: 0.8em;
+    .model-label    {
+      color: getColor(neon, 40);
+      font-weight: normal;
+      display: inline;
+      margin-left: $margin-space/2;
+    }
   }
-  a{
-    margin-top: 5px;
-    margin-left: 5px;
-    fill: getColor(neon, 40);
-    font-weight: normal;
-    text-decoration: none;
-    background: none;
-    font-size: 0.8em;
-  }
+
   svg {
     width: 65%;
     height: 86%;

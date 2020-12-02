@@ -57,7 +57,7 @@ function getColorFromVariable (variable) {
 const names = {
   Industry: 'Industry',
   Transport: 'Transport',
-  'Residential and commercial': 'Residential and commercial'
+  'Residential and commercial': 'Buildings'
 }
 
 function getNameFromVariable (variable) {
