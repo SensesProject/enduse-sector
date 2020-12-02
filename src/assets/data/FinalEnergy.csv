@@ -1,388 +1,388 @@
 Model,Scenario,Region,Unit,Year,Value,Enduse,EnergySource
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0.3936,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,32.4348,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,27.3012,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,40.3962,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,6.2783,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,34.5371,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0.8814,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,97.8818,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0.0005,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,27.1562,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,34.6223,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,13.3544,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,6.5086,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,34.6228,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0.8814,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,97.8818,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,11.9939,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,7.4677,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,2.1688,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,0.1297,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,13.0096,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,21.9569,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,0.3936,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,32.4348,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,27.3012,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,40.3962,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,6.2783,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2010,34.5371,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,0.1737,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,21.118,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,6.8206,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,2.8728,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,1.1326,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,0.0001,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,3.8198,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,18.9156,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,0.1737,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,21.118,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,1.5053,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,5.1615,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0.2212,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0.0432,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,4.3295,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,1.4631,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,11.9939,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,7.4677,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,2.1688,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,0.1297,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,13.0096,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2010,21.9569,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0.0402,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0.0011,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,10.2525,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,2.8345,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,2.7044,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0.2632,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,1.9015,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,10.571,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0.0402,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0.0011,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,10.2525,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,1.9392,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,3.1041,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0.0007,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0.0262,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,2.9156,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,2.8191,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,1.5053,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,5.1615,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0.2212,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,0.0432,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,4.3295,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2010,1.4631,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0.016,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,8.8164,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,1.9204,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0.6646,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0.0003,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0.9529,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,1.5888,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0.016,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,8.8164,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,1.1612,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,2.6709,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,2.1999,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0.0182,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,1.8015,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0.2335,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,1.9392,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,3.1041,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0.0007,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,0.0262,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,2.9156,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2010,2.8191,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0.2137,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,2.511,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,1.0275,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,1.8169,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,2.7039,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0.2469,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0.2276,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0.2137,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,2.511,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,10.7015,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,14.0304,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,1.6877,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,0.1766,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,18.3399,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,8.0645,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,1.1612,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,2.6709,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,2.1999,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0.0182,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,1.8015,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2010,0.2335,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,0.4378,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,0.2741,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,55.184,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,22.0194,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,19.0973,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,2.4085,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,0.0002,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,6.4333,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,3.3199,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,0.4378,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,0.2741,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,55.184,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,39.219,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,43.6191,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,8.2593,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,0.4208,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,52.857,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,37.3375,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,10.7015,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,14.0304,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,1.6877,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,0.1766,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,18.3399,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2010,8.0645,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,1.6627,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,117.0321,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,51.0946,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,33.4642,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,7.3143,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,0.0005,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,14.7519,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,31.8985,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,1.6627,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,117.0321,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,21.3198,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,15.0754,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,3.5797,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,0.1665,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,21.4161,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,25.1423,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,39.219,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,43.6191,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,8.2593,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,0.4208,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,52.857,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2020,37.3375,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,0.5864,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,33.5058,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,15.9577,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,6.553,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,1.9045,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,0.0001,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,5.9283,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,12.9657,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,0.5864,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,33.5058,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,2.6268,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,6.6324,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0.2575,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0.0525,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,8.1323,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,2.8265,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,21.3198,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,15.0754,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,3.5797,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,0.1665,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,21.4161,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2020,25.1423,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0.144,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0.0009,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,16.5253,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,5.0019,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,3.8427,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0.2257,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,2.4589,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,13.6667,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0.144,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0.0009,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,16.5253,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,2.7142,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,4.0313,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0.0015,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0.0267,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,4.5443,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,3.0772,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,2.6268,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,6.6324,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0.2575,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,0.0525,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,8.1323,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2020,2.8265,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0.0251,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,12.1644,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,3.1155,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0.9713,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0.0225,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,1.2907,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,1.3347,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0.0251,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,12.1644,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,1.3901,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,3.1201,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,2.1437,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0.0175,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,2.0972,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0.2229,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,2.7142,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,4.0313,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0.0015,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,0.0267,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,4.5443,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2020,3.0772,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0.2705,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,3.1438,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,1.8033,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,2.0531,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,2.6461,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0.312,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0.1986,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0.2705,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,3.1438,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,11.1681,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,14.76,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,2.2769,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,0.1575,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,16.6671,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,6.0686,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,1.3901,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,3.1201,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,2.1437,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0.0175,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,2.0972,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2020,0.2229,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,0.6366,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,0.226,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,51.6929,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,25.2162,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,20.044,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,2.5157,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,0.0002,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,4.7622,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,3.7328,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,0.6366,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,0.226,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,51.6929,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,51.9451,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,48.1433,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,10.7175,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,0.7,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,64.2706,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,41.6142,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,11.1681,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,14.76,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,2.2769,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,0.1575,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,16.6671,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2020,6.0686,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,3.3826,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,0.0019,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,134.127,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,72.9944,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,36.4838,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,8.3781,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,0.0008,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,16.5075,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,31.5755,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,3.3826,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,0.0019,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,134.127,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,28.9163,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,19.0393,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,5.9145,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,0.3106,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,28.1297,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,27.2809,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,51.9451,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,48.1433,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,10.7175,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,0.7,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,64.2706,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2030,41.6142,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,1.5286,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,0.0006,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,43.8198,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,27.9691,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,9.6283,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,3.1342,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,0.0004,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,7.0755,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,10.6605,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,1.5286,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,0.0006,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,43.8198,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,4.5837,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,7.9245,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0.3407,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0.0838,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,10.8768,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,4.447,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,28.9163,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,19.0393,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,5.9145,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,0.3106,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,28.1297,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2030,27.2809,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0.2406,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0.0003,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,20.8836,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,8.0907,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,4.9228,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0.2452,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0.0001,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,3.0601,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,14.77,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0.2406,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0.0003,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,20.8836,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,3.6879,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,4.6831,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0.0043,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0.06,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,5.7674,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,3.6103,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,4.5837,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,7.9245,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0.3407,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,0.0838,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,10.8768,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2030,4.447,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0.0341,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,13.622,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,4.7254,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,1.3565,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0.0676,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0.0001,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,1.6011,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,1.4125,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0.0341,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,13.622,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,1.6064,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,2.8182,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,1.9217,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0.0257,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,2.1337,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0.2483,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,3.6879,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,4.6831,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0.0043,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,0.06,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,5.7674,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2030,3.6103,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0.341,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,3.2287,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,2.4183,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,1.8231,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,2.2898,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0.3278,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0.1793,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0.341,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,3.2287,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,13.1507,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,13.6782,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,2.5363,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,0.22,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,17.363,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,6.0278,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,1.6064,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,2.8182,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,1.9217,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0.0257,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,2.1337,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2030,0.2483,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,1.2383,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,0.0703,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,0.0013,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,52.5728,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,29.7908,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,18.7531,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,2.6412,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,0.0002,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,4.4431,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,4.5532,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,1.2383,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,0.0703,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,0.0013,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,52.5728,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,65.6094,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,58.849,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,11.7036,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,3.0438,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,72.1461,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,48.0708,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,13.1507,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,13.6782,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,2.5363,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,0.22,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,17.363,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2030,6.0278,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,6.7065,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,0.0099,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,151.0477,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,98.6369,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,45.4055,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,8.7303,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,0.009,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,17.7612,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,29.1283,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,6.7065,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,0.0099,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,151.0477,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,36.9112,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,25.6947,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,6.9472,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,1.3478,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,32.6727,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,30.9168,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,65.6094,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,58.849,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,11.7036,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,3.0438,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,72.1461,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2040,48.0708,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,3.5863,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,0.0032,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,52.4912,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,42.721,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,15.0969,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,3.8452,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,0.0039,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,7.3469,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,9.4202,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,3.5863,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,0.0032,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,52.4912,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,7.3624,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,10.7565,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0.4627,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0.406,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,12.0091,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,6.3296,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,36.9112,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,25.6947,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,6.9472,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,1.3478,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,32.6727,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Asia (No Japan),EJ/yr,2040,30.9168,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0.3313,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0.0023,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,25.937,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,12.3639,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,6.579,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0.228,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0.0012,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,3.5654,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,14.045,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0.3313,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0.0023,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,25.937,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,4.9053,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,6.0651,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0.0078,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0.2403,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,6.65,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,3.8135,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,7.3624,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,10.7565,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0.4627,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,0.406,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,12.0091,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Middle East + Africa,EJ/yr,2040,6.3296,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0.0394,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,15.6468,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,6.6522,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,2.1354,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0.121,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0.0007,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,1.7374,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,1.324,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0.0394,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,15.6468,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,1.799,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,2.5959,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,1.6646,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0.0998,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,2.3436,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0.3084,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,4.9053,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,6.0651,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0.0078,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,0.2403,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,6.65,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Latin America,EJ/yr,2040,3.8135,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0.3677,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,3.482,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,3.0112,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,1.7976,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,1.9687,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0.0003,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0.4019,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0.2329,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0.3677,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,3.482,Transportation,LiquidsTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,14.6315,Industry,ElectricityIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,13.7369,Industry,GasesIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,2.6213,Industry,HeatIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,0.9499,Industry,HydrogenIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,18.4708,Industry,LiquidsIndus
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,6.7024,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,1.799,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,2.5959,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,1.6646,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0.0998,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,2.3436,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,Central Asia,EJ/yr,2040,0.3084,Industry,SolidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,2.3818,Transportation,ElectricityTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,0,Transportation,GasesTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,0.0067,Transportation,HydrogenTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,53.4906,Transportation,LiquidsTrans
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,33.8885,Residential and Commercial,Electricity
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,19.7966,Residential and Commercial,Gases
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,2.5674,Residential and Commercial,Heat
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,0.0029,Residential and Commercial,Hydrogen
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,4.7095,Residential and Commercial,Liquids
 REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,4.1063,Residential and Commercial,Solids
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,2.3818,Transportation,ElectricityTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,0,Transportation,GasesTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,0.0067,Transportation,HydrogenTrans
-REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,53.4906,Transportation,LiquidsTrans
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,14.6315,Industry,ElectricityIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,13.7369,Industry,GasesIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,2.6213,Industry,HeatIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,0.9499,Industry,HydrogenIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,18.4708,Industry,LiquidsIndus
+REMIND-MAgPIE 1.7-3.0,NPi_v3,OECD90 + EU,EJ/yr,2040,6.7024,Industry,SolidsIndus
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2050,80.5393,Industry,ElectricityIndus
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2050,67.2527,Industry,GasesIndus
 REMIND-MAgPIE 1.7-3.0,NPi_v3,World,EJ/yr,2050,10.7232,Industry,HeatIndus

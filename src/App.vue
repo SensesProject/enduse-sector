@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <SensesMenu :id="'power-sector'"/>
+    <SensesMenu :id="'end-use'" :minWidth="900"/>
     <div class="content" :class="mobile ? 'isMobile' : 'isDesktop'" ref="container">
       <div class="title-wrapper">
         <h1 class="module-title">Transition risks <br>End-use Sector Transformation</h1>

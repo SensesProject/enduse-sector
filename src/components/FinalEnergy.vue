@@ -16,7 +16,12 @@
     <div></div>
     <svg :width="innerWidth" :height="innerHeight" :transform="`translate(0, 0)`">
       <g v-for="(group, g) in dots" v-bind:key="g + 'grou' + 'header'" :class="`${labels[g]}-group`" :transform="`translate(${headerPosition[g]}, 0)`">
-      <text :class="`${enduse[g]}-labels`" :x="scale.x(2009)" y="10">{{ enduse[g] }}</text>
+      <text :class="`${enduse[g]}-labels`" :x="scale.x(2004)" y="10">{{ enduse[g] }}</text>
+      <g v-for="(text, t) in group" :key="t + 'text'" >
+          <g v-if="t == 0 || t == 9">
+          <text class="year-label" :x="text.year" y="30">{{ years[t] }}</text>
+          </g>
+        </g>
       </g>
       <g v-for="(group, g) in dots" v-bind:key="g + 'group'" :class="`${labels[g]}-group`" :transform="`translate(${horizontalPosition[g]}, ${groupPosition[g]})`">
         <!-- draws dots for energy carrier with index g   -->
@@ -82,6 +87,7 @@ export default {
       energy: _.groupBy(FinalEnergy, d => d.EnergySource),
       model: [...new Set(FinalEnergy.map(r => r.Model))],
       years: [...new Set(FinalEnergy.map(r => r.Year))],
+      // labelsData: [...new Set(FinalEnergy.map(r => r.EnergySource))],
       labels: ['Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids', 'Hydrogen', 'Gases', 'Electricity', 'Liquids', 'Heat', 'Solids'],
       labelsColors: ['HydrogenTrans', 'GasesTrans', 'ElectricityTrans', 'LiquidsTrans', 'HydrogenRyc', 'GasesRyc', 'ElectricityRyc', 'LiquidsRyc', 'HeaRyct', 'SolidsRyc', 'HydrogenIndus', 'GasesIndus', 'ElectricityIndus', 'LiquidsIndus', 'HeatIndus', 'SolidsIndus'],
       enduse: ['Transport', 'Buildings', 'Industry'],
@@ -142,7 +148,7 @@ export default {
           return {
             year: this.scale.x(single.Year),
             value: this.scale.y(Math.sqrt(single.Value)),
-            valueTWh: single.Value * 277.78 // conversion from EJ to TWh
+            valueTWh: single.Value //* 277.78 // conversion from EJ to TWh
           }
         })
       })
@@ -329,6 +335,9 @@ $margin-space: $spacing / 2;
       .Buildings-labels {
         //fill: $color-blue;
         font-weight: 600;
+      }
+      .axis-label {
+        font-size: 10px;
       }
       .year-label {
         text-anchor: middle;
