@@ -18,7 +18,7 @@
       <section>
         <div class="wrapper active">
           <div class="svg enduse"></div>
-          <div><p>Chapter 3</p><span>End Use</span></div>
+          <div><p>Chapter 3</p><span>End-Use</span></div>
         </div>
       </section>
     </nav>
@@ -91,15 +91,15 @@ export default {
         color: getColor(violet, 40);
         &.fossils
         {filter: invert(30%) sepia(91%) saturate(2513%) hue-rotate(227deg) brightness(106%) contrast(102%);
-          background-image: url('~@/assets/fossils.svg');
+          background-image: url('~@/assets/images/fossils.svg');
         }
         &.power
         {filter: invert(30%) sepia(91%) saturate(2513%) hue-rotate(227deg) brightness(106%) contrast(102%);
-          background-image: url('~@/assets/power.svg');
+          background-image: url('~@/assets/images/power.svg');
         }
         &.enduse
         {filter: invert(18%) sepia(19%) saturate(6441%) hue-rotate(234deg) brightness(92%) contrast(91%);
-          background-image: url('~@/assets/enduse.svg');
+          background-image: url('~@/assets/images/enduse.svg');
         }
       }
 

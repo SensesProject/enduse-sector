@@ -233,7 +233,7 @@ $transition-time: 0.5s;
   svg {
     g.Industry {
       text.title {
-        fill: rgb(179,119,0);
+        fill: #ffac00;
         font-weight: 600;
       }
       circle {
@@ -255,7 +255,7 @@ $transition-time: 0.5s;
 
     g.Buildings {
       text.title {
-        fill: getColor(blue, 40);
+        fill: #2BACE9;
         font-weight: 600;
       }
       circle {
@@ -300,7 +300,7 @@ $transition-time: 0.5s;
       }
       circle {
         transition: all $transition-time;
-        fill-opacity: 0.3;
+        fill-opacity: 0.5;
         stroke-opacity: 0;
       }
 

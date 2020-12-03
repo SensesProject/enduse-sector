@@ -1,11 +1,11 @@
 <template>
   <g class="labels" :class="`${labels[1]}-label`">
     <line :x2="xPos" :x1="xScale(2020)" :y1="yPos" :y2="yPos" class="year"/>
-    <text :x="xPos - radius" :y="yPos - radius - 30" class="ej shadow">{{labels[0]}} Bn/$
-      <tspan :x="xPos - radius" :y="yPos - radius - 10" class="shadow">{{labels[1]}} Ej/y</tspan>
+    <text :x="xPos - radius" :y="yPos - radius - 30" class="ej shadow">{{labels[0]}} Bn$/yr
+      <tspan :x="xPos - radius" :y="yPos - radius - 10" class="shadow">{{labels[1]}} TWh/yr</tspan>
     </text>
-    <text :x="xPos - radius" :y="yPos - radius - 30" class="ej">{{labels[0]}} Bn/$
-      <tspan :x="xPos - radius" :y="yPos - radius - 10">{{labels[1]}} Ej/y</tspan>
+    <text :x="xPos - radius" :y="yPos - radius - 30" class="ej">{{labels[0]}} Bn$/yr
+      <tspan :x="xPos - radius" :y="yPos - radius - 10">{{labels[1]}} TWh/yr</tspan>
     </text>
     <text :x="xPos -15" :y="scale(0) + 15" class="year">{{labels[2]}}</text>
   </g>
@@ -50,13 +50,13 @@ text.year {
 text.shadow {
   fill: none;
   stroke: white;
-  stroke-width: 8px;
+  stroke-width: 6px;
 }
 
 tspan.shadow {
     fill: none;
     stroke: white;
-    stroke-width: 8px;
+    stroke-width: 6px;
 }
 
 line.year {

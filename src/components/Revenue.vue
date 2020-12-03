@@ -2,7 +2,7 @@
   <div class="secondary-energy" ref="inWrapper">
     <div></div>
     <div class="key" :class=" mobile ? 'mobile' : 'desktop'">
-      <h3 >Changes in revenue
+      <h3>Illustrative changes in revenue
       <span class="model-label">(Model: REMIND-MAgPIE)</span>
       </h3>
     </div>
@@ -248,6 +248,7 @@ export default {
 <style scoped lang="scss">
 @import "library/src/style/variables.scss";
 $margin-space: $spacing / 2;
+$transition-time: 0.5s;
 
 .secondary-energy {
   height: 82vh;
@@ -443,6 +444,13 @@ $margin-space: $spacing / 2;
     height: 86%;
     background-color: rgba(221,214,255,.2);
     margin-top: $margin-space*1.5;
+    circle {
+      transition: all $transition-time;
+      fill-opacity: 1;
+    }
+    rect {
+      transition: all $transition-time;
+    }
     .axis {
       stroke: getColor(grey, 20);
       stroke-width: 0.5;

@@ -3,7 +3,7 @@
     <SensesMenu :id="'end-use'" :minWidth="900"/>
     <div class="content" :class="mobile ? 'isMobile' : 'isDesktop'" ref="container">
       <div class="title-wrapper">
-        <h1 class="module-title">Transition risks <br>End-use Sector Transformation</h1>
+        <h1 class="module-title">Transition risks <br>End-Use Sector Transformation</h1>
         <div class="text-wrapper">
         <p class="intro-paragraph" >This is the third chapter of the Transition Risks modules. You can select another chapter below.
           The Transition Risks modules are based on the Risk Factor Pathways as created by the UNEP
@@ -19,17 +19,17 @@
           What risks will be discussed?
         </h3>
         <p class="two-column-paragraph">The end-use sector goes through a transition from carbon-emitting fuels towards cleaner
-          fuels that don’t emit CO2. These cleaner fuels are for example electricity, hydrogen or biofuels. This transition is
-          primarily driven by climate policies, posing several transition risks to investors in the industry, transport and
-          residential and commercial (or buildings) sectors. The consumption of energy is associated with both direct and
-          indirect emissions of energy. Direct emissions occur when energy consumers burn fossil fuels themselves, whereas
-          indirect emissions occur when they consume carbon-free energy carriers (like electricity) that have been produced
-          from fossil fuels. Once climate policies are introduced, both these direct emission costs and the indirect changes
-          in fuel costs create a risk for companies in these sectors by changing their cost structures. When these new costs
-          are trickling through towards the prices of the product or services that these sectors provide, customers can respond
-          by consuming more or less of these services. Depending on this customer response, the revenue for the sector can increase
-          or decrease during the transition. Finally, the transition to a low-carbon system requires investments in efficiency
-          in these end-use sectors as well, increasing  the capital requirements for these end-use sectors.
+          fuels that don’t emit CO2. These cleaner energy carriers are for example electricity, hydrogen or biofuels. This
+          transition is primarily driven by climate policies, posing several transition risks to investors in the industry,
+          transport and residential and commercial (or buildings) sectors. The consumption of energy is associated with both
+          direct and indirect emissions of energy. Direct emissions occur when energy consumers burn fossil fuels themselves,
+          whereas indirect emissions occur when they consume carbon-free energy carriers (like electricity) that have been
+          produced from fossil fuels. Once climate policies are introduced, both these direct emission costs and the indirect
+          changes in fuel costs create a risk for companies in these sectors by changing their cost structures. When these new
+          costs are trickling through towards the prices of the product or services that these sectors provide, customers can
+          respond by consuming more or less of these services. Depending on this customer response, the revenue for the sector
+          can increase or decrease during the transition. Finally, the transition to a low-carbon system requires investments in
+          efficiency as well, increasing  the capital requirements for these end-use sectors.
           </p>
       </div>
       <div class="text-wrapper">
@@ -51,16 +51,16 @@
         </template>
         <div slot="text" class="observer">
           <IntersectionObserver :step="0"  align="left">
-            <p>The industry sector sees the strongest increase in hydrogen use and a large growth in electricity demand.
+            <p>In the <span class="transport">transport sector</span>, liquids keep playing a larger role, even though a lot of transport energy demand
+              is electrified. These liquids can however be based on biofuels, rather than fossil oil.
             </p>
           </IntersectionObserver>
           <IntersectionObserver :step="1"  align="left">
-            <p>The buildings sector shows a strong electrification as well, combined with reduction of gases and liquids.
+            <p>The <span class="buildings">buildings sector</span> shows a strong electrification, combined with reduction of gases and liquids.
             </p>
           </IntersectionObserver>
           <IntersectionObserver :step="2"  align="left" class="changeheight">
-            <p>In the transport sector, liquids keep playing a larger role, even though a lot of transport energy demand
-              is electrified. These liquids can however be based on biofuels, rather than fossil oil.
+            <p>The <span class="industry">industry sector</span> sees the strongest increase in hydrogen use and a large growth in electricity demand as well.
             </p>
           </IntersectionObserver>
         </div>
@@ -69,14 +69,14 @@
         <h2 class="chapter-title" id="costs">
           Costs risks
         </h2>
-        <p class="two-column-paragraph">The end use sectors face two types of cost risks. First, change in direct emission costs,
-          as the introduction of carbon pricing for end-users of fossil fuels leads to a cost increase associated with the use of
-          fossil fuels. A present day example of this risk is the European Emission Trading System (ETS) which requires industry
-          and airlines to obtain emission rights.
+        <p class="two-column-paragraph">The end-use sectors face two types of cost risks. First, change in direct emission costs,
+          as the introduction of carbon pricing for end-users leads to a cost increase associated with the use of fossil fuels.
+          A present day example of this risk is the European Emission Trading System (ETS) which requires industry and airlines
+          to obtain emission rights.
           The second cost risk is about indirect changes in fuels costs. These can either be driven by emission costs that are
           incurred upstream (for instance if electricity is produced from fossil fuels) or by changes in the fuel markets in
-          response to climate policies. An example of the latter dynamic would be the reduction of oil prices in response to
-          lower demand under climate policy scenarios.
+          response to climate policies. These changes can be in either direction, for example a reduction of oil prices in
+          response to lower demand under climate policy scenarios.
         </p>
       </div>
      <LayoutScrollytelling>
@@ -92,14 +92,15 @@
                 </p>
               </IntersectionObserver>
               <IntersectionObserver :step="1"  align="left">
-                <p>Fuel costs changes over time in all scenarios, with and without climate policy due to changes in the upstream
-                  sector and an increased energy demand. Therefore these costs are best viewed relative to a current policies scenario.
+                <p>Fuel costs change over time in all scenarios, with and without climate policy due to changes in the production of fossil
+                  fuels and electricity and an increased energy demand. Therefore these costs are best viewed relative to a current
+                  policies scenario.
                 </p>
               </IntersectionObserver>
               <IntersectionObserver :step="2"  align="left" class="changeheight">
-                <p>The change in total fuel costs, without accounting for direct emission costs, is largest in the industry and building
-                  sectors. In the transport sector, the switch to electricity and the associated efficiency increases can sometimes
-                  even lead to a gain in fuel costs.
+                <p>The change in total fuel costs, without accounting for direct emission costs, is largest in the industry and transport
+                  sectors. In the transport sector, the switch to electricity and the associated efficiency increases can in
+                  exceptional cases even lead to a gain in fuel costs.
                 </p>
               </IntersectionObserver>
             </div>
@@ -109,10 +110,12 @@
           Revenue changes
         </h2>
         <p class="two-column-paragraph">If the energy expenditures of the end-use sectors increase, the costs of goods and services
-          that these sectors produce will increase as well. Consumers can respond to these cost changes in different ways, by
-          consuming more or less of the goods and services. The changes in demand depend on so-called elasticities, which economists
-          have derived historically for many different goods and services. These elasticities can vary widely across specific goods
-          and services. In general, transport demand has been relatively inelastic, whereas demand for industrial goods has been elastic.
+          that these sectors produce will increase as well. Consumers can respond to these cost changes in different ways,
+          by consuming more or less of the goods and services. The changes in demand depend on so-called elasticities,
+          which economists have derived historically for many different goods and services. Elasticities describe the
+          relation between the ‘shock’ in price and the ‘response’ in demand. These elasticities can vary widely across
+          specific goods and services. In general, transport demand has been relatively inelastic (i.e. the response is
+          smaller than the shock), whereas demand for industrial goods has been elastic (i.e. the response is larger than the shock).
         </p>
       </div>
       <LayoutScrollytelling>
@@ -123,8 +126,8 @@
         </template>
         <div slot="text" class="observer">
         <IntersectionObserver :step="0"  align="right">
-          <p>If the consumer response is unit elastic, the increase in costs of the end-use sectors is compensated equally with an
-            increase in revenues and the revenue-risk would be zero.
+          <p>If the consumer response is exactly equal to the change in prices (i.e. unit elastic), the increase in costs
+            of the end-use sectors is compensated equally with an increase in revenues and the revenue-risk would be zero.
           </p>
         </IntersectionObserver>
         <IntersectionObserver :step="1"  align="right">
@@ -134,8 +137,9 @@
         </IntersectionObserver>
         <IntersectionObserver :step="2"  align="right">
           <p>However, if consumers respond relatively elastic, the increase in prices leads to a drop in the consumption of
-            goods and services. In this case, the end-use sector not only risk an increase in their costs, but also a decrease
-            in their revenues.
+            goods and services. In this case, the end-use sectors not only risk an increase in their costs, but also a decrease
+            in their revenues. The revenue changes depend crucially on the response of customers to increased costs in the
+            industry, transport and buildings sectors.
             </p>
         </IntersectionObserver>
       </div>
@@ -144,12 +148,10 @@
         <h2 class="chapter-title" id="structure">
           Investment need
         </h2>
-        <p class="two-column-paragraph">The increase in the costs of energy also stimulates a shift towards higher efficiency
-          in the end-use sectors. This higher efficiency can be reached by switching to more efficient fuels, such as electric
-          transport or by using energy more efficiently, such as home insulation. The former of these two options is not included
-          in the numbers below, which only look into additional energy efficiency measures.  As increasing energy efficiency
-          requires investments in more efficient equipment or insulation,these investments are adding to the cost profile of
-          the Industry, Transport and Building sectors.
+        <p class="two-column-paragraph">The increase in the costs of energy also stimulates a shift towards higher efficiency in the
+          end-use sectors. As increasing energy efficiency requires investments in more efficient equipment or insulation, these
+          investments are adding to the cost profile of the Industry, Transport and Building sectors. Here, we only look into
+          investment in increasing efficiency, not into the costs related to fuel switching, which might also increase efficiency.
         </p>
       </div>
       <LayoutScrollytelling>
@@ -163,6 +165,11 @@
             <p>Under a current policy scenario, we are globally investing a total of 250 Bn$ per year in energy efficiency measures,
               which increases to 300 or 333 Bn$ per year in the 2 degrees and 1.5 degrees scenarios. The largest shares of these
               investments go towards the buildings and transport sectors.
+              <br>
+              <br>
+              This figure provides just a single example from a single model. For more insights on the
+              uncertainty investment requirements see the module
+              <a  id="link" href="https://climatescenarios.org/investment/" target="_blank">↗ Investment Opportunities and Alignment</a>.
             </p>
           </IntersectionObserver>
         </div>
@@ -260,6 +267,7 @@ export default {
   }
   #link {
     background: none;
+    outline: none;
   }
   .content {
     max-width: 900px;
@@ -281,6 +289,7 @@ export default {
     #header {
       margin-bottom: $spacing/2;
     }
+
     .text-wrapper {
       margin-top: $spacing;
       margin-bottom: $spacing;
@@ -316,6 +325,18 @@ export default {
       -moz-box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
       box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
       width: 33%;
+      .buildings {
+        color: #2BACE9;
+        font-weight: 600;
+      }
+      .industry {
+        color: #ffac00;
+        font-weight: 600;
+      }
+      .transport {
+        color: getColor(purple, 40);
+        font-weight: 600;
+      }
     }
     .intersection-observer .default.right{
       width: 33%;

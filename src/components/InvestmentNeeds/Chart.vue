@@ -88,12 +88,13 @@ export default {
   },
   computed: {
     label () {
-      const subject = this.selectedRegion === 'World' ? 'We are' : `${this.selectedRegion} is`
+      // const subject = this.selectedRegion === 'World' ? 'We are' : `${this.selectedRegion} is`
       const labels = {
-        CPol: `What ${subject} <strong>currently</strong> investing (Current policies)`,
-        NDC: `What ${this.selectedRegion} <strong>pledged</strong> to invest (Nationally Determined Contributions)`,
-        '2C': `What ${this.selectedRegion} <strong>should</strong> invest for <strong>2°C</strong>`,
-        '1.5C': `What ${this.selectedRegion} <strong>should</strong> invest for <strong>1.5°C</strong>`
+        CPol: 'What we are <strong>currently</strong> investing (Current policies)',
+        NDC: 'What we <strong>pledged</strong> to invest (Nationally Determined Contributions)',
+        '2C': 'What we <strong>should</strong> invest for <strong>2°C</strong>',
+        '1.5C': 'What we <strong>should</strong> invest for <strong>1.5°C</strong>'
+        // '1.5C': `What ${this.selectedRegion} <strong>should</strong> invest for <strong>1.5°C</strong>`
       }
       return get(labels, this.scenario)
     },
@@ -279,7 +280,7 @@ export default {
       }
 
       .label {
-        font-size: 8px;
+        font-size: 0.8em;
         fill: getColor(gray, 60);
       }
     }

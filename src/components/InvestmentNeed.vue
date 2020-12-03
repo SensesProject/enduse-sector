@@ -1,7 +1,7 @@
 <template>
   <section class="investments" ref="inWrapper">
     <header class="key">
-      <h3>Energy efficiency investment needs within the enduse sector</h3>
+      <h3>Energy efficiency investment needs within the end-use sector</h3>
       <p class="model">(Model: REMIND-MAgPIE)</p>
       <div>
         <label class="label"><input class = "checkbox" type="checkbox" v-model="isStacked">not stacked</label>
@@ -64,7 +64,7 @@ export default {
       },
       innerHeight: 0,
       isStacked: true,
-      showDifference: false,
+      showDifference: true,
       selectedRegion: 'World',
       variables: [
         'Transport',

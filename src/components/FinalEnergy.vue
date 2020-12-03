@@ -148,7 +148,7 @@ export default {
           return {
             year: this.scale.x(single.Year),
             value: this.scale.y(Math.sqrt(single.Value)),
-            valueTWh: single.Value //* 277.78 // conversion from EJ to TWh
+            valueTWh: single.Value * 277.78 // conversion from EJ to TWh
           }
         })
       })
