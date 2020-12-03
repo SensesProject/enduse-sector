@@ -83,6 +83,7 @@ export default {
     width: 100%;
     height: 100%;
     outline: none;
+    color: getColor(violet, 40);
       div.svg {
         display: block;
         background-size: 80px 80px;
